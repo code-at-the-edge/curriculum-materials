@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <link  rel="stylesheet" type="text/css"  href="data:text/css;charset=utf-8;base64,{{- path.Join "/" .File.Dir "style.css" | readFile | base64Encode }}">
+        <script src='/{{- path.Join .File.Dir "script.js" | safeHTML }}' ></script>
+    </head>
+
+    <body>
+        {{- path.Join .File.Dir "body.html"  | readFile | safeHTML  }}
+
+    </body>
+</html>

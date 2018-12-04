@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "extends": "essentials",
+  "rules": { "semi": ["warn", "always", { "omitLastInOneLineBlock": true}],
+             "no-magic-numbers": ["error", {"ignoreArrayIndexes": true}],
+             "complexity": ["warn", {"max": 5}]
+           }
+}
