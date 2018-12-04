@@ -12,7 +12,7 @@ git:
 
 branches:
   only:
-    - sourcefiles
+    - hugo-version
 
 env:
   global:
@@ -39,9 +39,9 @@ deploy:
   github_token: ${GITHUB_TOKEN}
   local_dir: public 
   skip_cleanup: true
-  target_branch: master
+  target_branch: gh-pages
   on:
-    branch: sourcefiles
+    branch: hugo-version
 
 before_install:
   # commenting these out -- we don't use asciidoctor
