@@ -1,0 +1,53 @@
+language: go
+
+go:
+  - 1.11
+
+sudo: false
+
+git:
+  depth: false
+  # disable the default submodule logic
+  submodules: false
+
+branches:
+  only:
+    - sourcefiles
+
+env:
+  global:
+    - SOURCE_DIR="public"
+    - BUILD_BRANCH="hugo-version"
+    - DEPLOY_BRANCH="gh-pages"
+    - HUGO_BUILD_TAGS="extended"
+
+install:
+  - mkdir -p $HOME/src
+  - go get github.com/magefile/mage
+  - go get github.com/gohugoio/hugo
+  - mv $HOME/gopath/src/github.com/gohugoio/hugo $HOME/src
+  - cd $HOME/src/hugo
+  
+script:
+  - go mod download
+  - mage -v hugo 
+  - ./hugo -s ${TRAVIS_HOME}/gopath/src/github.com/khangchendzonga/khangchendzonga.github.io
+
+deploy:
+  provider: pages
+  edge: true
+  github_token: ${GITHUB_TOKEN}
+  local_dir: public
+  skip_cleanup: true
+  target_branch: master
+  on:
+    branch: sourcefiles
+
+before_install:
+  # commenting these out -- we don't use asciidoctor
+  # - gem install asciidoctor
+  # - type asciidoctor    
+  # Use https (public access) instead of git for git-submodules. This modifies only Travis-CI behavior!
+  # use sed to replace the SSH URL with the public URL, then init and update submodules
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
