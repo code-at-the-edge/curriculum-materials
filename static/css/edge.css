@@ -23,13 +23,12 @@ div.render > iframe {
     opacity: 1;
   }
 }
-@keyframes fake {
-  from {
+@keyframes fake
+from {
     opacity: 1;
-  }
-  to {
+}
+to {
     opacity: 1;
-  }
 }
 body {
   -webkit-animation: fake 1s infinite;
@@ -60,6 +59,8 @@ body {
   display: none;
   width: 100%;
   flex-basis: auto;
+  border-bottom: none;
+  border-bottom-color: none;
 }
 .worko-tabs .tab {
   display: inline-block;
@@ -116,3 +117,34 @@ body {
     border-bottom: 1px solid #ccc;
   }
 }
+
+
+/* fixing fucking huge font sizes in child frame  */
+
+div.md h1:first-of-type {
+    font-size: 2.5rem !important;
+}
+
+div.md h2 {
+    font-size: 2.0rem;
+}
+/* annoying borders */
+
+iframe {
+    border: none;
+}
+
+div.lesson-container>div {
+    border: 1px gray solid;
+}
+
+#project-caption {
+    background-color: #eee;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+#projeft-caption h5
