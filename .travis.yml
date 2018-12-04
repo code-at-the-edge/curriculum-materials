@@ -37,7 +37,7 @@ deploy:
   provider: pages
   edge: true
   github_token: ${GITHUB_TOKEN}
-  local_dir: public
+  local_dir: public 
   skip_cleanup: true
   target_branch: master
   on:
