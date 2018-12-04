@@ -7,6 +7,8 @@
     "test": "mocha --reporter mochawesome --reporter-options reportDir=TestResults,reportFilename=testresults || true",
     "watch": "mocha --reporter mochawesome --reporter-options reportDir=TestResults,reportFilename=testresults -w",
     "collectjson": "node collectjson-teacher.js",
+    "build-pages": "node ./scripts/builder.js",
+    "start": "concurrently --kill-others \"nodemon -e js,json,css,md -i build -x \\\"npm run build-pages\\\"\" \"live-server ./build\""
     "server": "node node_modules/http-server/bin/http-server"
   },
   "author": "Matt Price",
