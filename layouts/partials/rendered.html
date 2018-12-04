@@ -1,11 +1,15 @@
-<html>
-    <head>
-        <link  rel="stylesheet" type="text/css"  href="data:text/css;charset=utf-8;base64,{{- path.Join "/" .File.Dir "style.css" | readFile | base64Encode }}">
-        <script src='/{{- path.Join .File.Dir "script.js" | safeHTML }}' ></script>
-    </head>
-
-    <body>
-        {{- path.Join .File.Dir "body.html"  | readFile | safeHTML  }}
-
-    </body>
-</html>
+{{- $htmlstring := path.Join .File.Dir "body.html" | readFile | safeHTML }}
+{{- $cssstring := delimit (slice ` <link rel="stylesheet" type="text/css"  href="data:text/css;charset=utf-8;base64,` ( path.Join "/" .File.Dir "style.css" | readFile | base64Encode) `">`) ""}}
+{{- $jsstring := delimit (slice ` <script src="` ( path.Join `/` .Page.Dir `script.js` | relURL ) `"></script>`) ""}}
+{{- $outertag := findRE `<html>((.?\n?)+)</html>` $htmlstring }}
+{{- $headmatch := findRE `<head>((.?\n?>?)+)</head>([.\n]+)?<body>` $htmlstring }}
+{{- $bodymatch := findRE `<body>((.?\n?>?)+)</body>` $htmlstring}}
+{{- if (not $outertag ) }}
+{{- $htmlstring = delimit (slice `<html>` $htmlstring `</html>`) "\n" }}
+{{- end }}
+{{- if $headmatch }}
+{{ $htmlstring = replaceRE `<head>((.?\n?>?)+)</head>([.\n]+)?<body>` (delimit (slice `<head>$1` $cssstring $jsstring `</head>$3<body>`) "\n") $htmlstring |safeHTML }}
+{{- else }}
+{{ $htmlstring = replace  $htmlstring `<html>` (delimit (slice `<html>` $cssstring $jsstring) "\n") | safeHTML }} 
+{{ end }}
+{{ $htmlstring }}
