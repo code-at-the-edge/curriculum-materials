@@ -31,7 +31,7 @@ install:
 script:
   - go mod download
   - mage -v hugo 
-  - ./hugo -s ${TRAVIS_HOME}/gopath/src/github.com/khangchendzonga/khangchendzonga.github.io
+  - ./hugo -s ${TRAVIS_HOME}/gopath/src/github.com/code-at-the-edge/curriculum-materials
 
 deploy:
   provider: pages
