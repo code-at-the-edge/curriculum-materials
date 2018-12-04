@@ -10,7 +10,6 @@
                 <label for="tab-one" id="tab-one-label" class="tab">Student Instrucions</label>
                 <label for="tab-two" id="tab-two-label" class="tab">Teacher Instructions</label>
 
-
                 <div id="tab-one-panel" class="panel active">
                     <div class="student-instructions">
                         {{path.Join .File.Dir "instructions.md" | readFile | markdownify}}</div>
@@ -19,29 +18,14 @@
                 <div id="tab-two-panel" class="panel">
                     <div class="teacher-instructions">
                         {{path.Join .File.Dir "teacher.md" | readFile | markdownify}}</div>
-                    
                 </div>
             </div>
-
         </div>
-
-
-        
-
 
 
     </div>
     <div class="render">
     <iframe src="data:text/html;charset=utf-8;base64,{{- partial "rendered.html" . | base64Encode }}"></iframe>
-    {{ partial "rendered.html" . | safeHTML }}
-    <iframe srcdoc="{{ partial "simpletest.html" . | safeHTML }}"></iframe>
-    <iframe srcdoc="{{ partial "rendered.html" . | safeHTML  }}"></iframe>
-    
-    <iframe srcdoc='<html><head><script src="script.js"></script></head>
-    <body><h1>hi</h1></body></html>'></iframe>
-    
-        <iframe srcdoc='{{partial "rendered.html" .  }}'></iframe>
-
     </div>
 </div>
 
