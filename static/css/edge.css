@@ -113,6 +113,9 @@ body {
     border-bottom: none;
   }
 
+
+  
+
   #tab-one:checked ~ .tabs #tab-one-panel, #tab-two:checked ~ .tabs #tab-two-panel {
     border-bottom: 1px solid #ccc;
   }
@@ -147,4 +150,16 @@ div.lesson-container>div {
     margin-right: auto;    
 }
 
-#projeft-caption h5
+
+
+
+/* fix that stupid ribbon */
+  header:after {
+      /* background: url(ribbon.png) 0 0/100% no-repeat; */
+      background: none;
+    content: '';
+    height: .35rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%; }
