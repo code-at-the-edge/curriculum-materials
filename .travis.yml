@@ -12,12 +12,12 @@ git:
 
 branches:
   only:
-    - hugo-version
+    - master
 
 env:
   global:
     - SOURCE_DIR="public"
-    - BUILD_BRANCH="hugo-version"
+    - BUILD_BRANCH="master"
     - DEPLOY_BRANCH="gh-pages"
     - HUGO_BUILD_TAGS="extended"
 
@@ -41,7 +41,7 @@ deploy:
   skip_cleanup: true
   target_branch: gh-pages
   on:
-    branch: hugo-version
+    branch: master
 
 before_install:
   # commenting these out -- we don't use asciidoctor
