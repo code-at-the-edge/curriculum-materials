@@ -3,9 +3,9 @@
     {{ partial "header.html" . }}
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-  {{- with .Site.Menus.shortcuts}}
+  {{- with .CurrentSection}}
     <nav class="shortcuts">
-        {{- range sort . "Weight"}}
+        {{- range sort .Pages "Weight"}}
             <li class="" role="">
                 <a href="{{.URL}}" {{if eq $.Site.Params.menushortcutsnewtab true}}target="_blank"{{end}} rel="noopener">
                   {{safeHTML .Name}}
