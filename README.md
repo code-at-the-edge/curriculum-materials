@@ -17,10 +17,10 @@ First, start the hugo server from  the root directory of your repo:
 ``` shell
 cd curriculum-materials
 hugo server --navigate-to-changed
-xdg-open http://localhost:1313/
+xdg-open http://localhost:1313/curriculum-materials
 ```
 
-Hugo will update as you work, though b ewarned that firefox is not 100% reliable when it comes to reloading iframes, so you want to use chrome. 
+Hugo will update as you work, though be warned that firefox is not 100% reliable when it comes to reloading iframes, so you want to use chrome. 
 
 ### Adding Materials
 
