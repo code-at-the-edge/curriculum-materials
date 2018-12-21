@@ -4,7 +4,7 @@ This repo generates a Hugo site that hosts curriculum materials built for [Code 
 
 ## Installation
 
-First, [install hugo](https://gohugo.io/getting-started/installing/). Then get the repo 
+First, [install Hugo](https://gohugo.io/getting-started/installing/) (you will require v0.48+). Then get the repo:
 
 ``` shell
 git clone git@github.com:code-at-the-edge/curriculum-materials.git --recursive
@@ -12,15 +12,15 @@ git clone git@github.com:code-at-the-edge/curriculum-materials.git --recursive
 
 ## Usage
 
-First, start the hugo server from  the root directory of your repo: 
+First, start the hugo server from the root directory of your repo:
 
 ``` shell
 cd curriculum-materials
-hugo server --navigate-to-changed
+hugo server --navigateToChanged
 xdg-open http://localhost:1313/curriculum-materials
 ```
 
-Hugo will update as you work, though be warned that firefox is not 100% reliable when it comes to reloading iframes, so you want to use chrome. 
+Hugo will update as you work, though be warned that Firefox is not 100% reliable when it comes to reloading iframes, so you want to use Chrome.
 
 ### Adding Materials
 
@@ -29,8 +29,8 @@ For now we have one course, which is found in `content/courses/intro-workshop/`.
 ``` shell
 hugo new --kind lesson courses/intro-workshop/LESSON-TITLE
 ```
-a new directory with the relevant content will be created as `courses/intro-workshop/LESSON-TITLE` and you can work there directly 
+a new directory with the relevant content will be created as `courses/intro-workshop/LESSON-TITLE` and you can work there directly
 
-### viewing your work
+### Viewing Your Work
 
 Hugo should update automagically in your browser!
