@@ -1,2 +1,0 @@
-# Instructions for Lesson
-
