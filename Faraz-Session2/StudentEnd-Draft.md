@@ -96,11 +96,11 @@ But, what computers really see is this:
 
 This is code, written in HTML. We need to understand what HTML is, and how it works.
 
-## Introduction to HTML
+# Introduction to HTML
 
 ![alt text](./Images/html.jpg)
 
----
+
 #### Activity 1-1
 Sometimes it is better to try first and learn afterwards. Follow these steps and by the end of today you will learn the rational behind each.
 
@@ -125,6 +125,7 @@ Sometimes it is better to try first and learn afterwards. Follow these steps and
 3. Continue making amendments where you see "...". Try to observe and understand what happens to the outcome when you make certain changes to the code.
 ---
 
+#### Tags
 You just made your first HTML web-page!
 
 
@@ -255,4 +256,4 @@ You can see again that the `style` variable is being changed here. More on that 
 
 ---
 
-Congratulations! You have finished your first tutorial of this workshop. You now know a bit about computers, programing languages and internet. You also have begun your journey into the world of web development by taking the first steps into the realm of html. 
+Congratulations! You have finished your first tutorial of this workshop. You now know a bit about computers, programing languages and internet. You also have begun your journey into the world of web development by taking the first steps into the realm of html.
