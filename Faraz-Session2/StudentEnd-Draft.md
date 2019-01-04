@@ -5,7 +5,7 @@
 
 ## What is a Computer?
 
-Computers are electronic machines that accept infomation, process the information according to specific instructions, and provide new information as the result. 
+Computers are electronic machines that accept information, process the information according to specific instructions, and provide new information as the result. 
 
 *What does that mean??*
 
@@ -163,7 +163,8 @@ For example, the **HTML element** in the code above consists of everything from 
 
 #### Activity 1-3
 Try to find the rest of the **elements** with the help of your teammates.
-You can review some of the most important html tags <a href="htmlcheatsheet.pdf"> here </a>
+You can review some of the most important html tags <a href="htmlcheatsheet.pdf"> here </a>. <br/>
+The document is from the Stanford University.
 
 ---
 
@@ -171,4 +172,87 @@ You can review some of the most important html tags <a href="htmlcheatsheet.pdf"
 * The author can write the title of the webpage between `<title>` and `</title>` tags.
 * The body of the webpage (the *body element*) goes between `<body>` and `</body>`.
 * `<h1>` and `</h1>` indicate what goes between is stylistically a header. 
+* `<p>` and `</p>` mark the beginning and end of a paragraph element. 
 
+Before starting the next activity make sure you have reviewed carefully the html sheet <a href="htmlcheatsheet.pdf"> here </a>. <br/>
+
+### Activity 1-4
+
+1. Open your code playground.
+
+2. Start a html document by defining the type and opening an html body.
+
+3. Start by adding a few lines about yourself.<br/>
+3.1. Write your name as a big headline. <br>
+3.2. Write the name of your favorite show in a smaller headline. <br>
+3.3. Write a short description of yourself in plain text.
+
+4. Create a table (Hint: use the Table tags in your cheat sheet. Specifically, look into `<table>` , `<tr>`, `<td>`, `<th>`. You can use the starter code here and manipulate it to get to the later steps.)
+![alt text](./Images/html-table.png)
+```
+<table>
+    <tr> 
+        <th>Headline1</th> 
+        <th>Headline2</th> 
+    </tr>
+    <tr>
+        <td>(1,1)</td> 
+        <td>(1,2)</td>
+    </tr>
+    <tr>
+        <td>(2,1)</td> 
+        <td>(2,2)</td> 
+    </tr> 
+</table>
+```
+Make sure you understand what goes where. We are now going to make some differences in the styling of the code. <br>
+
+5.  Let's align the headlines to the centre.
+
+```
+<table style="width:100%">
+    <tr> 
+        <th>Headline1</th> 
+        <th>Headline2</th> 
+    </tr>
+    <tr>
+        <td>(1,1)</td> 
+        <td>(1,2)</td>
+    </tr>
+    <tr>
+        <td>(2,1)</td> 
+        <td>(2,2)</td> 
+    </tr> 
+</table>
+```
+
+You notice we have added `style="width:100%"` to the `<table>` tag. We will learn more about styling soon.
+
+6. You can also put the entries to the centre:
+
+```
+<table style="width:100%">
+    <tr> 
+        <th>Headline1</th> 
+        <th>Headline2</th> 
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle;"> (1,1)</td> 
+        <td>(1,2)</td>
+    </tr>
+    <tr>
+        <td>(2,1)</td> 
+        <td>(2,2)</td> 
+    </tr> 
+</table>
+```
+
+You can see again that the `style` variable is being changed here. More on that later.
+
+7. Expand the table into a `(#members of your team) * 3 table` (with as many rows as your team members and 3 columns)
+
+8. Fill the table with your names, your favorite movies, and favorite foods.
+
+---
+
+Congratulations! You have finished your first tutorial of this workshop. You now know a bit about computers, programing languages and internet. You also have begun your journey into the world of web development by taking the first steps into the realm of html. 
