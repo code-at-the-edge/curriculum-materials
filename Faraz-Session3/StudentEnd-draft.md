@@ -26,7 +26,7 @@ Today we will talk about style in html documents. By the end of today you will l
 
 3. Add a *sub-element* after `"Second, First"` and put `"Second, First, First"` there.
 
-4. Now we are going to make some stylistic modifications. Feel free to use your cheat sheet. 
+4. Now we are going to make some stylistic modifications. Feel free to use your cheat sheet.
 
 ![alt text](./images/text-tags.png)
 
@@ -38,7 +38,7 @@ Today we will talk about style in html documents. By the end of today you will l
 
 ---
 
-You can start to see the stylistic variations you can make for your reader. This is just the tip of the iceberg. 
+You can start to see the stylistic variations you can make for your reader. This is just the tip of the iceberg.
 
 ![alt text](./images/html-meme.jpg)
 
