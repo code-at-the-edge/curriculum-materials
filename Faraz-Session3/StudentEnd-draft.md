@@ -28,7 +28,7 @@ Today we will talk about style in html documents. By the end of today you will l
 
 4. Now we are going to make some stylistic modifications. Feel free to use your cheat sheet.
 
-![](./Images/text-tags.PNG)
+![](./Images/Text-tags.PNG)
 
 5. Use the `<strong>` tag to make the main categories **bold**. (`"First"`, `"Second"`, `"Third"`)
 
