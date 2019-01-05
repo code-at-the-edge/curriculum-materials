@@ -85,7 +85,7 @@ Let's learn about CSS with an activity.
 h2 {
   font-weight:normal;
   color: white;
-  font-size: 37px;
+  font-size: 38px;
   font-family: Courier;
   background-color: black;
   text-align: center
