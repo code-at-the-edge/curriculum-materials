@@ -45,7 +45,7 @@ You can start to see the stylistic variations you can make for your reader. This
 ---
 ## Activity 2-2
 
-1. Start a new html document. Define the elements and in body of the **body element** use `<h1>`, `<h2>`, `<h3>`, `<p>` and other tags as you wish to create the following memo.
+1. Start a new html page. Define the elements and in body of the **body element** use `<h1>`, `<h2>`, `<h3>`, `<p>` and other tags as you wish to create the following memo.
 
 2. Use `<h1>` and write `<YourName> Environmental Report`.
 
