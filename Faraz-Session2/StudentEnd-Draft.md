@@ -101,7 +101,7 @@ This is code, written in HTML. We need to understand what HTML is, and how it wo
 ![alt text](./Images/html.jpg)
 
 
-#### Activity 1-1
+## Activity 1-1
 Sometimes it is better to try first and learn afterwards. Follow these steps and by the end of today you will learn the rational behind each.
 
 1. Open your code playground. A code playground is a live environment which continuously interprets your code.
@@ -125,7 +125,8 @@ Sometimes it is better to try first and learn afterwards. Follow these steps and
 3. Continue making amendments where you see "...". Try to observe and understand what happens to the outcome when you make certain changes to the code.
 ---
 
-#### Tags
+## Tags
+
 You just made your first HTML web-page!
 
 
@@ -136,7 +137,7 @@ Everything in HTML goes inside a tag. Tags are specific instructions given by th
 
 ---
 
-#### Activity 1-2
+## Activity 1-2
 Try to find the rest of the **tags** with the help of your teammates.
 
 ---
@@ -151,7 +152,7 @@ Now that we can identify the tags,let's revisit the code above and try to unders
 
 ---
 
-#### Elements
+## Elements
 `<html>` is called a **start** tag, and `</html>` is called an **end** tag.<br>
 A html document consists of **elements**. The body that goes between a start tag and an end tag is called an **element** in html.<br>
 For example, the **HTML element** in the code above consists of everything from the start tag `<html>` to the end tag `</html>`
@@ -162,7 +163,7 @@ For example, the **HTML element** in the code above consists of everything from 
 
 ---
 
-#### Activity 1-3
+## Activity 1-3
 Try to find the rest of the **elements** with the help of your teammates.
 You can review some of the most important html tags <a href="htmlcheatsheet.pdf"> here </a>. <br/>
 The document is from the Stanford University.
@@ -177,7 +178,8 @@ The document is from the Stanford University.
 
 Before starting the next activity make sure you have reviewed carefully the html sheet <a href="htmlcheatsheet.pdf"> here </a>. <br/>
 
-### Activity 1-4
+---
+## Activity 1-4
 
 1. Open your code playground.
 
