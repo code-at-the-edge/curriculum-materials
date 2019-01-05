@@ -28,7 +28,7 @@ Today we will talk about style in html documents. By the end of today you will l
 
 4. Now we are going to make some stylistic modifications. Feel free to use your cheat sheet.
 
-![alt text](./Images/text-tags.png)
+![](./Images/text-tags.PNG)
 
 5. Use the `<strong>` tag to make the main categories **bold**. (`"First"`, `"Second"`, `"Third"`)
 
@@ -40,7 +40,7 @@ Today we will talk about style in html documents. By the end of today you will l
 
 You can start to see the stylistic variations you can make for your reader. This is just the tip of the iceberg.
 
-![alt text](./Images/html-meme.jpg)
+![](./Images/html-meme.jpg)
 
 ---
 ## Activity 2-2
