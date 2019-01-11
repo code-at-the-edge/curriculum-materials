@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+
+GIT_CURRICULUM="https://github.com/code-at-the-edge/curriculum-materials.git"
+BRANCH_CURRICULUM=master
+
+if ! [ -z "`ps xa | awk '{print $5}' | grep dpkg | grep -v grep`" ]; then
+    echo -e "\e[1;31mDPKG is running in the background.\e[0m"
+    read -p "Would you like to KILL it to continue (Y/n)? " -n 1 -r
+    echo ""
+    if [[ $REPLY =~ ^[Nn]$ ]]; then
+        echo -e "\e[1;31mPlease stop DPKG Before Proceeding!\e[0m"
+        exit
+    else
+        echo -e "\e[1;32mKilling DPKG and continuing\e[0m"
+        sudo killall dpkg
+    fi
+fi
+
+# install git
+sudo apt-get update
+if ! [ "$(which git)" ]; then
+    sudo apt-get install git -y
+fi
+
+# Download code at the edge repo
+git clone $GIT_CURRICULUM
+fi
+cd curriculum-materials/scripts
+git checkout $BRANCH_CURRICULUM
+
+
+# Normalize OS environment (thanks tomesh!)
+echo -e "\e[1;32mStarting installation...\e[0m"
+
+# Detect missing /sbin from $PATH variable on Debian distros, and add it
+if [ -z $(echo $PATH | grep "/sbin")  ]; then
+    # Current environment
+    export PATH="/sbin:/usr/sbin:$PATH"
+    # Next login
+    echo 'export PATH="/sbin:/usr/sbin:$PATH"' | sudo tee -a /etc/profile
+fi
+
+# Get tools
+
+# TODO -- install and configure
+# Set up as Access Point
+# hostap
+
+# Set up Server
+# nginx
+
+# Set up Teaching Tools
+# camera
+# simple file upload
+# curriculum website
+# code playground
+
+
+# Prompt for name of the AP
+read -p "Enter the name of your mesh network (default: code-at-the-edge): " -r
+export AP_NAME=`echo $REPLY | sed 's/ //g'`
+if [ "${#AP_NAME}" == 0 ]; then
+    export AP_NAME="code-at-the-edge"
+fi
+
+
+read -p "Installation complete. Press any key to reboot. " -n 1 -r
+
+# Reboot device
+sudo reboot
