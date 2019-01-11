@@ -10,6 +10,8 @@ First, [install Hugo](https://gohugo.io/getting-started/installing/) (you will r
 git clone git@github.com:code-at-the-edge/curriculum-materials.git --recursive
 ```
 
+If you need to update the submodule you can type  `git submodule update --init --recursive`
+
 ## Usage
 
 First, start the hugo server from the root directory of your repo:

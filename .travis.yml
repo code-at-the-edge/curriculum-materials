@@ -10,10 +10,6 @@ git:
   # disable the default submodule logic
   submodules: false
 
-branches:
-  only:
-    - master
-
 env:
   global:
     - SOURCE_DIR="public"
@@ -27,17 +23,17 @@ install:
   - go get github.com/gohugoio/hugo
   - mv $HOME/gopath/src/github.com/gohugoio/hugo $HOME/src
   - cd $HOME/src/hugo
-  
+
 script:
   - go mod download
-  - mage -v hugo 
+  - mage -v hugo
   - ./hugo -s ${TRAVIS_HOME}/gopath/src/github.com/code-at-the-edge/curriculum-materials
 
 deploy:
   provider: pages
   edge: true
   github_token: ${GITHUB_TOKEN}
-  local_dir: public 
+  local_dir: public
   skip_cleanup: true
   target_branch: gh-pages
   on:
@@ -46,7 +42,7 @@ deploy:
 before_install:
   # commenting these out -- we don't use asciidoctor
   # - gem install asciidoctor
-  # - type asciidoctor    
+  # - type asciidoctor
   # Use https (public access) instead of git for git-submodules. This modifies only Travis-CI behavior!
   # use sed to replace the SSH URL with the public URL, then init and update submodules
   - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
