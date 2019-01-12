@@ -20,37 +20,50 @@
 
 ### Materials Required
 
-- [ ] ConfiguredRaspberry Pi
+- [ ] Configured Raspberry Pi
   - Ensure [Special RPi page] is working for **Linking Websites** concepts
 - [ ] Yarn and connection cards (cut out)
-- [ ] [something for box game?]
 
 ### Room Setup
 
--
-[Some description of what should go here]
+- Computer Lab, with 2-4 chairs at space near each computer
+- Room to stand (could move outside for activity)
 
 ## Outline of sections
 
 1. **Introduction** (10 minutes)
-1. **Linking websites** (45 minutes)
+1. **Linking websites** (40 minutes)
     - Presentation (10 minutes)
-    - Skill building (20 mimutes)
+    - Skill building (15 mimutes)
       - adding `a` HTML elements (`href` anchors with ids)
       - navigating to different pages?
     - Connecting Online Activity (15 minutes)
       - Hand out cards with icons, ask folks to get/share that info without moving
       - Provide yarn and reask, above. Spend some time having them ask and throw around stuff
       - Flag privacy issue? Local / internet?
-1. **Layout and Positioning** (45 minutes)
+1. **Layout and Positioning** (30 minutes)
     - Presentation (10 minutes)
-    - "Element Box" game (15 minutes)
-      - Class up and standing around, moving around but not getting in each others space
-      - Arms as padding, pylons? sticks? as margin.
-      - Can do front, back, left, right holding arms out. Trying to have space on all sides
     - Skill building (20 minutes)
       - `border, padding, margin, display, position, float` CSS properties
 1. **Project Time** (30 minutes)
     - Connecting and navigating between pages
-    - Give you extra structure: header, 4!
-1. **Conclusion** (20 minutes)
+
+1. **Conclusion** (10 minutes)
+
+## Sections
+
+### PRESENTATION: Introduction
+
+- Introduce topics
+  - Today we 
+
+### PAIR PROGRAMMING: Linking websites
+
+adding `a` HTML elements (`href` anchors with ids)
+- navigating to different pages?
+
+### ACTIVITY: Connecting Online
+
+### PAIR PROGRAMMING: Layout and Positioning
+
+`border, padding, margin, display, position, float` CSS properties
