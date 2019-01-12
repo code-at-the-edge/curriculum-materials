@@ -6,12 +6,10 @@
 
 ## Time
 
-2.5 hours
+2.0 hours
 
 ## Rationale and Learning Objectives
 
-
-(so maybe: at the course level we say we are )
 
 ## Preparation
 
