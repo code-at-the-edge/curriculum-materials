@@ -10,6 +10,7 @@
 
 ## Rationale and Learning Objectives
 
+[Bulleted list of objectives]
 
 ## Preparation
 
