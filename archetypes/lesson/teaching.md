@@ -6,14 +6,13 @@
 
 ## Time
 
-2.5 hours
+2.0 hours
 
 ## Rationale and Learning Objectives
 
+[Bulleted list of objectives]
 
-(so maybe: at the course level we say we are )
-
-## Preparation 
+## Preparation
 
 ### Materials Required
 
@@ -29,8 +28,5 @@
 1. Concept One ( _ minutes)
     - Activity ( _ minutes)
 1. Concept Two ( _ minutes)
-    - Activity ( _ minutes) 
-1. Conclusion ( _ minutes) 
-
-## Other Notes
-
+    - Activity ( _ minutes)
+1. Conclusion ( _ minutes)
