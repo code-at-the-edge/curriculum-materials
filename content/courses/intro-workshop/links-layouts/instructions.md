@@ -23,13 +23,13 @@ We've also been working in teams (hopefully pairs!) at our computers to try out 
 
 ## PAIR PROGRAMMING: Creating connections, or linking web sites
 
-Links are one of the most common features of web sites, you can click on a link and "jump" or "follow" it to another page! The neat part about a link is that it doesn't have to be only text, it can be an image or other element.
+Links are one of the most common features of web sites. In fact, they are what make web sites a "web". You can click on a link and "jump" or "follow" it to another page! The neat part about a link is that it doesn't have to be only text, it can be an image or other element.
 
-Links are often "local", that means they take you to another page on the same site, however they can also be "extenal" and take you to another site, or image, document, or text that you don't really have control over.
+Links are often "local", that means they take you to another page on the same site, however they can also be "extenal" and take you to another site, or image, file, document, email, or phone number that you don't really have control over.
 
 ```
 **A link by another name**
-Links used to be known as HTML links, hyperlinks (because the "H" stands for Hyper). When people are taking about _extenal_ links they often just refer to a link as a "URL" (Uniform Resource Locator) or "URI" (Uniform Resource Identifier), but those are actually the names of the thing being linked to, not the act of making a connection.
+Links used to be known as HTML links, hyperlinks (because the "H" stands for Hyper). When people are taking about _extenal_ links they often just refer to a link based on the _type of destination_ as a "URL" (Uniform Resource Locator) or "URI" (Uniform Resource Identifier), but those are actually the names of the thing being linked to, not the act of making a connection.
 
 ```
 
@@ -37,13 +37,28 @@ Links used to be known as HTML links, hyperlinks (because the "H" stands for Hyp
 
 Let's try adding a link now --
 
+First things, a link is defined using the `<a>`, or anchor, element. It often looks like:
+
+```
+<a href="https://mozillaindia.org/">Mozilla India</a>
+<a href="destination"><img src=""/></a>
+
+```
+
+In the element the `href` attribute specifies the _destination_, sometimes called an _address_
+
+`<a href="destination">link text</a>`
+
 1.  adding `a` HTML elements (`href` anchors with ids)
 
 
-2A. adding a link to another page
+### Linking to another page
+
+2A. adding a link to another part of the same page
 
 
-2B. adding a link to another part of the same page
+2B. adding a link to another page
+
 
 
 3. adding a link to the special RPi link page
