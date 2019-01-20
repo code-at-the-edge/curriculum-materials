@@ -1,0 +1,68 @@
+/* not really that important, just a reset to make things easier. */
+html, html * {
+    box-sizing: border-box;
+}
+
+
+main {
+    background-color: rgba(20,80,80,0.2);
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                         "side art aside"
+                         "side art aside";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-gap: 10px;
+}
+
+
+main>* {
+    border: red solid 4px;   
+    border-radius: 10px;
+    text-align: center;         
+    
+}
+
+header {
+    background-color: rgba(143, 81, 188, 0.3);
+    grid-area: 1 / 1 / span 1 / span 4;
+}
+
+aside {
+    background-color: rgba(143, 81, 188, 0.3);
+    grid-area: aside;
+}
+
+
+section.sidebar {
+    background-color: rgba(150, 112, 36, 0.3);
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section.sidebar img {
+    max-width: 80%; /* you'll see why this is useful soon, I promise!*/
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: rgba(4,2,200,0.7);
+    grid-area: 2/4;
+}
+
+article {
+    background-color: rgba(30,30,30,0.4);
+    grid-area: art;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 10px;
+    
+}
+
+
