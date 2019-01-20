@@ -45,7 +45,9 @@ Students yet need not know about how `list` is made. Just help them identify the
 * `Activity 1-3` should be a fairly straight up exercise after the last section. Help the students find all the elements in the starter code.
     * Suggested time: `15 minutes`
 
-* `Activity 1-4` is an extensive activity in which students are supposed to make their very first own web page and put a table in it. Much of the code is already provided to the as starter codes. Make sure the students understand the rational behind their decisions. Make sure they understand how to take advantage of the cheat sheet. Using the manual pages is an important skill any developer should flourish.
+* `Activity 1-4` is an extensive activity in which students are supposed to make their very first own web page with `semantic elements`. Much of the code is already provided to the students as starter codes. Make sure the students understand the rational behind their decisions. Make sure they understand how to take advantage of the cheat sheet. Using the manual pages is an important skill any developer should flourish.
+    * Students will probably ask you about the CSS. Tell them they will learn about it during the next session.
+    * Make sure students do use `<p>`, `<h?>`, `<b>`, `<i>` tags. They should be able to use the proper tags.
     * Allow the students to take the time to go through what they have learned today. It is not easy to take all this information at once. 
     * Some student may be lost and reluctant to work on the activities due to intimidation. Reassure them and push them to do the activity. 
     * Encourage the students to personalize their page by using the tags in the cheat sheet.
