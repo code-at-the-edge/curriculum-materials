@@ -1,7 +1,7 @@
 # Let's Learn About Computers
 
 
-![](./Images/1.jpg)
+![alt text](./Images/1.jpg "this is faraz")
 
 ## What is a Computer?
 
@@ -11,7 +11,7 @@ Computers are electronic machines that accept information, process the informati
 
 ![alt text](./Images/Computer.jpg)
 
-Computers can receive information from Mouse, Keyboard, Camera, etc. BUt they don't know how to handle the information intrinsically. You, the *human* must give the computer specific instructions, so they know how to handle the information. 
+Computers can receive information from Mouse, Keyboard, Camera, etc. BUt they don't know how to handle the information intrinsically. You, the *human* must give the computer specific instructions, so they know how to handle the information.
 
 ## Giving Instructions to Computers
 
@@ -158,13 +158,9 @@ A html document consists of **elements**. The body that goes between a start tag
 For example, the **HTML element** in the code above consists of everything from the start tag `<html>` to the end tag `</html>`
 
 ---
-<br>
-<br>
-
----
 
 ## Activity 1-3
-Try to find the rest of the **elements** with the help of your teammates.
+1. Try to find the rest of the **elements** with the help of your teammates.
 You can review some of the most important html tags <a href="htmlcheatsheet.pdf"> here </a>. <br/>
 The document is from the Stanford University.
 
@@ -173,19 +169,99 @@ The document is from the Stanford University.
 * **Start tag** `<head>` starts the *head element* and `<!head>` finishes it.
 * The author can write the title of the webpage between `<title>` and `</title>` tags.
 * The body of the webpage (the *body element*) goes between `<body>` and `</body>`.
-* `<h1>` and `</h1>` indicate what goes between is stylistically a header. 
-* `<p>` and `</p>` mark the beginning and end of a paragraph element. 
+* `<h1>` and `</h1>` indicate what goes between is stylistically a header.
+* `<p>` and `</p>` mark the beginning and end of a paragraph element.
+
 
 Before starting the next activity make sure you have reviewed carefully the html sheet <a href="htmlcheatsheet.pdf"> here </a>. <br/>
 
+A HTML documented is usually divided up and presented in separate sections. The image below identify some of the most important of these separate sections.  
+
+![alt text](./Images/semantics.jpg)
+
+Each of these tags define an independent `element` in the HTML document.
+
+The elements that these tags create are called `semantic elements` because the tags defines the role of their content in the document.
+
+To get a better picture of things imagine if:
+
+1. the content of the walls of your class room (stuff like pictures, graphs, etc.) are in the `semantic element` of ```<wall>```
+
+2. What is on the ground of your classroom (stuff like your chairs, desks, etc.) are in the `semantic element` of ```<ground>```
+
+3. What is on your desks (stuff like your monitor, mouse, keyboard, etc.) are in the `semantic element` of ```<desk>```
+
+We have already used `<p>` and `<h1>`. These are also semantic tags because they define what is the content of your elements. For example, if you are using `<p>` you know what is inside the tags is to be understood as a `paragraph`.
+
+Let's do an activity to get a better understanding of semantic tags.
+
+
 ---
 ## Activity 1-4
+
+1. Open your <a href="style.txt"> style file</a> and copy its content into the CSS section of your code playground. This is a code written in CSS. CSS is an exciting tool for adding style to your HTML document. We will learn more on this soon. 
+
+2. Copy this code below in the HTML section of your code playground
+
+```
+
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> 
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <main>
+          <header>
+
+          </header>
+            <nav> 
+        </nav>
+            <section class="sidebar">
+            </section>
+            <article>
+            <p> 
+            </p>
+
+            </article>
+            <aside></aside>
+        </main>
+    </body>
+</html>
+
+```
+
+3. Write a short paragraph about yourself and your environment concerns in `<article>`. Make sure to use the `<p>` and `<h?>` tags. Remember, we are practicing `semantic elements`.
+
+4. Your instructor should provide you with links to some images. Use the snippet code below to add pictures to your `<section>` element. 
+
+```
+<img alt="" id="[your image name]" src="[the link goes here]/>
+```
+5. Use `<h1>` and write a title for your document in `<header>` element.
+
+6. You can use `<b>` to write in **bold** and `<i>` to write in *italic* and `<u>` to write underlined text
+
+7. Keep playing with this template. You should be able to understand what purpose each of the tags play in the presentation of the document.
+
+---
+Congratulations! You have finished your first tutorial of this workshop. You now know a bit about computers, programing languages and internet. You also have begun your journey into the world of web development by taking the first steps into the realm of html.
+
+
+---
+## Extra Activity 
+
+This is an extra activity for those who would like to learn about HTML tables. Tables are effective ways to present data in an orderly fashion. 
 
 1. Open your code playground.
 
 2. Start a html document by defining the type and opening an html body.
 
 3. Start by adding a few lines about yourself. Remember you should use the `<p>` tag.<br/>
+
 3.1. Write your name as a big headline. <br>
 3.2. Write the name of your favorite show in a smaller headline. <br>
 3.3. Write a short description of yourself in plain text.
@@ -259,5 +335,3 @@ You can see again that the `style` variable is being changed here. More on that 
 8. Fill the table with your names, your favorite movies, and favorite foods.
 
 ---
-
-Congratulations! You have finished your first tutorial of this workshop. You now know a bit about computers, programing languages and internet. You also have begun your journey into the world of web development by taking the first steps into the realm of html.
