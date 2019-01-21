@@ -21,7 +21,7 @@ You'll recall in over the last two day's we've talked about:
 
 We've also been working in teams (hopefully pairs!) at our computers to try out working on these activities, we'll start off doing that again today ⌨ 🖱.
 
-## PAIR PROGRAMMING: Creating connections, or linking web sites
+## Creating connections, or linking web sites
 
 Links are one of the most common features of web sites. In fact, they are what make web sites a "web". You can click on a link and "jump" or "follow" it to another page! The neat part about a link is that it doesn't have to be only text, it can be an image or other element.
 
@@ -29,8 +29,7 @@ Links are often "local", that means they take you to another page on the same si
 
 ```
 **A link by another name**
-Links used to be known as HTML links, hyperlinks (because the "H" stands for Hyper). When people are taking about _extenal_ links they often just refer to a link based on the _type of destination_ as a "URL" (Uniform Resource Locator) or "URI" (Uniform Resource Identifier), but those are actually the names of the thing being linked to, not the act of making a connection.
-
+Links used to be known as HTML links, hyperlinks (because the "H" stands for Hyper). When people are taking about _external_ links they often just refer to a link based on the _type of destination_ as a "URL" (Uniform Resource Locator) or "URI" (Uniform Resource Identifier), but those are actually the names of the thing being linked to, not the act of making a connection.
 ```
 
 ### Adding a Link
@@ -41,28 +40,39 @@ First things, a link is defined using the `<a>`, or anchor, element. It often lo
 
 ```
 <a href="https://mozillaindia.org/">Mozilla India</a>
-<a href="destination"><img src=""/></a>
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg" alt="Picture of Kangchenjunga taken by author from Goecha La pass, 4940m, Sikkim" /></a>
 
 ```
 
-In the element the `href` attribute specifies the _destination_, sometimes called an _address_
+In the `<a>` element the `href` attribute specifies the _destination_, sometimes called an _address_. The element opening tag and closing tag go around the part of the web page that becomes the link: either text or an image!
 
-`<a href="destination">link text</a>`
+`<a href="destination">link text or image</a>`
 
-1.  adding `a` HTML elements (`href` anchors with ids)
+The destination can be either _local_, or a part of our own web sites, or _external_, a part of someone else's web site or some other thing that is theirs.
 
+When we make local links we can point to a whole page, or just a part of a page we want to draw attention to. To mark a part of a page that we want to link directly we use the `id` or identifier attribute:
 
-### Linking to another page
+```
+<a id="bookmark"></a>
+<p id="introduction">This is the first paragraph of my page. Below, I have images of my favourite places</p>
+```
 
-2A. adding a link to another part of the same page
+Then we use the `#` or hash symbol plus the `id` as the destination!
 
+`<a href="#introduction">Go to the introduction</a>`
 
-2B. adding a link to another page
+### PAIR PROGRAMMING: Linking to another page
 
+Now your turn!
 
+Try:
+- Adding a link to another part of the same page
+- Adding a link to another page
+- If you have time, try adding a link to the course website!
 
-3. adding a link to the special RPi link page
-
+```
+Hint: you can find the _address_ of a web site by looking in the top centre of the browser bar
+```
 
 ## GAME: Connecting Online
 
@@ -70,11 +80,10 @@ We've started to practice using links and see how they can create paths, or rout
 
 Let's pause for a minute and talk about what that means-- creating links on the Web, that are visitable by everyone who comes to our web page:
 
-[Explain Lessons -- make up lessons!!]
-
+[explain rules -- make up lessons!!]
 
 ## PAIR PROGRAMMING: Layout and Positioning
 
-Now that we have tried out adding links, and thought about what it means to have connections between our own pages and other people's, we should return to _how we organize our web pages_ so they are meaningful to us, and can be easier read by other people!
+Now that we have added links and thought about what it means to have connections between websites, we should look at _how to organize our own web pages_ so they are meaningful to us and can be easier read by other people!
 
 [topics `border, padding, margin, display, position, float` CSS properties]

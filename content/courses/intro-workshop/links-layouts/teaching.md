@@ -53,5 +53,5 @@
 ## Resources
 
 The following resources were used to plan this lesson:
-- https://www.w3schools.com/html/html_links.asp
-- 
+- https://developer.mozilla.org/en-US/docs/Web/SVG/Element/a
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
