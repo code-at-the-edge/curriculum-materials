@@ -1,11 +1,10 @@
-# Introduction to html, continued
+## Introduction to html, continued
 
 Today we will talk about style in html documents. By the end of today you will learn how to choose backgrounds for your documents, font colors, font types, etc. But before that let's do an exercise to refresh your mind on html and introduce new functionality.
 
----
-## Activity 2-1
+### Activity 2-1
 
-1. Open your code playground. Start an instance of a html document, by defining the document type, start thing the **html element**, the **head element**, and the **body element**. Feel free to use the starter code from the last session. 
+1. Open your code playground. Start an instance of a html document, by defining the document type, start thing the **html element**, the **head element**, and the **body element**. Feel free to use the starter code from the last session.
 
 2. Take a look at the code here, and add it to your body element
 
@@ -22,7 +21,7 @@ Today we will talk about style in html documents. By the end of today you will l
 </ul>
 ```
 
-3. You just made your first **nested list**. These are great ways to represent data in an human accessible way. Take notice of what **tags** are used. Find where the **elements** are being opened and where they are being closed. Try to add a number of elements. 
+3. You just made your first **nested list**. These are great ways to represent data in an human accessible way. Take notice of what **tags** are used. Find where the **elements** are being opened and where they are being closed. Try to add a number of elements.
 
 3. Add a *sub-element* after `"Second, First"` and put `"Second, First, First"` there.
 
@@ -36,14 +35,11 @@ Today we will talk about style in html documents. By the end of today you will l
 
 7. Use the `<font size=>` to change the size of one of the elements.
 
----
-
 You can start to see the stylistic variations you can make for your reader. This is just the tip of the iceberg.
 
 ![](./Images/html-meme.jpg)
 
----
-## Activity 2-2
+### Activity 2-2
 
 1. Start a new html page. Define the elements and in body of the **body element** use `<h1>`, `<h2>`, `<h3>`, `<p>` and other tags as you wish to create the following memo.
 
@@ -55,9 +51,7 @@ You can start to see the stylistic variations you can make for your reader. This
 
 5. Use `<font size=?>` to change the size of your Heading 2s. You can use numbers `1 to 7` in place of `?`. Play around and see what happens. Don't forget to close your elements properly.
 
-6. Be creative and make more stylistic modifications to your memo. Feel free to use the cheat sheet given to you. 
-
----
+6. Be creative and make more stylistic modifications to your memo. Feel free to use the cheat sheet given to you.
 
 ## Style and HTML
 
@@ -67,15 +61,13 @@ However, the way we have been doing these modifications seems to be highly ineff
 
 There must be a way to control the stylistic organization of webpage.
 
-Happily there are ways. With an external **stylesheet** we can give instructions to a computer on how to display the contents of a html document. 
+Happily there are ways. With an external **stylesheet** we can give instructions to a computer on how to display the contents of a html document.
 
-One of the solutions is to use **CSS** (**Cascading Style Sheets**). 
+One of the solutions is to use **CSS** (**Cascading Style Sheets**).
 
 Let's learn about CSS with an activity.
 
----
-
-## Activity 2-3
+### Activity 2-3
 
 1. Go back to your code editor. Delete all the stylistic modification you did on your memo from the previous activity. (Take your work to `Step 3, Activity 2-2`).
 
@@ -98,11 +90,7 @@ h2 {
 
 5. Now Create an *ordered* list with the help of `<ul style="list-style-type:disc">` tag. You had seen something like this in the past when you used the `<font size=?>` tag. As you can see we can change properties of tags both externally, and externally within an html document.
 
----
-
-
-
-# Introduction to CSS
+## Introduction to CSS
 
 In the last activity you made your first CSS document. CSS is a programing language which is used to change the way a HTML document is represented in a web browser.
 
@@ -111,4 +99,3 @@ A good way to think about this is to imagine the HTML document as the skeleton o
 ![](./Images/html-css.png)
 
 As it is illustrated above, CSS can turn your HTML into a wonderful web page.
-
