@@ -1,57 +1,55 @@
-## Introduction to html, continued
+# Introduction to html, continued
 
-Today we will talk about style in html documents. By the end of today you will learn how to choose backgrounds for your documents, font colors, font types, etc. But before that let's do an exercise to refresh your mind on html and introduce new functionality.
+Today we will talk about style in html documents. By the end of today you will learn how to work different sections of your HTML document, choose backgrounds, font colors, font types, etc. But before that let's do an exercise to refresh your mind on html and introduce new functionality.
 
-### Activity 2-1
+---
+## Activity 2-1
 
-1. Open your code playground. Start an instance of a html document, by defining the document type, start thing the **html element**, the **head element**, and the **body element**. Feel free to use the starter code from the last session.
+1. Open your code playground. You should be able to see your code from last session. 
 
-2. Take a look at the code here, and add it to your body element
+2. Take a look at the code here, and add it to your `<article>` element
 
 ```
+<div>
 <ul>
-  <li>First</li>
-  <li>Second
+  <li>First Pollutant</li>
+  <li>Second Pollutant
     <ul>
-      <li>Second, First</li>
-      <li>Second, Second</li>
+      <li>Causes</li>
+      <li>Effects</li>
     </ul>
   </li>
-  <li>Third</li>
+  <li>Third Pollutant</li>
 </ul>
+</div>
 ```
 
-3. You just made your first **nested list**. These are great ways to represent data in an human accessible way. Take notice of what **tags** are used. Find where the **elements** are being opened and where they are being closed. Try to add a number of elements.
+1. Each `<div>` element is a separate division in your HTML code. Later in this session we will se why it is important to divide your HTML document into distinct divisions using `<div>`
 
-3. Add a *sub-element* after `"Second, First"` and put `"Second, First, First"` there.
+3. You just made your first **nested list**. These are great ways to represent data in a human accessible way. Take notice of what **tags** are used. Find where the **elements** are being opened and where they are being closed. Try to add a number of elements. 
 
-4. Now we are going to make some stylistic modifications. Feel free to use your cheat sheet.
+4. Fill your list with actual content. What pollutants do you think causs the most damage to your environment?
+
+3. Add a *sub-element* after `"Causes"` and put one of the `Causes ` of the `Second Pollutant` in there.
+
+4. Now we are going to make some stylistic modifications. Feel free to use your cheat sheet .
 
 ![](./Images/tags.jpg)
 
-5. Use the `<strong>` tag to make the main categories **bold**. (`"First"`, `"Second"`, `"Third"`)
+5. Use the `<strong>` or `<b>` tag to make the main categories **bold**. (`"First"`, `"Second"`, `"Third"`)
 
-6. Use the `<em>` tag to turn the deepest sub-directories *italic*. (`"First, Second, First"`)
+6. Use the `<em>` or `<i>`tag to turn the deepest sub-directories *italic*. (`"First, Second, First"`)
 
 7. Use the `<font size=>` to change the size of one of the elements.
+
+
+---
 
 You can start to see the stylistic variations you can make for your reader. This is just the tip of the iceberg.
 
 ![](./Images/html-meme.jpg)
 
-### Activity 2-2
-
-1. Start a new html page. Define the elements and in body of the **body element** use `<h1>`, `<h2>`, `<h3>`, `<p>` and other tags as you wish to create the following memo.
-
-2. Use `<h1>` and write `<YourName> Environmental Report`.
-
-3. Write about the causes of pollution in your community and about ways you could think of a solution. Make sure you are writing your document in stylishly appealing order. Make sure to write your paragraphs in the body of **paragraph elements** (Use `<p>` tag)
-
-4. Use the `<font color=blue>` to change the color of Heading 1. Don't forget to close the **font element** with a `</font>`
-
-5. Use `<font size=?>` to change the size of your Heading 2s. You can use numbers `1 to 7` in place of `?`. Play around and see what happens. Don't forget to close your elements properly.
-
-6. Be creative and make more stylistic modifications to your memo. Feel free to use the cheat sheet given to you.
+---
 
 ## Style and HTML
 
@@ -61,26 +59,28 @@ However, the way we have been doing these modifications seems to be highly ineff
 
 There must be a way to control the stylistic organization of webpage.
 
-Happily there are ways. With an external **stylesheet** we can give instructions to a computer on how to display the contents of a html document.
+Happily there are ways. With an external **stylesheet** we can give instructions to a computer on how to display the contents of a html document. 
 
-One of the solutions is to use **CSS** (**Cascading Style Sheets**).
+One of the solutions is to use **CSS** (**Cascading Style Sheets**). 
 
-Let's learn about CSS with an activity.
+You have already been using CSS. Let's now learn about it with an activity.
 
-### Activity 2-3
+---
 
-1. Go back to your code editor. Delete all the stylistic modification you did on your memo from the previous activity. (Take your work to `Step 3, Activity 2-2`).
+## Activity 2-3
 
-2. In the CSS section of the code playground add the following code.
+1. Open your code from the last session. You had written a title for your page under the `<header>` tag with use of `<h1>` tag.
+
+2. Now add the starter code here to the CSS section of your code playground. Remember not to change the rest of the CSS code.
 
 ```
-h2 {
+h1 {
   font-weight:normal;
   color: white;
-  font-size: 38px;
+  font-size: 40px;
   font-family: Courier;
-  background-color: black;
-  text-align: center
+  background-color: Green;
+  text-align: center;
 }
 ```
 
@@ -88,14 +88,93 @@ h2 {
 
 4. Now try to make some difference on the appearance of your `<p>` elements. Maybe change the color, change the background and play with the alignment.
 
-5. Now Create an *ordered* list with the help of `<ul style="list-style-type:disc">` tag. You had seen something like this in the past when you used the `<font size=?>` tag. As you can see we can change properties of tags both externally, and externally within an html document.
+---
 
-## Introduction to CSS
 
-In the last activity you made your first CSS document. CSS is a programing language which is used to change the way a HTML document is represented in a web browser.
+# Introduction to CSS
+
+In the last activity you made your first CSS modifications. CSS is a programing language which is used to change the way a HTML document is represented in a web browser.
 
 A good way to think about this is to imagine the HTML document as the skeleton of a webpage, and the CSS document as the appearance of the body. HTML is the *structural layer* and CSS is the *presentation layer*.
 
 ![](./Images/html-css.png)
 
 As it is illustrated above, CSS can turn your HTML into a wonderful web page.
+
+In the last activity you used `h1{}` to change some stuff with the way the `<h1>` is presented in the HTML documented. 
+
+To understand CSS you need to understand what are `selectors` and `properties`
+
+![alt text](./Images/css-syntax.jpg)
+
+As you can see, we can generalize and say we can change properties of HTML tags through defining `selectors` in the CSS code and modifying some of the properties of the tag in that selector.
+Take notice of the way we use `{`,`}`, and `;`. These are mandatory.
+
+We introduce you to 4 ways you can take advantage of CSS powers:
+
+
+1. You have already used the simple case use through the last activity. You can define a selector for a certain tag and change some of the properties. 
+
+2. You can instruct your machine to change some of the properties of a tag, only when the tag is used within a certain tag. Use this code below in your CSS:
+
+```
+section > h2 {
+  font-weight:bold;
+  color: white;
+  font-size: 30px;
+  font-family: Courier;
+  background-color: Red;
+  text-align: center;
+}
+```
+
+And now add a `<h2>` element to your `<section>` element. See the difference? `<h2>` does not behave the same in `<section>` and `<article>`.
+
+3. You can define a new `id` and use it in your HTML code. Add this snippet to your CSS.
+
+```
+#box1 {
+  grid-area: f;
+  background-color: Green;
+  text-align: center;
+}
+```
+Remember we put our nested list from the last activity into a `<div>` element?
+Now change this line:
+
+```
+<div>
+```
+
+To this:
+
+```
+<div id="box1"><section>Box1</section>
+```
+
+Did you see what happened? 
+You told the computer to interpret this `<div>` element as a `box1` and it did so for you! Now try to make some more variations. 
+
+4. You can also define classes of things. Use this code below in your CSS:
+
+```
+p.extrabig{
+    font-weight:bold;
+    font-size: 25px;
+}
+```
+
+Now add a `<p class="extrabig>` element to your `<article>` element and write something. As you can see, you have changed some properties of the `<p>` element by defining a new `class` and redefining some the properties in there. 
+
+
+---
+
+## Activity 2-2
+
+1. By now you know a lot about CSS! Try to read the CSS code we have given your. You should be able to understand most of it. Discuss the code with your partners and fill free to ask about different parts of it from your instructor. 
+
+
+2. Your instructor should have some images ready for you. Get the links from your instructor and add the images to your `<section>` element. Take notice of how this element is of class `sidebar`.
+
+3. We have created a number of boxes for you. Start add stuff to this boxes in your `<article>` element. Try to change some of the properties in different boxes. Maybe change the background in some of them, or change the color. 
+

@@ -1,10 +1,11 @@
 # Let's Learn About Computers
 
+
 ![alt text](./Images/1.jpg "this is faraz")
 
 ## What is a Computer?
 
-Computers are electronic machines that accept information, process the information according to specific instructions, and provide new information as the result.
+Computers are electronic machines that accept information, process the information according to specific instructions, and provide new information as the result. 
 
 *What does that mean??*
 
@@ -44,13 +45,14 @@ You get the idea. Your friend must perform lots and lots of step before they get
 
 ![alt text](./Images/Happy-Computer.jpg)
 
-We give the instructions to computers thorough **programming languages**. We define each and every step very carefully and computers will go through that steps and do what we want from them.
+We give the instructions to computers thorough **programming languages**. We define each and every step very carefully and computers will go through that steps and do what we want from them. 
 
 In this workshop, we will teach you about the languages which will help you create your own web pages.
 
-But before that, let's see what is Internet, what is this thing called the **World Wide Web**.
+But before that, let's see what is internet, what is this thing called the **world wide web**.
 
-### What is the World Wide Web?
+
+## What is the World Wide Web?
 
 ![alt text](./Images/World-Wide.jpg)
 
@@ -81,7 +83,12 @@ When you go to Google's website, you see this:
 
 ![alt text](./Images/google.png)
 
+<br>
+
 But, what computers really see is this:
+
+<br><br>
+
 
 ![alt text](./Images/google-code.png)
 
@@ -89,17 +96,17 @@ But, what computers really see is this:
 
 This is code, written in HTML. We need to understand what HTML is, and how it works.
 
-## Introduction to HTML
+# Introduction to HTML
 
 ![alt text](./Images/html.jpg)
 
-### Activity 1-1
 
+## Activity 1-1
 Sometimes it is better to try first and learn afterwards. Follow these steps and by the end of today you will learn the rational behind each.
 
 1. Open your code playground. A code playground is a live environment which continuously interprets your code.
 
-2. On the HTML tab, put the following.
+2. On the HTML tab, put the following. 
 
 ```
 <!DOCTYPE html>
@@ -115,35 +122,49 @@ Sometimes it is better to try first and learn afterwards. Follow these steps and
 </body>
 </html>
 ```
-
 3. Continue making amendments where you see "...". Try to observe and understand what happens to the outcome when you make certain changes to the code.
-
-You just made your first HTML web-page!
+---
 
 ## Tags
 
-Everything in HTML goes inside a tag. Tags are specific instructions given by the user to the interpretation machine. All tags start with a < (left bracket) and a > (right bracket). Stuff like `<!DOCTYPE>`, `<html>`, and `</html>` are some of the tags in the code snippet above.
+You just made your first HTML web-page!
 
-### Activity 1-2
 
+Everything in HTML goes inside a tag. Tags are specific instructions given by the user to the interpretation machine. All tags start with a < (left bracket) and a > (right bracket). Stuff like `<!DOCTYPE>`, `<html>`, and `</html>` are some of the tags in the code snippet above.<br>
+
+<br>
+<br>
+
+---
+
+## Activity 1-2
 Try to find the rest of the **tags** with the help of your teammates.
+
+---
 
 Now that we can identify the tags,let's revisit the code above and try to understand what we did there and learn along the way:
 
 * The `<!DOCTYPE html>` declares that this document is a html document.
-* `<html>` and `</html>`mark the beginning and the end of the **HTML element**.
+* `<html>` and `</html>`mark the beginning and the end of the **HTML element**. <br>
+
+<br>
+<br>
+
+---
 
 ## Elements
-
 `<html>` is called a **start** tag, and `</html>` is called an **end** tag.<br>
 A html document consists of **elements**. The body that goes between a start tag and an end tag is called an **element** in html.<br>
 For example, the **HTML element** in the code above consists of everything from the start tag `<html>` to the end tag `</html>`
 
-### Activity 1-3
+---
 
+## Activity 1-3
 1. Try to find the rest of the **elements** with the help of your teammates.
 You can review some of the most important html tags <a href="htmlcheatsheet.pdf"> here </a>. <br/>
 The document is from the Stanford University.
+
+---
 
 * **Start tag** `<head>` starts the *head element* and `<!head>` finishes it.
 * The author can write the title of the webpage between `<title>` and `</title>` tags.
@@ -151,9 +172,10 @@ The document is from the Stanford University.
 * `<h1>` and `</h1>` indicate what goes between is stylistically a header.
 * `<p>` and `</p>` mark the beginning and end of a paragraph element.
 
+
 Before starting the next activity make sure you have reviewed carefully the html sheet <a href="htmlcheatsheet.pdf"> here </a>. <br/>
 
-A HTML documented is usually divided up and presented in separate sections. The image below identify some of the most important of these separate sections.
+A HTML documented is usually divided up and presented in separate sections. The image below identify some of the most important of these separate sections.  
 
 ![alt text](./Images/semantics.jpg)
 
@@ -163,29 +185,32 @@ The elements that these tags create are called `semantic elements` because the t
 
 To get a better picture of things imagine if:
 
-1. the content of the walls of your class room (stuff like pictures, graphs, etc.) are in the `semantic element` of `<wall>`
+1. the content of the walls of your class room (stuff like pictures, graphs, etc.) are in the `semantic element` of ```<wall>```
 
-2. What is on the ground of your classroom (stuff like your chairs, desks, etc.) are in the `semantic element` of `<ground>`
+2. What is on the ground of your classroom (stuff like your chairs, desks, etc.) are in the `semantic element` of ```<ground>```
 
-3. What is on your desks (stuff like your monitor, mouse, keyboard, etc.) are in the `semantic element` of `<desk>`
+3. What is on your desks (stuff like your monitor, mouse, keyboard, etc.) are in the `semantic element` of ```<desk>```
 
 We have already used `<p>` and `<h1>`. These are also semantic tags because they define what is the content of your elements. For example, if you are using `<p>` you know what is inside the tags is to be understood as a `paragraph`.
 
 Let's do an activity to get a better understanding of semantic tags.
 
+
+---
 ## Activity 1-4
 
-1. Open your <a href="style.txt"> style file</a> and copy its content into the CSS section of your code playground. This is a code written in CSS. CSS is an exciting tool for adding style to your HTML document. We will learn more on this soon.
+1. Open your <a href="style.txt"> style file</a> and copy its content into the CSS section of your code playground. This is a code written in CSS. CSS is an exciting tool for adding style to your HTML document. We will learn more on this soon. 
 
 2. Copy this code below in the HTML section of your code playground
 
 ```
+
 <!doctype html>
 <html>
     <head>
         <title></title>
         <meta charset="utf-8" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> 
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
@@ -193,12 +218,12 @@ Let's do an activity to get a better understanding of semantic tags.
           <header>
 
           </header>
-            <nav>
+            <nav> 
         </nav>
             <section class="sidebar">
             </section>
             <article>
-            <p>
+            <p> 
             </p>
 
             </article>
@@ -209,9 +234,9 @@ Let's do an activity to get a better understanding of semantic tags.
 
 ```
 
-3. Write a short paragraph about yourself and your environment concerns in `<article>`. Make sure to use the `<p>` and `<h?>` tags. Remember, we are practicing `semantic elements`.
+3. Write a short paragraph with a headline about yourself and your environment concerns in `<article>`. Make sure to use the `<p>` and `<h2>` tags. Remember, we are practicing `semantic elements`.
 
-4. Your instructor should provide you with links to some images. Use the snippet code below to add pictures to your `<section>` element.
+4. Your instructor should provide you with links to some images. Use the snippet code below to add pictures to your `<section>` element. 
 
 ```
 <img alt="" id="[your image name]" src="[the link goes here]/>
@@ -222,11 +247,14 @@ Let's do an activity to get a better understanding of semantic tags.
 
 7. Keep playing with this template. You should be able to understand what purpose each of the tags play in the presentation of the document.
 
+---
 Congratulations! You have finished your first tutorial of this workshop. You now know a bit about computers, programing languages and internet. You also have begun your journey into the world of web development by taking the first steps into the realm of html.
 
-## Extra Activity
 
-This is an extra activity for those who would like to learn about HTML tables. Tables are effective ways to present data in an orderly fashion.
+---
+## Extra Activity 
+
+This is an extra activity for those who would like to learn about HTML tables. Tables are effective ways to present data in an orderly fashion. 
 
 1. Open your code playground.
 
@@ -244,39 +272,38 @@ This is an extra activity for those who would like to learn about HTML tables. T
 
 ```
 <table>
-    <tr>
-        <th>Headline1</th>
-        <th>Headline2</th>
+    <tr> 
+        <th>Headline1</th> 
+        <th>Headline2</th> 
     </tr>
     <tr>
-        <td>(1,1)</td>
+        <td>(1,1)</td> 
         <td>(1,2)</td>
     </tr>
     <tr>
-        <td>(2,1)</td>
-        <td>(2,2)</td>
-    </tr>
+        <td>(2,1)</td> 
+        <td>(2,2)</td> 
+    </tr> 
 </table>
 ```
-
 Make sure you understand what goes where. We are now going to make some differences in the styling of the code. <br>
 
 5.  Let's align the headlines to the centre.
 
 ```
 <table style="width:100%">
-    <tr>
-        <th>Headline1</th>
-        <th>Headline2</th>
+    <tr> 
+        <th>Headline1</th> 
+        <th>Headline2</th> 
     </tr>
     <tr>
-        <td>(1,1)</td>
+        <td>(1,1)</td> 
         <td>(1,2)</td>
     </tr>
     <tr>
-        <td>(2,1)</td>
-        <td>(2,2)</td>
-    </tr>
+        <td>(2,1)</td> 
+        <td>(2,2)</td> 
+    </tr> 
 </table>
 ```
 
@@ -286,18 +313,18 @@ You notice we have added `style="width:100%"` to the `<table>` tag. We will lear
 
 ```
 <table style="width:100%">
-    <tr>
-        <th>Headline1</th>
-        <th>Headline2</th>
+    <tr> 
+        <th>Headline1</th> 
+        <th>Headline2</th> 
     </tr>
     <tr>
-        <td style="text-align: center; vertical-align: middle;"> (1,1)</td>
+        <td style="text-align: center; vertical-align: middle;"> (1,1)</td> 
         <td>(1,2)</td>
     </tr>
     <tr>
-        <td>(2,1)</td>
-        <td>(2,2)</td>
-    </tr>
+        <td>(2,1)</td> 
+        <td>(2,2)</td> 
+    </tr> 
 </table>
 ```
 
@@ -306,3 +333,5 @@ You can see again that the `style` variable is being changed here. More on that 
 7. Expand the table into a `(#members of your team) * 3 table` (with as many rows as your team members and 3 columns)
 
 8. Fill the table with your names, your favorite movies, and favorite foods.
+
+---
