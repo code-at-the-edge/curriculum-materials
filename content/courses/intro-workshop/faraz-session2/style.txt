@@ -1,11 +1,11 @@
-/* not really that important, just a reset to make things easier. */
+    /* not really that important, just a reset to make things easier. */
 html, html * {
-    box-sizing: border-box;
+
 }
 
 
 main {
-    background-color: rgba(20,80,80,0.2);
+    background-color: rgba(80,80,80,0.2);
     min-height: 100vh;
     display: grid;
     grid-template-areas: "nav nav nav"
@@ -18,16 +18,12 @@ main {
 
 
 main>* {
-    border: red solid 4px;   
+    border: orange solid 1px;   /*sorry for the horrible color*/
     border-radius: 10px;
-    text-align: center;         
+    text-align: center;         /*keep the text centered horizontally*/
     
 }
 
-header {
-    background-color: rgba(143, 81, 188, 0.3);
-    grid-area: 1 / 1 / span 1 / span 4;
-}
 
 aside {
     background-color: rgba(143, 81, 188, 0.3);
@@ -50,19 +46,78 @@ section.sidebar img {
     border-radius: 5px;
 }
 
+header{
+    background-color: rgba(30,200,30,0.3);
+    grid-area: 1 / 1 / span 1 / span 3; 
+}
 nav {
-    background-color: rgba(4,2,200,0.7);
-    grid-area: 2/4;
+    background-color: rgba(30,200,30,0.3);
+    grid-area: n;
 }
 
 article {
     background-color: rgba(30,30,30,0.4);
     grid-area: art;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: "a a a a" "e f f h" "e f f  h" "e n n p";
+    
+  
     grid-gap: 10px;
     
 }
 
 
+article > div {
+    border: blue 1px solid;
+    border-radius: 10px;
+    background-color: rgba(50,50,200,0.3);
+}
+
+article div section {
+    line-height:2;
+    background-color: rgba(10,10,200,0.5);
+    
+}
+
+#box2 {
+  grid-area: a;
+}
+
+#box3 {
+  grid-area: h;
+}
+
+#box4 {
+  grid-area: n;
+}
+
+#box5 {
+
+grid-area: p;
+background-color: rgba(200,10,10,0.3)
+}
+
+#box6 {
+
+grid-area: e;
+background-color: rgba(200,10,10,0.3)
+}
+
+@media (max-width: 500px) {
+    main {
+        grid-template-areas: "n"
+                             "ar"
+                             "s"
+                             "as";
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 1fr 120px 80px;
+    }
+    section.sidebar {
+        flex-direction: row;
+    }
+    section.sidebar img {
+        flex: 1;
+        max-height: 40%;
+        flex-shrink: 1;
+    }
+}
