@@ -1,16 +1,15 @@
 div.lesson-container {
-    display: flex;
+  display: flex;
 }
 
 div.lesson-container div.md, div.lesson-container div.render {
-
-    flex-basis: 0;
-    flex-grow: 1;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 div.render > iframe {
-    width: 100%;
-    height: 100%
+  width: 100%;
+  height: 100%
 }
 
 
@@ -23,12 +22,13 @@ div.render > iframe {
     opacity: 1;
   }
 }
-@keyframes fake
-from {
-    opacity: 1;
-}
-to {
-    opacity: 1;
+@keyframes fake {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 1;
+  }
 }
 body {
   -webkit-animation: fake 1s infinite;
@@ -112,33 +112,25 @@ body {
   #tab-one:checked ~ .tabs #tab-one-label, #tab-two:checked ~ .tabs #tab-two-label {
     border-bottom: none;
   }
-
-
-  
-
   #tab-one:checked ~ .tabs #tab-one-panel, #tab-two:checked ~ .tabs #tab-two-panel {
     border-bottom: 1px solid #ccc;
   }
 }
 
-
-/* fixing fucking huge font sizes in child frame  */
-
+/* Fixing huge font sizes in child frame  */
 div.md h1:first-of-type {
-    font-size: 2.5rem !important;
+  font-size: 2.5rem !important;
 }
-
 div.md h2 {
-    font-size: 2.0rem;
+  font-size: 2.0rem;
 }
-/* annoying borders */
 
+/* Remove annoying borders */
 iframe {
-    border: none;
+  border: none;
 }
-
 div.lesson-container>div {
-    border: 1px gray solid;
+  border: 1px gray solid;
 }
 
 #project-caption {
@@ -147,19 +139,17 @@ div.lesson-container>div {
     padding-bottom: 3px;
     vertical-align: top;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
 }
 
-
-
-
-/* fix that stupid ribbon */
+/*Fix that ribbon */
   header:after {
-      /* background: url(ribbon.png) 0 0/100% no-repeat; */
-      background: none;
+    /* background: url(ribbon.png) 0 0/100% no-repeat; */
+    background: none;
     content: '';
     height: .35rem;
     left: 0;
     position: absolute;
     right: 0;
-    top: 100%; }
+    top: 100%;
+}
