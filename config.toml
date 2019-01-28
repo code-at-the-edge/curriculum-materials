@@ -3,15 +3,12 @@ languageCode = "en-us"
 title = "Code At the Edge Curriculum"
 theme = "docdock"
 
-# MARKDOWN
-## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
+# ignoreFiles = [ "\\.css$", "\\.boo$" ]
 
-[blackfriday]
-  angledQuotes = true
-  extensions = ["hardLineBreak"]
-
+# SYNTAX
 # Highlighting config (Pygments)
 pygmentsCodeFences = true
+pygmentsOptions = "linenos=inline"
 
 # Use the Chroma stylesheet
 pygmentsUseClasses = true
@@ -20,4 +17,9 @@ pygmentsUseClassic = false
 # See https://xyproto.github.io/splash/docs/all.html
 pygmentsStyle = "monokailight"
 
-# ignoreFiles = [ "\\.css$", "\\.boo$" ]
+# MARKDOWN
+## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
+
+[blackfriday]
+  angledQuotes = true
+  extensions = ["hardLineBreak"]
