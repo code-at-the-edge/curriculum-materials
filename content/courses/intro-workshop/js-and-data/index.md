@@ -1,10 +1,6 @@
 ---
-title: Lesson Title
+title: Javascript and Data
 description: ""
 weight:
 alwaysopen: true
 ---
-
-## Header 2
-
-Notes here
