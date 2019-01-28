@@ -8,7 +8,7 @@ Today we will talk about style in html documents. By the end of today you will l
 
 2. Take a look at the code here, and add it to your `<article>` element
 
-```
+```html
 <div>
 <ul>
   <li>First Pollutant</li>
@@ -65,7 +65,7 @@ You have already been using CSS. Let's now learn about it with an activity.
 
 2. Now add the starter code here to the CSS section of your code playground. Remember not to change the rest of the CSS code.
 
-```
+```css
 h1 {
   font-weight:normal;
   color: white;
@@ -105,7 +105,7 @@ We introduce you to 4 ways you can take advantage of CSS powers:
 
 2. You can instruct your machine to change some of the properties of a tag, only when the tag is used within a certain tag. Use this code below in your CSS:
 
-```
+```css
 section > h2 {
   font-weight:bold;
   color: white;
@@ -120,7 +120,7 @@ And now add a `<h2>` element to your `<section>` element. See the difference? `<
 
 3. You can define a new `id` and use it in your HTML code. Add this snippet to your CSS.
 
-```
+```css
 #box1 {
   grid-area: f;
   background-color: Green;
@@ -130,13 +130,13 @@ And now add a `<h2>` element to your `<section>` element. See the difference? `<
 Remember we put our nested list from the last activity into a `<div>` element?
 Now change this line:
 
-```
+```html
 <div>
 ```
 
 To this:
 
-```
+```html
 <div id="box1"><section>Box1</section>
 ```
 
@@ -145,7 +145,7 @@ You told the computer to interpret this `<div>` element as a `box1` and it did s
 
 4. You can also define classes of things. Use this code below in your CSS:
 
-```
+```css
 p.extrabig{
     font-weight:bold;
     font-size: 25px;

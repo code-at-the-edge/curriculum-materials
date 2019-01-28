@@ -4,18 +4,18 @@
 
 Today we'll cover **two main concepts** through a mix of activities at the computer and moving around playing a game:
 
-1. **Creating connections, or links, to different parts of a web site or even between sites** (40 minutes)
+1. **Creating connections, or links, to different parts of a web site or even between sites**
     - Pair programming
       - adding `a` HTML elements (`href` anchors with ids)
       - navigating to different pages?
     - Connecting Online Game
-1. **Controlling how a web site is structured and how elements are positioned** (30 minutes)
+1. **Controlling how a web site is structured and how elements are positioned**
     - Pair programming
       - `border, padding, margin, display, position, float` CSS properties
 1. **Project Time** (30 minutes)
     - Connecting and navigating between pages
 
-You'll recall in over the last two day's we've talked about:
+Over the last two days we've talked about:
 
 [Summary of key concepts]
 
@@ -38,34 +38,36 @@ Let's try adding a link now --
 
 First things, a link is defined using the `<a>`, or anchor, element. It often looks like:
 
-```
+```html
 <a href="https://mozillaindia.org/">Mozilla India</a>
 <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg" alt="Picture of Kangchenjunga taken by author from Goecha La pass, 4940m, Sikkim" /></a>
-
 ```
 
 In the `<a>` element the `href` attribute specifies the _destination_, sometimes called an _address_. The element opening tag and closing tag go around the part of the web page that becomes the link: either text or an image!
 
-`<a href="destination">link text or image</a>`
+```html
+<a href="destination">link text or image</a>
+```
 
 The destination can be either _local_, or a part of our own web sites, or _external_, a part of someone else's web site or some other thing that is theirs.
 
 When we make local links we can point to a whole page, or just a part of a page we want to draw attention to. To mark a part of a page that we want to link directly we use the `id` or identifier attribute:
 
-```
+```html
 <a id="bookmark"></a>
 <p id="introduction">This is the first paragraph of my page. Below, I have images of my favourite places</p>
 ```
 
 Then we use the `#` or hash symbol plus the `id` as the destination!
 
-`<a href="#introduction">Go to the introduction</a>`
+```html
+<a href="#introduction">Go to the introduction</a>
+```
 
 ### Activity: Linking to another page
 
-Now your turn!
+Now it's **your turn**! Try:
 
-Try:
 - Adding a link to another part of the same page
 - Adding a link to another page
 - If you have time, try adding a link to the course website!
@@ -75,7 +77,7 @@ Hint: you can find the _address_ of a web site by looking in the top centre of t
 [Screenshot from our RPi?]
 ```
 
-## GAME: Connecting Online
+## Game: Connecting Online
 
 We've started to practice using links and see how they can create paths, or routes, between different parts of our own pages and sites as well as maybe even _different_ sites.
 
@@ -117,7 +119,7 @@ It is because of these parts we can add a border around elements and to control 
 
 Okay, let's start from our template, you can work from you're existing page or from scratch:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -135,7 +137,7 @@ Okay, let's start from our template, you can work from you're existing page or f
 
 Now, how about we add a `border` to all the biggest headers, so `h1` elements! We can specify the thickness or width of the border, the style, and the colour all at once:
 
-```
+```css
 h1 {
   border: 2px solid black;
 }
@@ -143,7 +145,7 @@ h1 {
 
 This ability that `border` has is because it is a `shorthand` property, which is a fancy way of saying it is a fast way of setting many values.
 
-Now you try:
+**Your turn**:
 
 - Changing the color of the border to blue
 - Making a thicker border
@@ -154,7 +156,7 @@ Now you try:
 
 Now that we have a nice border around our header, let's also add a border around our first paragraph so we can see a bit better how much space we have between them:
 
-```
+```css
 h1 {
   border: 2px solid blue;
 }
@@ -170,7 +172,7 @@ Now, lets add some space for the concent _inside_ borders, for that we use `padd
 
 Lets add some `padding` to our `p` element:
 
-```
+```css
 p {
   border: 2px solid black;
   padding: 20px;
@@ -179,7 +181,7 @@ p {
 
 The property `padding` is also a quick way of setting padding around the whole area. It we want it to be the same we can use just one value, as we have done above, or we can set a value for each side seperately:
 
-```
+```css
 padding: 20px 0 20px 0; /* This sets top and bottom padding at 20px and left and right at 0px */
 ```
 
@@ -192,14 +194,14 @@ Or, if we want to be really clear about what padding we are setting, we can defi
 
 We use the property `margin` in the same way, either in it's shorthand or individual form, lets add a `margin-bottom` to our header:
 
-```
+```css
 h1 {
   border: 2px solid blue;
   margin-bottom: 20px;
 }
 ```
 
-Now you try:
+**Your turn:**
 
 - Adding space outside the border on the top side of the paragraph
 - Adding a margin on the left and right of the header, using only one property *hint: you can use shorthand!*
@@ -221,5 +223,16 @@ As a result, people focus on using ways to specifying size that are _flexible_, 
 | Em        | `em`  | Relative unit based on the `font-size` of the element, 1`em` = 1x the size of the font |
 | Root Em   | `rem` | Relative unit based on the `font-size` of the "root" element on the page, this doesn't change depending on where it is in the page! |
 
-Now you try:
+**Your turn**:
+
 - Change your use of pixels for margin and padding above to one of the _relative units_: `rem`, `em`, or `%`, how does that make it different?
+
+## Positioning elements
+
+
+
+`display, position, float` CSS properties
+
+
+
+## Activity:
