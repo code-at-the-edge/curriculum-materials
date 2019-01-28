@@ -23,7 +23,7 @@
 - [ ] Configured Raspberry Pi
   - Ensure [Raspberry Pi upload] is working for **Linking Websites** section
   - Ensure [Raspberry Pi "Link Page"] is working for **Linking Websites** section
-- [ ] Yarn and connection cards (cut out)
+- [ ] Connection Online hangouts (prepared and cut out)
 
 ### Room Setup
 
@@ -33,7 +33,7 @@
 ## Outline
 
 1. **Introduction** (10 minutes)
-1. ***Creating connections, or links** (40 minutes)
+1. **Creating connections, or links** (40 minutes)
     - Pair programming (25 mimutes)
       - adding `a` HTML elements (`href` anchors with ids)
       - navigating to different pages?
@@ -42,14 +42,13 @@
       - Provide yarn and reask, above. Spend some time having them ask and throw around stuff
       - Flag privacy issue? Local / internet?
 1. **Controlling how a web site is structured** (30 minutes)
-    - Presentation (10 minutes)
-    - Pair programming (20 minutes)
+    - Pair programming (30 minutes)
       - `border, padding, margin, display, position, float` CSS properties
 1. **Project Time** (30 minutes)
     - Connecting and navigating between pages
 1. **Conclusion** (10 minutes)
 
-## Section Facilitation
+## Facilitation
 
 ### Introduction
 
@@ -102,9 +101,7 @@ With that said, let's try to understand what the DNS does by making a little DNS
 | 4   |           |               |
 | 5   |           |               |
 
-- Fill in this table, take suggestions but also have prepared some (School Website, this Clase Website?)
-
-
+- Fill in this table, ask for suggestions but also have prepared a list in advance
 - Create your own DNS table, similar to what is shown above.
 - Divide into groups of 3 to 5.
 - Assign each group an IP address from the newly created table, and assign each person in the group a position:
@@ -114,7 +111,6 @@ With that said, let's try to understand what the DNS does by making a little DNS
     The Return Internet (optional)
     The Message Receiver (optional)
 - Each group will draw an IP Address Cards and Delivery Type Cards - Manipulatives to find out where their message is going
-
 - The Message Writer will craft a note to send to the server.
 - The Internet will rip the message up into 4 small pieces called packets, then deliver each packet one at a time to the Server with the IP address that was drawn from the IP Address Card stack.
 - The Server will make sure that the message arrives in order, then will send each packet off one at a time with the Return Internet (can be the same person or different person than the original Internet).
@@ -122,7 +118,6 @@ With that said, let's try to understand what the DNS does by making a little DNS
 - The Message Receiver will wait for all of the pieces to arrive, then read the message to be sure it arrived correctly!
 
 Rules:
-
 - The Internet must rip the message into exactly four packets.
 - If the Internet drops a packet, they have to pick it up and go back to the start to deliver it again.
 - The server has to wait for all of the message pieces to arrive before it can begin to send the message along.

@@ -27,10 +27,8 @@ Links are one of the most common features of web sites. In fact, they are what m
 
 Links are often "local", that means they take you to another page on the same site, however they can also be "extenal" and take you to another site, or image, file, document, email, or phone number that you don't really have control over.
 
-```
-**A link by another name**
+**A link by another name**{:tip}
 Links used to be known as HTML links, hyperlinks (because the "H" stands for Hyper). When people are taking about _external_ links they often just refer to a link based on the _type of destination_ as a "URL" (Uniform Resource Locator) or "URI" (Uniform Resource Identifier), but those are actually the names of the thing being linked to, not the act of making a connection.
-```
 
 ## Adding a Link
 

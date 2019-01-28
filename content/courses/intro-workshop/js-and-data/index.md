@@ -1,6 +1,6 @@
 ---
-title: Javascript and Data
+title: "Javascript and Data"
 description: ""
-weight:
+weight: 5
 alwaysopen: true
 ---
