@@ -33,7 +33,7 @@ Today we will talk about style in html documents. By the end of today you will l
 
 4. Now we are going to make some stylistic modifications. Feel free to use your cheat sheet .
 
-![](./Images/tags.jpg)
+![](./images/tags.jpg)
 
 5. Use the `<strong>` or `<b>` tag to make the main categories **bold**. (`"First"`, `"Second"`, `"Third"`)
 
@@ -43,7 +43,7 @@ Today we will talk about style in html documents. By the end of today you will l
 
 You can start to see the stylistic variations you can make for your reader. This is just the tip of the iceberg.
 
-![](./Images/html-meme.jpg)
+![](./images/html-meme.jpg)
 
 ## Style and HTML
 
@@ -86,7 +86,7 @@ In the last activity you made your first CSS modifications. CSS is a programing 
 
 A good way to think about this is to imagine the HTML document as the skeleton of a webpage, and the CSS document as the appearance of the body. HTML is the *structural layer* and CSS is the *presentation layer*.
 
-![](./Images/html-css.png)
+![](./images/html-css.png)
 
 As it is illustrated above, CSS can turn your HTML into a wonderful web page.
 
@@ -94,7 +94,7 @@ In the last activity you used `h1{}` to change some stuff with the way the `<h1>
 
 To understand CSS you need to understand what are `selectors` and `properties`
 
-![alt text](./Images/css-syntax.jpg)
+![alt text](./images/css-syntax.jpg)
 
 As you can see, we can generalize and say we can change properties of HTML tags through defining `selectors` in the CSS code and modifying some of the properties of the tag in that selector.
 Take notice of the way we use `{`,`}`, and `;`. These are mandatory.

@@ -100,8 +100,11 @@ Sometimes it is better to try first and learn afterwards. Follow these steps and
 1. Open your code playground. A code playground is a live environment which continuously interprets your code.
 
 2. On the HTML tab, put the following.
-
+```html
+<h1>hello</h1>
 ```
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
