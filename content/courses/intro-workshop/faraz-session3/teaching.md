@@ -1,4 +1,4 @@
-# Lesson Plan for Links and Layouts
+# Lesson Plan for Introduction to CSS
 
 ## Audience
 
