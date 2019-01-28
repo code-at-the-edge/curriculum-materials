@@ -1,6 +1,6 @@
 # Let's Learn About Computers
 
-![](./Images/1.jpg "this is faraz")
+![](./images/1.jpg "this is faraz")
 
 ## What is a Computer?
 
@@ -8,19 +8,19 @@ Computers are electronic machines that accept information, process the informati
 
 *What does that mean??*
 
-![](./Images/Computer.jpg)
+![](./images/Computer.jpg)
 
 Computers can receive information from Mouse, Keyboard, Camera, etc. BUt they don't know how to handle the information intrinsically. You, the *human* must give the computer specific instructions, so they know how to handle the information.
 
 ## Giving Instructions to Computers
 
-![](./Images/interaction.gif)
+![](./images/interaction.gif)
 
 We communicate with computers through the same tool with which we communicate with other fellow human beings. We use **language**!!
 
 We simply tell computers what to do for us, and they do it for us!
 
-![](./Images/Yess.jpg)
+![](./images/Yess.jpg)
 
 So... If I want an ice-cream, can I just ask my computer to get one for me? Well, yes... and no!
 
@@ -42,7 +42,7 @@ You get the idea. Your friend must perform lots and lots of step before they get
 
 **Computers are not**. You need to give them instructions for every little bit of thing you want them to do. Sounds frustrating! Yes, but with appropriate instructions, you can get the computers to do anything for you!
 
-![](./Images/Happy-Computer.jpg)
+![](./images/Happy-Computer.jpg)
 
 We give the instructions to computers thorough **programming languages**. We define each and every step very carefully and computers will go through that steps and do what we want from them.
 
@@ -53,7 +53,7 @@ But before that, let's see what is internet, what is this thing called the **wor
 
 ## What is the World Wide Web?
 
-![](./Images/World-Wide.jpg)
+![](./images/World-Wide.jpg)
 
 From Wikipedia:
 
@@ -72,7 +72,7 @@ For example, when you want to Google something, computers do the following:
 5. Google's computer shares the result of the search with your computer
 6. Your computer receives the information from Google's computer, processes it, and show the result to you.
 
-![](./Images/Google-Search.PNG)
+![](./images/Google-Search.PNG)
 
 This is just a start, but we now know a little bit about Internet. It is time to create our own web-pages now!
 
@@ -80,11 +80,11 @@ This is just a start, but we now know a little bit about Internet. It is time to
 
 When you go to Google's website, you see this:
 
-![](./Images/google.png)
+![](./images/google.png)
 
 But, what computers really see is this:
 
-![](./Images/google-code.png)
+![](./images/google-code.png)
 
 **What does this all mean??** We will teach you to understand! This is not as complicated as it looks, we promise!
 
@@ -92,7 +92,7 @@ This is code, written in HTML. We need to understand what HTML is, and how it wo
 
 # Introduction to HTML
 
-![](./Images/html.jpg)
+![](./images/html.jpg)
 
 ### Activity 1-1
 Sometimes it is better to try first and learn afterwards. Follow these steps and by the end of today you will learn the rational behind each.
@@ -100,9 +100,6 @@ Sometimes it is better to try first and learn afterwards. Follow these steps and
 1. Open your code playground. A code playground is a live environment which continuously interprets your code.
 
 2. On the HTML tab, put the following.
-```html
-<h1>hello</h1>
-```
 
 ```html
 <!DOCTYPE html>
@@ -119,6 +116,7 @@ Sometimes it is better to try first and learn afterwards. Follow these steps and
 </body>
 </html>
 ```
+
 3. Continue making amendments where you see "...". Try to observe and understand what happens to the outcome when you make certain changes to the code.
 
 ## Tags
@@ -152,12 +150,11 @@ You can review some of the most important html tags <a href="htmlcheatsheet.pdf"
 * `<h1>` and `</h1>` indicate what goes between is stylistically a header.
 * `<p>` and `</p>` mark the beginning and end of a paragraph element.
 
-
 Before starting the next activity make sure you have reviewed carefully the html sheet <a href="htmlcheatsheet.pdf"> here </a>.
 
 A HTML documented is usually divided up and presented in separate sections. The image below identify some of the most important of these separate sections.
 
-![](./Images/semantics.jpg)
+![](./images/semantics.jpg)
 
 Each of these tags define an independent `element` in the HTML document.
 
@@ -181,7 +178,7 @@ Let's do an activity to get a better understanding of semantic tags.
 
 2. Copy this code below in the HTML section of your code playground
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -208,14 +205,14 @@ Let's do an activity to get a better understanding of semantic tags.
     </main>
   </body>
 </html>
-
 ```
 
 3. Write a short paragraph with a headline about yourself and your environment concerns in `<article>`. Make sure to use the `<p>` and `<h2>` tags. Remember, we are practicing `semantic elements`.
 
 4. Your instructor should provide you with links to some images. Use the snippet code below to add pictures to your `<section>` element.
-```
-<img alt="" id="[your image name]" src="[the link goes here]/>
+
+```html
+<img alt="a description of the image here" src="[the link goes here]" />
 ```
 
 5. Use `<h1>` and write a title for your document in `<header>` element.
@@ -242,9 +239,9 @@ This is an extra activity for those who would like to learn about HTML tables. T
 
 4. Create a table (Hint: use the Table tags in your cheat sheet. Specifically, look into `<table>` , `<tr>`, `<td>`, `<th>`. You can use the starter code here and manipulate it to get to the later steps.)
 
-![](./Images/html-table.png)
+![](./images/html-table.png)
 
-```
+```html
 <table>
     <tr>
         <th>Headline1</th>
@@ -264,7 +261,7 @@ Make sure you understand what goes where. We are now going to make some differen
 
 5.  Let's align the headlines to the centre.
 
-```
+```html
 <table style="width:100%">
     <tr>
         <th>Headline1</th>
@@ -285,7 +282,7 @@ You notice we have added `style="width:100%"` to the `<table>` tag. We will lear
 
 6. You can also put the entries to the centre:
 
-```
+```html
 <table style="width:100%">
     <tr>
         <th>Headline1</th>
