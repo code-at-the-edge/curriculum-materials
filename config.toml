@@ -2,4 +2,22 @@ baseURL = "https://code-at-the-edge.github.io/curriculum-materials/"
 languageCode = "en-us"
 title = "Code At the Edge Curriculum"
 theme = "docdock"
+
+# MARKDOWN
+## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
+
+[blackfriday]
+  angledQuotes = true
+  extensions = ["hardLineBreak"]
+
+# Highlighting config (Pygments)
+pygmentsCodeFences = true
+
+# Use the Chroma stylesheet
+pygmentsUseClasses = true
+pygmentsUseClassic = false
+
+# See https://xyproto.github.io/splash/docs/all.html
+pygmentsStyle = "monokailight"
+
 # ignoreFiles = [ "\\.css$", "\\.boo$" ]
