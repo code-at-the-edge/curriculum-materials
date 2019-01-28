@@ -105,12 +105,13 @@ Sometimes it is better to try first and learn afterwards. Follow these steps and
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title Goes Here</title>
+  <meta charset="utf-8">
+  <title>Title Goes Here</title>
 </head>
 <body>
 
-<h1>My name is...</h1>
-<p>I think computers are...</p>
+  <h1>My name is...</h1>
+  <p>I think computers are...</p>
 
 </body>
 </html>
@@ -178,31 +179,31 @@ Let's do an activity to get a better understanding of semantic tags.
 2. Copy this code below in the HTML section of your code playground
 
 ```
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta charset="utf-8" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-        <link href="style.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <main>
-          <header>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <main>
+      <header>
 
-          </header>
-            <nav>
-        </nav>
-            <section class="sidebar">
-            </section>
-            <article>
-            <p>
-            </p>
+      </header>
+      <nav>
+      </nav>
+      <section class="sidebar">
+      </section>
+      <article>
+      <p>
+      </p>
 
-            </article>
-            <aside></aside>
-        </main>
-    </body>
+      </article>
+      <aside></aside>
+    </main>
+  </body>
 </html>
 
 ```
