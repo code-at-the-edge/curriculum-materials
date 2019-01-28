@@ -46,6 +46,7 @@
 ## Resources
 
 The following resources were used to plan this lesson:
+
 - https://www.w3schools.com/html/html_lists.asp
 - https://www.w3schools.com/css/css_intro.asp
 - https://www.w3schools.com/cssref/sel_id.asp
