@@ -42,15 +42,13 @@ Today we will talk about style in html documents. By the end of today you will l
 
 ![](./images/tags.jpg)
 
-5. Use the `<strong>` or `<b>` tag to make the main categories **bold**. (`"First"`, `"Second"`, `"Third"`)
+5. Use the `<strong>` tag to make the main categories **bold**. (`"First"`, `"Second"`, `"Third"`)
 
-6. Use the `<em>` or `<i>`tag to turn the deepest sub-directories *italic*. (`"First, Second, First"`)
+6. Use the `<em>` tag to turn the deepest sub-directories *italic*. (`"First, Second, First"`)
 
 7. Use the `<font size=>` to change the size of one of the elements.
 
 You can start to see the stylistic variations you can make for your reader. This is just the tip of the iceberg.
-
-![](./images/html-meme.jpg)
 
 ## Style and HTML
 
@@ -92,8 +90,6 @@ h1 {
 In the last activity you made your first CSS modifications. CSS is a programing language which is used to change the way a HTML document is represented in a web browser.
 
 A good way to think about this is to imagine the HTML document as the skeleton of a webpage, and the CSS document as the appearance of the body. HTML is the *structural layer* and CSS is the *presentation layer*.
-
-![](./images/html-css.png)
 
 As it is illustrated above, CSS can turn your HTML into a wonderful web page.
 
@@ -153,7 +149,7 @@ You told the computer to interpret this `<div>` element as a `box1` and it did s
 4. You can also define classes of things. Use this code below in your CSS:
 
 ```css
-p.extrabig{
+p.extrabig {
     font-weight:bold;
     font-size: 25px;
 }
