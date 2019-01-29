@@ -9,17 +9,16 @@
         <label for="tab-two" id="tab-two-label" class="tab">For Teachers</label>
         <div id="tab-one-panel" class="panel active">
           <div class="student-instructions">
-            {{ with .GetPage "index.md" }}{{ .Content | markdownify | safeHTML }}{{ end }}
+            {{ .Content }}
           </div>
         </div>
         <div id="tab-two-panel" class="panel">
           <div class="teacher-instructions">
-            {{ with .GetPage "teaching.md" }}{{ .Content | markdownify | safeHTML }}{{ end }}
+            {{ path.Join .File.Dir "teaching.md" | readFile | markdownify | safeHTML }}
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 {{ end }}
