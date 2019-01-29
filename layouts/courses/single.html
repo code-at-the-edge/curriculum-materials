@@ -1,38 +1,25 @@
 {{ define "main" }}
 <div class="lesson-container">
-    <div class="md">
-        <div class="worko-tabs">
-
-            <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
-            <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
-
-            <div class="tabs flex-tabs">
-                <label for="tab-one" id="tab-one-label" class="tab">For Students</label>
-                <label for="tab-two" id="tab-two-label" class="tab">For Teachers</label>
-
-                <div id="tab-one-panel" class="panel active">
-                    <div class="student-instructions">
-                        {{path.Join .File.Dir "instructions.md" | readFile | markdownify | safeHTML}}</div>
-
-                </div>
-                <div id="tab-two-panel" class="panel">
-                    <div class="teacher-instructions">
-                        {{path.Join .File.Dir "teaching.md" | readFile | markdownify | safeHTML}}</div>
-                </div>
-            </div>
+  <div class="md">
+    <div class="worko-tabs">
+      <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
+      <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
+      <div class="tabs flex-tabs">
+        <label for="tab-one" id="tab-one-label" class="tab">For Students</label>
+        <label for="tab-two" id="tab-two-label" class="tab">For Teachers</label>
+        <div id="tab-one-panel" class="panel active">
+          <div class="student-instructions">
+            {{ with .GetPage "index.md" }}{{ .Content | markdownify | safeHTML }}{{ end }}
+          </div>
         </div>
-
-
-    </div>
-    <div class="render">
-        <div id="project-caption">
-            <h5>Rendered Project</h5>
-
+        <div id="tab-two-panel" class="panel">
+          <div class="teacher-instructions">
+            {{ with .GetPage "teaching.md" }}{{ .Content | markdownify | safeHTML }}{{ end }}
+          </div>
         </div>
-
-
-    <iframe src="data:text/html;charset=utf-8;base64,{{- partial "rendered.html" . | base64Encode }}"></iframe>
+      </div>
     </div>
+  </div>
 </div>
 
 {{ end }}
