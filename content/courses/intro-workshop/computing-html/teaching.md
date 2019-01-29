@@ -1,4 +1,35 @@
-# First Session, Instructor Notes
+# Lesson Plan for All about Computing and Building Blocks of HTML
+
+## Audience
+
+12-16 year olds
+
+## Time
+
+2.0 hours
+
+## Rationale and Learning Objectives
+
+
+## Preparation
+
+### Materials Required
+
+- [ ] Configured Raspberry Pi
+- [ ] Configured Code Playground
+- [ ] Printouts for offline activities
+- [ ] Glue sticks
+- [ ] Scissors
+- [ ] Rope/string
+- [ ] Post its
+- [ ] Markers
+
+### Room Setup
+
+- Computer Lab, with 2-4 chairs at space near each computer
+- Room to stand (could move outside for activity)
+
+## Outline of sections
 
 This session consists of a number of short lectures and some activities. Here you can find a break down of the time dedicated to each, and some tips on how to present the parts to the students.
 
@@ -51,3 +82,18 @@ Students yet need not know about how `list` is made. Just help them identify the
     * Some student may be lost and reluctant to work on the activities due to intimidation. Reassure them and push them to do the activity.
     * Encourage the students to personalize their page by using the tags in the cheat sheet.
     * Suggested time: `30 minutes`
+
+## Resources
+
+Offline icebreakers:
+
+- https://code.org/curriculum/unplugged
+- [Code.org "Move it, Move it" Program "Writing" Activity](https://studio.code.org/s/courseb-2018/stage/1/puzzle/1
+- [Tag, tag Revolution Activity](https://mousemeredith.makes.org/thimble/LTE2Mjc5Nzk3NzY=/tag-tag-revolution-activity)
+- [HTML Thimble Tag Puzzle](https://mozilla.github.io/curriculum-final/offline-icebreakers/session02-html-thimble-tag-puzzle.html#overview)
+- [HTML Puzzle Boxes](https://mozilla.github.io/curriculum-final/offline-icebreakers/session06-html-puzzle-box.html#overview) [Printing materials](https://www.dropbox.com/s/lv7u8tqawawudiy/html-puzzle-box.pdf?dl=0)
+
+Videos on the Internet:
+
+- [The Internet: Wires, Cables & Wifi](https://www.youtube.com/watch?v=ZhEf7e4kopM)
+- [The Internet: IP Addresses & DNS](https://www.youtube.com/watch?v=5o8CwafCxnU)

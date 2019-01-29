@@ -1,5 +1,5 @@
 ---
-title: "All about computing and HTML"
+title: "All About Computing and HTML"
 description: ""
 weight: 2
 alwaysopen: true
@@ -7,33 +7,37 @@ alwaysopen: true
 
 # Let's Learn About Computers
 
-![](./images/1.jpg "this is faraz")
-
 ## What is a Computer?
 
-Computers are electronic machines that accept information, process the information according to specific instructions, and provide new information as the result.
+Computers machines that are programmable--they are devices, often powered by electricity, that can accept instructions and information as _inputs_, carry out those instructions or series of operations on _inputs_, and provide the results as _outputs_.
 
 *What does that mean??*
 
 ![](./images/Computer.jpg)
 
-Computers can receive information from Mouse, Keyboard, Camera, etc. BUt they don't know how to handle the information intrinsically. You, the *human* must give the computer specific instructions, so they know how to handle the information.
+Computers receive information from different sources: a mouse, a keyboard, a camera, and more, but they are not able to automatically act on those _inputs_ without help. You, the _human_ must give the computer specific instructions in order for it to know how to handle the information from those different sources in a way that produces results we can understand.
 
 ## Giving Instructions to Computers
 
 ![](./images/interaction.gif)
 
-We communicate with computers through the same tool with which we communicate with other fellow human beings. We use **language**!!
+We communicate with computers the same way we communicate with other as people-- we use **languages**!! However, just like with spoken languages, there are many different ones for computers.
 
-We simply tell computers what to do for us, and they do it for us!
+> Hello, brothers and sisters.
+> नमस्कार, भाइबहिनीहरू
+> 你好，兄弟姐妹
 
-![](./images/Yess.jpg)
+We use **programming languages** to define each and every step very carefully, computers follow those instructions to (hopefully) do what we want them to.
 
-So... If I want an ice-cream, can I just ask my computer to get one for me? Well, yes... and no!
+So is it as easy as telling computers what we want them to do for us, and then they do it?
 
-Imagine if you ask your friend to get an ice-cream for you. Imagine if your friend is nice enough to get the ice-cream for you. They will now there are steps to the goal of getting an ice-cream, and they do the steps without you having to tell them what to do. They know they have to do the following and you do not have to tell them about it:
+Well, yes... and no! Like we mentioned above, there are lots of languages, so you have to be speaking the right one for the type of task you want to accomplish, also, computers are very literal, they do not always understand instructions or can require very specific instructions that are difficult to fully plan.
 
-1. Put your Jacket on.
+Say I want an ice cream, can I just ask my computer to get one for me? Well, yes... and no!
+
+Imagine if you ask your friend to get ice cream for you. If your friend is nice enough to get ice cream for you, they will do all the steps inbetween the goal of getting an ice cream without you having to tell them what to do. For example, they will do the following without you having to tell them about it:
+
+1. Put your jacket on.
 2. Put your shoes on.
 3. Tie your shoelaces.
 4. Open the door.
@@ -41,26 +45,21 @@ Imagine if you ask your friend to get an ice-cream for you. Imagine if your frie
 6. Close the door.
 7. Lock the door.
 8. Take the stairs
-9. Walk down the ally.
-10. Get to the grocery store.
+9. Walk to the grocery store.
 11. Buy an ice-cream.
+12. Walk back toyou
 
-You get the idea. Your friend must perform lots and lots of step before they get the ice-cream to you. You do not need to inform your friend about these steps, they are smart enough to know.
+You get the idea. Your friend must perform lots and lots of small steps before they get the ice-cream to you. You do not need to tell your friend each step, they are smart enough to fill in the needed steps. **Computers do not fill in missing instructions however**. You need to tell them every  thing you want them to do. Sounds frustrating!
 
-**Computers are not**. You need to give them instructions for every little bit of thing you want them to do. Sounds frustrating! Yes, but with appropriate instructions, you can get the computers to do anything for you!
+### Activity: Giving a Computer Instructions
 
-![](./images/Happy-Computer.jpg)
+Now it is **your turn**, imagine I'm a computer and you want me to open the door to this room, how would you tell me to? In what order do you have to give me instructions?
 
-We give the instructions to computers thorough **programming languages**. We define each and every step very carefully and computers will go through that steps and do what we want from them.
+## The Internet and the World Wide Web
 
 In this workshop, we will teach you about the languages which will help you create your own web pages.
 
 But before that, let's see what is internet, what is this thing called the **world wide web**.
-
-
-## What is the World Wide Web?
-
-![](./images/World-Wide.jpg)
 
 From Wikipedia:
 
@@ -97,11 +96,10 @@ But, what computers really see is this:
 
 This is code, written in HTML. We need to understand what HTML is, and how it works.
 
-# Introduction to HTML
-
-![](./images/html.jpg)
+## Building Blocks of HTML
 
 ### Activity 1-1
+
 Sometimes it is better to try first and learn afterwards. Follow these steps and by the end of today you will learn the rational behind each.
 
 1. Open your code playground. A code playground is a live environment which continuously interprets your code.
@@ -181,7 +179,7 @@ Let's do an activity to get a better understanding of semantic tags.
 
 ### Activity 1-4
 
-1. Open your <a href="style.txt"> style file</a> and copy its content into the CSS section of your code playground. This is a code written in CSS. CSS is an exciting tool for adding style to your HTML document. We will learn more on this soon.
+1. Open your [style file](style.css) and copy its content into the CSS section of your code playground. This is a code written in CSS. CSS is an exciting tool for adding style to your HTML document. We will learn more on this soon.
 
 2. Copy this code below in the HTML section of your code playground
 
@@ -199,16 +197,21 @@ Let's do an activity to get a better understanding of semantic tags.
       <header>
 
       </header>
+
       <nav>
       </nav>
+
       <section class="sidebar">
       </section>
-      <article>
-      <p>
-      </p>
 
+      <article>
+        <p>
+        </p>
       </article>
-      <aside></aside>
+
+      <aside>
+
+      </aside>
     </main>
   </body>
 </html>
