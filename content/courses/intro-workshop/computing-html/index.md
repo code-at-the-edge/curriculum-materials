@@ -13,13 +13,13 @@ Computers machines that are programmable--they are devices, often powered by ele
 
 *What does that mean??*
 
-![](./images/Computer.jpg)
+![Logical representation of the parts of a computer](./images/computer.jpg)
 
 Computers receive information from different sources: a mouse, a keyboard, a camera, and more, but they are not able to automatically act on those _inputs_ without help. You, the _human_ must give the computer specific instructions in order for it to know how to handle the information from those different sources in a way that produces results we can understand.
 
 ## Giving Instructions to Computers
 
-![](./images/interaction.gif)
+![Person and computer both thinking 'can't you do anything right?'](./images/interaction.gif)
 
 We communicate with computers the same way we communicate with other as people-- we use **languages**!! However, just like with spoken languages, there are many different ones for computers.
 
@@ -35,119 +35,131 @@ Well, yes... and no! Like we mentioned above, there are lots of languages, so yo
 
 Say I want an ice cream, can I just ask my computer to get one for me? Well, yes... and no!
 
-Imagine if you ask your friend to get ice cream for you. If your friend is nice enough to get ice cream for you, they will do all the steps inbetween the goal of getting an ice cream without you having to tell them what to do. For example, they will do the following without you having to tell them about it:
+Imagine if you ask your friend to get ice cream for you. If your friend is nice enough to get ice cream for you, they will do all the steps in between the goal of getting an ice cream without you having to tell them what to do. For example, they will do the following without you having to tell them about it:
 
 1. Put your jacket on.
-2. Put your shoes on.
-3. Tie your shoelaces.
-4. Open the door.
-5. Step outside.
-6. Close the door.
-7. Lock the door.
-8. Take the stairs
-9. Walk to the grocery store.
-11. Buy an ice-cream.
-12. Walk back toyou
+1. Put your shoes on.
+1. Tie your shoelaces.
+1. Open the door.
+1. Step outside.
+1. Close the door.
+1. Lock the door.
+1. Walk down the stairs to ground level.
+1. Walk to the grocery store.
+1. Buy an ice cream cone.
+1. Walk back to you.
 
-You get the idea. Your friend must perform lots and lots of small steps before they get the ice-cream to you. You do not need to tell your friend each step, they are smart enough to fill in the needed steps. **Computers do not fill in missing instructions however**. You need to tell them every  thing you want them to do. Sounds frustrating!
+And so on....
+
+Your friend must perform lots and lots of small steps before they get an ice cream to you. But you do not need to tell your friend each step, they are able to fill in the extra needed steps on their own. **Computers do not fill in missing instructions however**. You need to tell them every thing you want them to do. Sounds frustrating!
 
 ### Activity: Giving a Computer Instructions
 
-Now it is **your turn**, imagine I'm a computer and you want me to open the door to this room, how would you tell me to? In what order do you have to give me instructions?
+Now it is **your turn**, imagine your instructor is a computer and you want me to open the door to this room, how would you tell me to? In what order do you have to give me instructions?
+
 
 ## The Internet and the World Wide Web
 
-In this workshop, we will teach you about the languages which will help you create your own web pages.
+In this workshop, we will teach you about the languages which will help you create your own web pages by telling the computer how you want it to look and what information it needs to have.
 
-But before that, let's see what is internet, what is this thing called the **world wide web**.
+But before we do that, we should talk about what the **Internet** and  **World Wide Web** are as well as how the two are related but also a little different.
 
-From Wikipedia:
+The **Internet** is a network or networks that connects millions of computers, mobile phones, and devices to each other so that they can all communicate. The **Web** is a virtual or _online_ space where information can be shared--often in the form of web sites, documents, and other resources--using the internet.
 
-"The World Wide Web (WWW), also called the Web, is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and accessible via the Internet."
+<div class="alert alert-info">
+  <strong>🔖 Terms and Tools: The Web</strong><br />
+  According to Wikipedia, the largest open reference resource on the Internet, The <strong>World Wide Web (WWW)</strong>, also called the Web, is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and accessible via the Internet.
+</div>
 
-**WHAT??**
+For example, when someone sends message to their friend on WhatsApp using their mobile phone (which is really just a small computer/electronic device) they are using the **Internet** and the following happens:
 
-In simpler words, World Wide Web is a virtual space where all the computers in the world can communicate with each other and share information with each other.
+1. Your device connects to a computer *running* the WhatsApp message queue that is connected to the Internet.
+1. If they are able to connect, your device sends the message along with information about who it is addressed to.
+1. The WhatsApp computer then tries to connect to the message recipient
+1. If they can connect to the recipient's device, then the message is sent and removed from the WhatsApp computer.
+1. The WhatsApp computer then lets your device know that the message was sent (and in some cases, that it was successfully received ✔️✔️)
 
-For example, when you want to Google something, computers do the following:
+![WhatsApp logo](./images/whatsapp_logo.png)
 
-1. Your computer connects to a computer *running* Google's website somewhere in the world.
-2. The Google computer stands-by for the information from your computer
-3. Your computer send the *keyword* you want to search to the Google's computer
-4. Google's computer processes your request
-5. Google's computer shares the result of the search with your computer
-6. Your computer receives the information from Google's computer, processes it, and show the result to you.
+This is just a start of one interaction on the Internet, but we now know a little bit about Internet. It is time to create our own web-pages now!
 
-![](./images/Google-Search.PNG)
-
-This is just a start, but we now know a little bit about Internet. It is time to create our own web-pages now!
-
-## Webpages and Computing Languages
+## Webpages and Computer Languages
 
 When you go to Google's website, you see this:
 
-![](./images/google.png)
+![Google India home page](./images/google.png)
 
-But, what computers really see is this:
+But what the computer sees is this:
 
-![](./images/google-code.png)
+![Source code for Google India](./images/google-code.png)
 
-**What does this all mean??** We will teach you to understand! This is not as complicated as it looks, we promise!
+This language, called HTML or Hypertext Markup Language, is the language of web pages. Taken together with two other languages, CSS or Cascading Style Sheets, and JavaScript, it forms part of the technologies that power the Web.
 
-This is code, written in HTML. We need to understand what HTML is, and how it works.
+If we want to make our own web pages, we have write out our instructions about what we want using the language that the computer can understand--and that is what we will be learning about this week!
 
 ## Building Blocks of HTML
 
-### Activity 1-1
+### Activity 1-1 💻
 
-Sometimes it is better to try first and learn afterwards. Follow these steps and by the end of today you will learn the rational behind each.
+Sometimes it helps to just start building!
 
-1. Open your code playground. A code playground is a live environment which continuously interprets your code.
+1. On your computer, open the [**code playground**](#). You can do this by clicking the link, or clicking the "Code Playground" link on the top right of the this web site.
 
-2. On the HTML tab, put the following.
+<div class="alert alert-info">
+  <strong>🔖 Terms and Tools: Code Playground</strong><br />
+  A <strong>code playground</strong> is a live environment where you can type out your code and see the results in real time. The code playground always watches the changes you are making and then reloads just the section of the page that shows the "finished" result.
+</div>
+
+2. In the HTML tab, paste the following code snippet:
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Title Goes Here</title>
+  <title>Title</title>
 </head>
 <body>
 
-  <h1>My name is...</h1>
-  <p>I think computers are...</p>
+  <h1>My favourite foods</h1>
+  <p>I like to eat...</p>
 
 </body>
 </html>
 ```
 
-3. Continue making amendments where you see "...". Try to observe and understand what happens to the outcome when you make certain changes to the code.
+3. In your code playground, try making changes to the HTML where you see "...". Pay attention to what happens to the resulting web page when you make certain changes to the code.
+
+#### 🎉🎊🎉 **Congratulations, you just made your first web page!** 🎉🎊🎉
+
+Now, to go back and talk through what made it possible to make that page.
 
 ## Tags
 
-You just made your first HTML web-page!
+The two core parts of HTML are **elements** which are created using **tags** in order to describe and structure content!
 
-Everything in HTML goes inside a tag. Tags are specific instructions given by the user to the interpretation machine. All tags start with a < (left bracket) and a > (right bracket). Stuff like `<!DOCTYPE>`, `<html>`, and `</html>` are some of the tags in the code snippet above.<br>
+**Tags** specify where elements start and where they end. All tags start with a `<` left angle bracket and end with a `>` right angle bracket.
 
-### Activity 1-2
+For example in the HTML code above `<!DOCTYPE>`, `<html>`, and `</html>` are some of the tags we can see.
 
-Try to find the rest of the **tags** with the help of your teammates.
+### Activity 1-2 💻
 
-Now that we can identify the tags,let's revisit the code above and try to understand what we did there and learn along the way:
+Try to find more tags **tags** in the HMTL code above with your fellow students.
+
+Now that we can identify tags, let's describe the code above to understand what we did there:
 
 * The `<!DOCTYPE html>` declares that this document is a html document.
-* `<html>` and `</html>`mark the beginning and the end of the **HTML element**.
+* `<html>` and `</html>` mark the beginning and the end of the **HTML element**. Everything else is nested underneath!
 
 ## Elements
 
-`<html>` is called a **start** tag, and `</html>` is called an **end** tag. A html document consists of **elements**. The body that goes between a start tag and an end tag is called an **element** in html. For example, the **HTML element** in the code above consists of everything from the start tag `<html>` to the end tag `</html>`
+A html document consists of **elements**. The body that goes between a start tag and an end tag is called an **element** in html. For example, the **HTML element** in the code above consists of everything from the start tag `<html>` to the end tag `</html>`
 
-### Activity 1-3
+### Activity 1-3 💻
 
-1. Try to find the rest of the **elements** with the help of your teammates.
+1. Try to find the rest of the **elements** with your fellow students.
 
-You can review some of the most important html tags <a href="htmlcheatsheet.pdf"> here </a>. The document is from the Stanford University.
+You can review some of the most important html tags <a href="htmlcheatsheet.pdf">here </a>. The document is from the Stanford University.
 
 * **Start tag** `<head>` starts the *head element* and `<!head>` finishes it.
 * The author can write the title of the webpage between `<title>` and `</title>` tags.
@@ -155,42 +167,56 @@ You can review some of the most important html tags <a href="htmlcheatsheet.pdf"
 * `<h1>` and `</h1>` indicate what goes between is stylistically a header.
 * `<p>` and `</p>` mark the beginning and end of a paragraph element.
 
-Before starting the next activity make sure you have reviewed carefully the html sheet <a href="htmlcheatsheet.pdf"> here </a>.
+Before starting the next activity review the html sheet <a href="htmlcheatsheet.pdf">here</a>.
 
-A HTML documented is usually divided up and presented in separate sections. The image below identify some of the most important of these separate sections.
+## Parts of a Web Page
+
+A web page often has many separate parts it can be logically seperated into. To help make web pages easier to build, people use elements to identify these seperate **sections** and create a broad outline, kind of like how you would a document on paper.
+
+Some of the most frequently used sections, also in the image below, are:
+
+`<article>`
+`<aside>`
+`<header>`
+`<footer>`
+`<h1>` through `<h6>`
+`<nav>`
+`<section>`
+
+The image below identify some of the most important of these separate sections, can you guess what they do?
 
 ![](./images/semantics.jpg)
 
 Each of these tags define an independent `element` in the HTML document.
+These elements are *semantic* because the tag also defines the function of their content in the document.
 
-The elements that these tags create are called `semantic elements` because the tags defines the role of their content in the document.
+Think about is this way:
 
-To get a better picture of things imagine if:
+1. The content of the walls of your class room (stuff like pictures, graphs, etc.) are in the *semantic element* of `<wall>`
 
-1. the content of the walls of your class room (stuff like pictures, graphs, etc.) are in the `semantic element` of ```<wall>```
+2. What is on the ground of your classroom (stuff like your chairs, desks, etc.) are in the *semantic element* of `<ground>`
 
-2. What is on the ground of your classroom (stuff like your chairs, desks, etc.) are in the `semantic element` of ```<ground>```
+3. What is on your desks (stuff like your monitor, mouse, keyboard, etc.) are in the *semantic element* of <desk>`
 
-3. What is on your desks (stuff like your monitor, mouse, keyboard, etc.) are in the `semantic element` of ```<desk>```
+We have already used `<p>` and `<h1>`. These are also semantic tags because they define what is the content of your elements. For example, if you are using `<p>` you know what is inside the tags is to be understood as a *paragraph*.
 
-We have already used `<p>` and `<h1>`. These are also semantic tags because they define what is the content of your elements. For example, if you are using `<p>` you know what is inside the tags is to be understood as a `paragraph`.
+Let's do an activity to practice using these tags.
 
-Let's do an activity to get a better understanding of semantic tags.
+### Activity 1-4 💻
 
-### Activity 1-4
+1. Open [style file](style.css) and copy its content into the CSS section of your code playground.
 
-1. Open your [style file](style.css) and copy its content into the CSS section of your code playground. This is a code written in CSS. CSS is an exciting tool for adding style to your HTML document. We will learn more on this soon.
+  CSS stands for Cascading Style Sheets and is a way to change the colour and fonts on your web pages as well as pretty much everthing else about how they look, we'll learn more about this tomorrow!
 
-2. Copy this code below in the HTML section of your code playground
+2. For now, copy the code below in the HTML section of your code playground
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <link href="style.css" rel="stylesheet"/>
+    <title></title>
   </head>
   <body>
     <main>
@@ -217,18 +243,22 @@ Let's do an activity to get a better understanding of semantic tags.
 </html>
 ```
 
-3. Write a short paragraph with a headline about yourself and your environment concerns in `<article>`. Make sure to use the `<p>` and `<h2>` tags. Remember, we are practicing `semantic elements`.
+3. Write a short paragraph with a headline about your favourite foods and your school in `<article>`. Make sure to use the `<p>` and `<h2>` tags.
 
-4. Your instructor should provide you with links to some images. Use the snippet code below to add pictures to your `<section>` element.
+4. Use `<h1>` and write a title for your document in `<header>` element.
+
+5. You can draw attention to text in a couple ways:
+  `<strong>important</strong>` to show text is **important**
+  `<em>emphasize</em>` to *emphasize* text similar to how you speak
+
+6. Keep playing with this template. You should be able to understand what purpose each of the tags play in the presentation of the document.
+
+7. Your instructor should provide you with links to some images. Use the snippet code below to add pictures to your `<section>` element.
 
 ```html
 <img alt="a description of the image here" src="[the link goes here]" />
 ```
 
-5. Use `<h1>` and write a title for your document in `<header>` element.
+#### 🎉🎊🎉 Congratulations! You finished the first day 🎉🎊🎉
 
-6. You can use `<b>` to write in **bold** and `<i>` to write in *italic* and `<u>` to write underlined text
-
-7. Keep playing with this template. You should be able to understand what purpose each of the tags play in the presentation of the document.
-
-Congratulations! You have finished your first tutorial of this workshop. You now know a bit about computers, programing languages and internet. You also have begun your journey into the world of web development by taking the first steps into the realm of html.
+You now know about computers, programming languages and the Internet. You also have begun your journey into web development by taking your first steps into the realm of HTML.

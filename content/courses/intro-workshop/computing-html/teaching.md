@@ -85,6 +85,8 @@ Students yet need not know about how `list` is made. Just help them identify the
 
 ## Resources
 
+- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+
 Offline icebreakers:
 
 - https://code.org/curriculum/unplugged
