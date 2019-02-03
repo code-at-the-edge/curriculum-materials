@@ -75,7 +75,7 @@ Before that let's review what we did yesterday!
 
 1. Open [style file](style.css) and copy its content into the CSS section of your code playground.
 
-  CSS stands for Cascading Style Sheets and is a way to change the colour and fonts on your web pages as well as pretty much everthing else about how they look, we'll learn more about this in a little bit!
+  CSS stands for **Cascading Style Sheets** and is a way to change the colour and fonts on your web pages as well as everything else about how they look, we'll learn more about this in a little bit!
 
 2. For now, copy the code below in the HTML section of your code playground
 
@@ -135,7 +135,7 @@ You can change a lot in terms of the style in a html document. You can already s
 
 However, the way we have been doing these modifications seems to be highly inefficient. Imagine if you have lots of Heading 2s and you want to change their color all to `red`. Certainly it does not seem convenient to go around and add lots and lots of tags to change the color of each Heading to red.
 
-There must be a way to control the stylistic organization of webpage.
+There must be a way to control the stylistic organization of web page.
 
 Happily there are ways. With an external **stylesheet** we can give instructions to a computer on how to display the contents of a html document.
 
@@ -162,13 +162,13 @@ h1 {
 
 3. Do you see the result? Take a moment and try some variations to better understand how the CSS is changing the way the content of the HTML is represented.
 
-4. Now try to make some difference on the appearance of your `<p>` elements. Maybe change the color, change the background and play with the alignment.
+4. Now try to make some difference on the appearance of your `<p>` elements. Try changing the color, the background and the alignment.
 
 # Introduction to CSS
 
-In the last activity you made your first CSS modifications. CSS is a programing language which is used to change the way a HTML document is represented in a web browser.
+In the last activity you made your first CSS modifications. CSS is a programming language which is used to change the way a HTML document is represented in a web browser.
 
-A good way to think about this is to imagine the HTML document as the skeleton of a webpage, and the CSS document as the appearance of the body. HTML is the *structural layer* and CSS is the *presentation layer*.
+A good way to think about this is to imagine the HTML document as the skeleton of a web page, and the CSS document as the appearance of the body. HTML is the *structural layer* and CSS is the *presentation layer*.
 
 As it is illustrated above, CSS can turn your HTML into a wonderful web page.
 
