@@ -1,3 +1,4 @@
+/* Rendering lessons and instructions side-by-side*/
 div.lesson-container {
   display: flex;
 }
@@ -108,7 +109,6 @@ body {
   .flex-tabs #tab-two-panel {
     order: 4;
   }
-
   #tab-one:checked ~ .tabs #tab-one-label, #tab-two:checked ~ .tabs #tab-two-label {
     border-bottom: none;
   }
@@ -116,6 +116,7 @@ body {
     border-bottom: 1px solid #ccc;
   }
 }
+
 
 /* Fixing huge font sizes in child frame  */
 div.md h1:first-of-type {
@@ -129,10 +130,9 @@ div.md h2 {
 iframe {
   border: none;
 }
-div.lesson-container>div {
+div.lesson-container > div {
   border: 1px gray solid;
 }
-
 #project-caption {
     background-color: #eee;
     padding-top: 3px;
@@ -152,4 +152,10 @@ div.lesson-container>div {
     position: absolute;
     right: 0;
     top: 100%;
+}
+
+/* Alert success */
+div.alert-success > h4 {
+  text-align: center;
+  margin-bottom: 0;
 }
