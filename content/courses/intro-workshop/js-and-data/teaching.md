@@ -30,22 +30,22 @@
 ## Outline of sections
 
 1. Introduction (10 minutes)
-1. Making websites interactive using JavaScript (45 minutes)
-    - Pair Programming (45 minutes)
 1. Seeing data all around (60 minutes)
     - "Environmental Survey" (30 minutes)
     - Pair programming (30 minutes)
+1. Making websites interactive using JavaScript (45 minutes)
+    - Pair Programming (45 minutes)
 1. Conclusion ( 10 minutes)
 
+## Seeing Data all around
 
-
-
-  - "Data Survey" activity (Session 5)
-
+Lesson materials:
+- https://www.tableau.com/about/blog/2015/10/2-activities-help-kids-discover-joy-data-45386
+- https://databasic.io/en/wtfcsv/wtfcsv-activity-guide.pdf
+- https://schoolofdata.org/handbook/courses/what-is-data/
+- https://blog.databasic.io/2017/02/24/databasic-at-harvard-laws-systemic-justice-project/
+- "Data Survey" activity (Session 5) notes:
   - Activity that draws on mind maps
-    - Healthy // Junk foods
-
-    - <>
+    - Healthy // Junk foods from "game"
     - What is Data?
     - CSV - JSON
-    -
