@@ -50,7 +50,7 @@
 
 ### Introduction
 
-Today we'll cover **two main concepts** through a mix of activities at the computer and moving around playing a game:
+The lesson covers **two main concepts** through a mix of activities at the computer and moving around playing a game:
 
 1. **Creating connections, or links** (60 minutes)
     - Pair programming (40 mimutes)
@@ -65,18 +65,23 @@ Today we'll cover **two main concepts** through a mix of activities at the compu
       - `border, padding, margin` CSS properties
       - `display, position, float` CSS properties
 
-Over the last two days we've talked about:
-
-- Computers and the languages we can use to give them instructions
-- HTML and CSS as the languages that we use to create web pages
-
-We've been working in teams at our computers to work together on these activities, we'll start off doing that again today ⌨ 🖱.
-
 ### Creating connections, or links
 
-- Present from the student instructions portion of the curriculum wesite
+- Introduce links and relate that to how the web becomes a **web**
+- Introduce the concept of links being **local** and **external**
+- First activity is to add a link:
+  - Image on Raspberry Pi
+  - Using an anchor **id** to link to a part of a site
 
-### Connecting Online Game
+### Activity: Linking to another page
+
+Ask the students to:
+
+- Add a link to another part of the same page
+- Add a link to another page
+- If you have time, add a link to the course website!
+
+### Game: Connecting Online Game
 
 - This is a modified version of the Code Course E, Lesson 27: The Internet activity, lesson plan available: https://curriculum.code.org/csf-18/coursee/27/
 - Read through this section to make sure you understand the game flow
@@ -101,7 +106,16 @@ We've been working in teams at our computers to work together on these activitie
     - The **DNS (Domain Name Server)** has tables that allow the system to go back and forth between URLs and IP addresses. If the Domain Name Servers ever stopped working, we wouldn't be able to translate between URLs and IP addresses
     - Let's try to understand what the DNS does by making a little DNS table and pretend to send messages through the internet!
 - Game Set up:
-  - Draw a "DNS Table"
+  - Draw a "DNS Table")
+  - Local websites from the region to feature:
+      - Sikkim Gov't Tourism Site
+      - School Web Page
+      - Gangtok Business?
+      - Sikkim University
+      - Computer Science -- Sikkim Manipal University?
+      - Kanchenjunga national park (UNESCO page?)
+      - natureconservation.in
+      - sikkimforest.in
 
     | #   | URL       | IP Address    |
     |-----|-----------|---------------|
@@ -131,9 +145,17 @@ We've been working in teams at our computers to work together on these activitie
   - The server has to wait for all of the message pieces to arrive before it can begin to send the message along.
   - To play this game, you can have your groups cluster anywhere, but for the first time it can be less confusing to have groups play in a line.
 
-### Controlling how a web site is structured
+### Layouts for HTML
 
-- Present from the student instructions portion of the curriculum wesite
+- Introduce concept of **layout** and **HTML box**:
+  > With HTML and CSS organizing and structuring a page is called layout and we can think about HTML elements as a series of nested boxes, with the text and images we care about, or smallest box at the centre, often called content.
+- Reinforce that **each element** has four areas:
+  - Content
+  - Padding
+  - Border
+  - Margin
+
+### Activity: Creating Borders
 
 ## Resources
 
@@ -147,6 +169,7 @@ The following resources were used to plan this lesson:
 - https://webplatform.github.io/docs/tutorials/understanding-css-units/#On-CSS-pixels,-physical-units-and-scalability
 - https://learn.shayhowe.com/html-css/opening-the-box-model/
 - https://learn.shayhowe.com/html-css/positioning-content/
+- https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
 
 ## Activities
 
