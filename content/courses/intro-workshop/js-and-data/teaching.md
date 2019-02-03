@@ -36,3 +36,16 @@
     - "Environmental Survey" (30 minutes)
     - Pair programming (30 minutes)
 1. Conclusion ( 10 minutes)
+
+
+
+
+  - "Data Survey" activity (Session 5)
+
+  - Activity that draws on mind maps
+    - Healthy // Junk foods
+
+    - <>
+    - What is Data?
+    - CSV - JSON
+    -

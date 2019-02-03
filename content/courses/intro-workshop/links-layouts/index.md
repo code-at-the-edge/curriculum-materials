@@ -5,14 +5,12 @@ weight: 4
 alwaysopen: true
 ---
 
-# Instructions
-
-## Introduction
+# Links and Layouts
 
 Today we'll cover **two main concepts** through a mix of activities at the computer and moving around playing a game:
 
-1. **Creating connections, or links, to different parts of a web site or even between sites**
-1. **Controlling how a web site is structured and how elements are positioned**
+1. Creating connections, or links, to different parts of a web site or even between sites
+1. Controlling how a web site is structured and how elements are positioned
 
 We've been working in teams at our computers to work together on these activities, we'll start off doing that again today ⌨ 🖱.
 
@@ -72,11 +70,11 @@ Then we use the `#` or hash symbol plus the `id` as the destination!
 
 ### Activity: Linking to another page 💻
 
-Now it's **your turn**! Try:
+Now it's **your turn**! Try to:
 
-- Adding a link to another part of the same page
-- Adding a link to another page
-- If you have time, try adding a link to the course website!
+- Add a link to another part of the same page
+- Add a link to another page
+- If you have time, add a link to the course website!
 
 <div class="alert alert-warning">
   <strong>🔎 Hint: Finding web addresses </strong><br />
@@ -130,16 +128,34 @@ Okay, let's start from our template, you can work from your existing page or fro
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Title Goes Here</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet"/>
+    <title>Site Title</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Site Title</h1>
+      </header>
 
-<h1>My name is...</h1>
-<p>I think computers are...</p>
+      <nav>
+      </nav>
 
-</body>
+      <section class="sidebar">
+      </section>
+
+      <article>
+        <h2>My favourite foods</h2>
+        <p>Some of my favourite foods are
+        </p>
+      </article>
+
+      <aside>
+
+      </aside>
+    </main>
+  </body>
 </html>
 ```
 
@@ -155,10 +171,10 @@ This ability that `border` has is because it is a `shorthand` property, which is
 
 **Your turn**:
 
-- Changing the color of the border to blue
-- Making a thicker border
-- Adding a border to something else on the page
-- Adding a border to multiple things on the page at the same time
+- Change the color of the border to blue
+- Make a thicker border
+- Add a border to something else on the page
+- Add a border to multiple things on the page at the same time
 
 ## Activity: Making Space 💻
 
@@ -211,9 +227,9 @@ h1 {
 
 **Your turn:**
 
-- Adding space outside the border on the top side of the paragraph
-- Adding a margin on the left and right of the header, using only one property *hint: you can use shorthand!*
-- Adding more space inside the border for the paragraph, however you want!
+- Add space outside the border on the top side of the paragraph
+- Add a margin on the left and right of the header, using only one property *hint: you can use shorthand!*
+- Add more space inside the border for the paragraph, however you want!
 
 ## Activity: Making websites better for phones 💻
 
@@ -240,14 +256,64 @@ Now that many more people are using phones or small tablets to view web sites, p
 
 ## Positioning elements
 
-Cases where you want to control the specific place where an element is:
+Now that we know how to make space around elements, lets put that together with what we learned before about adding images, changing colours, and different sections of a web page!
 
-- Text flowing around image
-- Text over image background
-- Making a row of beautiful images!
+### Activity: Putting images and text together 💻
 
-`display, position, float` CSS properties
+One our websites we have put in a lot of info about food but without images, lets put those together now by showing off the ingredients we might find in a recipe.
 
+To start, let's make a class called "`ingredient`" with a header, image, and some text:
 
+```html
+<section id="ingredient-list">
+  <div class="ingredient">
+    <h3>Spice</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Spices_in_an_Indian_market.jpg/220px-Spices_in_an_Indian_market.jpg" />
+    <p>Spices are an ingredient in many foods</p>
+  </div>
+</section>
+```
 
-## Activity: 💻
+```css
+.ingredient {
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0.25rem;
+}
+
+.ingredient > h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+```
+
+**[TODO: Cache ingredient images locally!]**
+
+How about we have the image stay on the right side and the text on the left. We can use the CSS property `float` to do so! It has a few possible values:
+
+- `left`
+- `right`
+- `none` - Will be displayed where it occurs in the text. This is what  **normally happens**!
+- `inherit` - The element inherits the float value of its parent
+
+Lets add a float to the image and see what it does! If we just want that to happen for ingredient images we need to specify that in the CSS:
+
+```css
+.ingredient > img {
+  float: right;
+}
+```
+
+Looks pretty good, but what happens if we use the other float values `right`, `none`, and `inherit`?
+
+Also, the image seems like it overflows. In order to fix this we can use a "fix" or use another CSS property, `display` to help with this. **Display** is important, because it controls how and element is displayed, and can even hide it! It has a lot of values because it is used for all sorts of things! It can be used to set how things are displayed inside the element, outside the element, both together, or if it is a list!
+
+We want to set how both the inside and outside look, we can use the value `inline-flex` for this:
+
+```css
+.ingredient-list {
+  display: inline-flex;
+}
+```
+
+Now lets add more ingredients and see what we get!
