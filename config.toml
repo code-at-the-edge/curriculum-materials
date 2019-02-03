@@ -8,7 +8,7 @@ theme = "docdock"
 # SYNTAX
 # Highlighting config (Pygments)
 pygmentsCodeFences = true
-pygmentsOptions = "linenos=inline"
+pygmentsOptions = ""
 
 # Use the Chroma stylesheet
 pygmentsUseClasses = true
