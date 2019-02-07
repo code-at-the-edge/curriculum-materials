@@ -1,7 +1,22 @@
 #!/usr/bin/env bash
 
+# can we use a .env to pass some of these? 
+# main site
 GIT_CURRICULUM="https://github.com/code-at-the-edge/curriculum-materials.git"
 BRANCH_CURRICULUM=master
+DIR_CURRICULUM=/var/www/curriculum
+URL_CURRICULUM=
+
+# jsbin
+GIT_JSBIN=
+BRANCH_JSBIN=
+DIR_JSBIN=/var/www/jsbin
+URL_JSBIN=
+
+# mysql
+MY_ROOT_PASS=
+MY_JSBIN_USER=
+MY_JSBIN_PASS=
 
 if ! [ -z "`ps xa | awk '{print $5}' | grep dpkg | grep -v grep`" ]; then
     echo -e "\e[1;31mDPKG is running in the background.\e[0m"
@@ -22,12 +37,6 @@ if ! [ "$(which git)" ]; then
     sudo apt-get install git -y
 fi
 
-# Download code at the edge repo
-git clone $GIT_CURRICULUM
-fi
-cd curriculum-materials/scripts
-git checkout $BRANCH_CURRICULUM
-
 
 # Normalize OS environment (thanks tomesh!)
 echo -e "\e[1;32mStarting installation...\e[0m"
@@ -46,16 +55,76 @@ fi
 # Set up as Access Point
 # hostap
 
+
+##############################
 # Set up Server
 # nginx
+# proxy pass to node !! see below
+# https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04#set-up-nginx-as-a-reverse-proxy-server
+##############################
 
+##############################
 # Set up Teaching Tools
 # camera
 # simple file upload
+##############################
+
+##############################
 # curriculum website
+##############################
+
+# Download code at the edge repo
+# put this in the right place!!
+
+# also need to set ownership on all these dirs
+git clone $GIT_CURRICULUM
+
+cd curriculum-materials/scripts
+git checkout $BRANCH_CURRICULUM
+
+
+##############################
 # code playground
+# pseuocode, pretty much
+##############################
 
 
+# grab mysql
+if ! [ "$(which mysql)" ]; then
+  sudo apt-get install -y mariadb-server mariadb-client 
+fi
+# now configure -- drat!!
+# set root pw
+# add user jsuser
+# add db jsbin, grant all to jsuser w password
+# maybe we should add a SQL script here as well to make that easier?
+# preferable of course to configure these vars but no time right now I think.
+
+
+git clone $GIT_JSBIN
+git checkout $BRANCH_JSBIN
+cd jsbin
+# run the sql setup script
+# might be able to skip password by stopping mariadb and running mysql/mariadb
+# in non-authenticating mode(like when resetting root password)
+mysql -u root -p jsbin < ./build/full-db-v3.mysql.sql
+
+# nvm use lts/carbon | lts/dubnium
+# figure out what to do about config.local.jsbin
+npm install
+
+npm run build
+
+# now install systemctl service (!) where do we do that??
+# now enable/autostart service
+
+
+
+##############################
+# mesh stuff
+##############################
+
+# do we need this?
 # Prompt for name of the AP
 read -p "Enter the name of your mesh network (default: code-at-the-edge): " -r
 export AP_NAME=`echo $REPLY | sed 's/ //g'`
