@@ -28,3 +28,14 @@ The following instructions will help you set up and configure a Raspberry Pi tha
     ```
     $ wget https://raw.githubusercontent.com/code-at-the-edge/curriculum-materials/master/scripts/install && chmod +x install && ./install
     ```
+
+## What this scriptdoes
+- [x] download curriculum materians
+- [x] download code playground
+- [-] install and configure database for code playground
+- [ ] install and configure router info
+- [ ] other stuff
+
+# Notes 
+
+Current version of script ha lots of notes. Use them to build further features (!)
