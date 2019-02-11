@@ -1,17 +1,21 @@
 #!/usr/bin/env bash
 
-# can we use a .env to pass some of these? 
+# can we use a .env to pass some of these?
+# node
+HOSTNAME=code
+AP_PASSWORD=
+
 # main site
 GIT_CURRICULUM="https://github.com/code-at-the-edge/curriculum-materials.git"
 BRANCH_CURRICULUM=master
-DIR_CURRICULUM=/var/www/curriculum
-URL_CURRICULUM=
+DIR_CURRICULUM=/var/www/code.local/html
+URL_CURRICULUM=/learning
 
 # jsbin
 GIT_JSBIN=
 BRANCH_JSBIN=
 DIR_JSBIN=/var/www/jsbin
-URL_JSBIN=
+URL_JSBIN=/playground
 
 # mysql
 MY_ROOT_PASS=
@@ -37,7 +41,6 @@ if ! [ "$(which git)" ]; then
     sudo apt-get install git -y
 fi
 
-
 # Normalize OS environment (thanks tomesh!)
 echo -e "\e[1;32mStarting installation...\e[0m"
 
@@ -49,12 +52,78 @@ if [ -z $(echo $PATH | grep "/sbin")  ]; then
     echo 'export PATH="/sbin:/usr/sbin:$PATH"' | sudo tee -a /etc/profile
 fi
 
-# Get tools
-
+##############################
+# Set up AP
 # TODO -- install and configure
-# Set up as Access Point
 # hostap
+##############################
 
+sudo apt-get install hostapd dnsmasq bridge-utils
+
+sudo systemctl stop hostapd
+sudo systemctl stop dnsmasq
+
+echo '# add static IP
+interface wlan0
+  static ip_address=192.168.0.10/24
+  denyinterfaces eth0
+  denyinterfaces wlan0' >> /etc/dhcpcd.conf
+
+sudo systemctl daemon-reload
+
+sudo mv /etc/dnsmasq.conf /etc/dnsmasq.conf.bak
+sudo touch /etc/dnsmasq.conf
+
+temp=$(mktemp)
+echo 'interface=wlan0
+  dhcp-range=192.168.0.11,192.168.0.30,255.255.255.0,24h' >> $temp
+sudo cp $temp /etc/dnsmasq.conf
+
+temp_hostapd=$(mktemp)
+echo "interface=wlan0
+bridge=br0
+hw_mode=g
+channel=7
+wmm_enabled=0
+macaddr_acl=0
+auth_algs=1
+ignore_broadcast_ssid=0
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=AES
+rsn_pairwise=CCMP
+ssid=$HOSTNAME
+wpa_passphrase=CodeAtTheEdge" >> $temp_hostapd
+sudo cp $temp_hostapd /etc/hostapd/hostapd.conf
+
+sudo cp /etc/default/hostapd /etc/default/hostapd.bak
+config_path='#DAEMON_CONF=""'
+replace_path='DAEMON_CONF="/etc/hostapd/hostapd.conf"'
+
+# TODO: SOMETHING ABOUT SED TO TO THE REPLACE ISN'T WORKING
+
+sudo cp /etc/sysctl.conf /etc/sysctl.conf.bak
+config_path='#net.ipv4.ip_forward=1'
+replace_path='net.ipv4.ip_forward=1'
+
+# TODO: SOMETHING ABOUT SED TO TO THE REPLACE ISN'T WORKING
+
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+sudo sh -c 'iptables-save > /etc/iptables.ipv4.nat'
+sudo iptables-restore < /etc/iptables.ipv4.nat
+
+# BRIDGE TRAFFIC wlan0 and eth0
+
+sudo brctl addbr br0
+sudo brctl addif br0 eth0
+
+echo '# add bridge
+auto br0
+iface br0 inet manual
+bridge_ports eth0 wlan0' >> /etc/dhcpcd.conf
+
+sudo systemctl start hostapd
+sudo systemctl start dnsmasq
 
 ##############################
 # Set up Server
@@ -63,6 +132,46 @@ fi
 # https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04#set-up-nginx-as-a-reverse-proxy-server
 ##############################
 
+sudo apt-get install nginx ufw
+
+sudo ufw allow 'Nginx HTTP'
+sudo ufw allow ssh
+sudo ufw enable
+sudo ufw status
+
+sudo /etc/init.d apache2 stop
+sudo systemctl disable apache2
+
+temp_nginx=$(mktemp)
+echo 'server {
+    listen 80;
+    listen [::]:80;
+    server_name code.local;
+
+    location / {
+        try_files $uri $uri/ =404;
+        root /var/www/code.local/html;
+      }
+
+    location /playground {
+        proxy_pass http://localhost:8081;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}' >> $temp_nginx
+sudo cp $temp_nginx /etc/nginx/sites-available/code.local
+
+sudo ln -s /etc/nginx/sites-available/code.local /etc/nginx/sites-enabled/
+sudo nginx -t
+
+sudo rm /etc/nginx/sites-enabled/default
+sudo chown -R www-data:www-data /var/www/code.local/html
+sudo chmod -R 0755 /var/www/code.local/html/*
+sudo systemctl restart nginx
+
 ##############################
 # Set up Teaching Tools
 # camera
@@ -70,18 +179,21 @@ fi
 ##############################
 
 ##############################
-# curriculum website
+# Curriculum Website
 ##############################
+
+sudo apt-get install hugo
 
 # Download code at the edge repo
 # put this in the right place!!
-
 # also need to set ownership on all these dirs
 git clone $GIT_CURRICULUM
-
-cd curriculum-materials/scripts
+cd curriculum-materials/
 git checkout $BRANCH_CURRICULUM
+hugo build
 
+sudo mkdir /var/www/code.local/
+sudo cp -R public/. $DIR_CURRICULUM
 
 ##############################
 # code playground
@@ -91,7 +203,7 @@ git checkout $BRANCH_CURRICULUM
 
 # grab mysql
 if ! [ "$(which mysql)" ]; then
-  sudo apt-get install -y mariadb-server mariadb-client 
+  sudo apt-get install -y mariadb-server mariadb-client
 fi
 # now configure -- drat!!
 # set root pw
@@ -117,20 +229,6 @@ npm run build
 
 # now install systemctl service (!) where do we do that??
 # now enable/autostart service
-
-
-
-##############################
-# mesh stuff
-##############################
-
-# do we need this?
-# Prompt for name of the AP
-read -p "Enter the name of your mesh network (default: code-at-the-edge): " -r
-export AP_NAME=`echo $REPLY | sed 's/ //g'`
-if [ "${#AP_NAME}" == 0 ]; then
-    export AP_NAME="code-at-the-edge"
-fi
 
 
 read -p "Installation complete. Press any key to reboot. " -n 1 -r
