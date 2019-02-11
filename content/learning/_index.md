@@ -1,5 +1,5 @@
 ---
-title: Introduction Workshop
+title: Lessons
 ---
 
 
