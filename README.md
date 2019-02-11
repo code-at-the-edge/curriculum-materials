@@ -1,5 +1,7 @@
 # Curriculum Staging project for Code At the Edge
 
+[![Build Status](https://travis-ci.org/code-at-the-edge/curriculum-materials.svg?branch=master)](https://travis-ci.org/code-at-the-edge/curriculum-materials)
+
 This repo generates a Hugo site that hosts curriculum materials built for [Code At the Edge](https://github.com/code-at-the-edge). At present we don't have much here. The initial purpose of the repo is to make it easier to view rendered lessons, but it may later be used as part of the classroom environment and/or as a platform for generation of JSON to be ingested by the coding environment.
 
 ## Installation
