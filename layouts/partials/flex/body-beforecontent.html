@@ -3,17 +3,37 @@
     {{ partial "header.html" . }}
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-  {{- with .CurrentSection }}
-    <nav class="shortcuts">
-      {{- range sort .Pages "Weight" }}
-        <li class="" role="">
-          <a href="{{.URL}}" {{if eq $.Site.Params.menushortcutsnewtab true }}target="_blank"{{ end }} rel="noopener">
-            {{ safeHTML .Name }}
+  <nav class ="shortcuts">
+      <li class="" role="">
+          <a href="jsbin.kgbv.local" target="_blank" rel="noopener">
+              Go Write Code!
           </a>
-        </li>
-      {{- end }}
-    </nav>
-  {{- end }}
+      </li>
+      <li class="" role="">
+          <a href="jsbin.kgbv.local" target="_blank" rel="noopener">
+              See the Pictures!
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="jsbin.kgbv.local" target="_blank" rel="noopener">
+              Other stuff
+          </a>
+      </li>
+
+  </nav>
+
+  {{/*- with .CurrentSection */}}
+  <!-- <nav class="shortcuts"> -->
+      
+      <!-- {{- range sort .Pages "Weight" }}
+           <li class="" role="">
+           <a href="{{.URL}}" {{if eq $.Site.Params.menushortcutsnewtab true }}target="_blank"{{ end }} rel="noopener">
+           {{ safeHTML .Name }}
+           </a>
+           </li>
+           {{- end }} -->
+  <!-- </nav> -->
+  {{/*- end */}}
 </header>
 <article>
   <aside>
