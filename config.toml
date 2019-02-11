@@ -1,4 +1,4 @@
-baseURL = "https://code-at-the-edge.github.io/curriculum-materials/"
+baseURL = "https://code-at-the-edge.github.io/"
 languageCode = "en-us"
 title = "Code At the Edge Curriculum"
 theme = "docdock"
