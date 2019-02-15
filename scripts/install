@@ -12,10 +12,10 @@ DIR_CURRICULUM=/var/www/code.local/html
 URL_CURRICULUM=/learning
 
 # jsbin
-GIT_JSBIN=
-BRANCH_JSBIN=
-DIR_JSBIN=/var/www/jsbin
-URL_JSBIN=/playground
+GIT_JSBIN=${GIT_JSBIN:-https://github.com/code-at-the-edge/jsbin.git}
+BRANCH_JSBIN=${BRANCH_JSBIN:-code-at-the-edge}
+DIR_JSBIN=${DIR_JSBIN:-/playground}
+URL_JSBIN=${URL_JSBIN:-http://kgbv.local:3000}
 
 # mysql
 MY_ROOT_PASS=
@@ -192,6 +192,7 @@ cd curriculum-materials/
 git checkout $BRANCH_CURRICULUM
 hugo build
 
+# ln -s instead?? 
 sudo mkdir /var/www/code.local/
 sudo cp -R public/. $DIR_CURRICULUM
 
@@ -200,32 +201,9 @@ sudo cp -R public/. $DIR_CURRICULUM
 # pseuocode, pretty much
 ##############################
 
+# moved to scripts/jsbin.sh
 
-# grab mysql
-if ! [ "$(which mysql)" ]; then
-  sudo apt-get install -y mariadb-server mariadb-client
-fi
-# now configure -- drat!!
-# set root pw
-# add user jsuser
-# add db jsbin, grant all to jsuser w password
-# maybe we should add a SQL script here as well to make that easier?
-# preferable of course to configure these vars but no time right now I think.
-
-
-git clone $GIT_JSBIN
-git checkout $BRANCH_JSBIN
-cd jsbin
-# run the sql setup script
-# might be able to skip password by stopping mariadb and running mysql/mariadb
-# in non-authenticating mode(like when resetting root password)
-mysql -u root -p jsbin < ./build/full-db-v3.mysql.sql
-
-# nvm use lts/carbon | lts/dubnium
-# figure out what to do about config.local.jsbin
-npm install
-
-npm run build
+exec ./jsbin.sh
 
 # now install systemctl service (!) where do we do that??
 # now enable/autostart service
