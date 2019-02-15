@@ -23,6 +23,8 @@ The following instructions will help you set up and configure a Raspberry Pi tha
 
 1. In your SSH session, run `passwd` and change your login password. It is very important to choose a strong password so others cannot remotely access your Raspberry Pi.
 
+1. Make sure you enable the camera and expand the filesystem using the Raspberry Pi configuration: `sudo raspi-config`.
+
 1. Run the **Code at the Edge** install script, then let the installation complete:
 
     ```
@@ -30,12 +32,12 @@ The following instructions will help you set up and configure a Raspberry Pi tha
     ```
 
 ## What this scriptdoes
-- [x] download curriculum materians
+- [x] download curriculum materials
 - [x] download code playground
 - [-] install and configure database for code playground
 - [ ] install and configure router info
 - [ ] other stuff
 
-# Notes 
+# Notes
 
 Current version of script ha lots of notes. Use them to build further features (!)

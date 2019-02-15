@@ -14,7 +14,7 @@
 - Navigate all pages in project using links
 - Define html box model, css layout and positioning
 - Change page layout using `border, padding, margin, display, position, float` CSS properties
-- Understand difference between project web page and online web sites
+- Understand the difference between project web page and online web sites
 
 ## Preparation
 

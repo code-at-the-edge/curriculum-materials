@@ -5,8 +5,6 @@ weight: 4
 alwaysopen: true
 ---
 
-# Links and Layouts
-
 Today we'll cover **two main concepts** through a mix of activities at the computer and moving around playing a game:
 
 1. Creating connections, or links, to different parts of a web site or even between sites
