@@ -35,8 +35,16 @@ if ! [ -z "`ps xa | awk '{print $5}' | grep dpkg | grep -v grep`" ]; then
     fi
 fi
 
+# get up to date
+sudo apt-get update && sudo apt-get dist-upgrade
+
+
+# install screen, we'regoing to need it!
+# also zile, also ag
+sudo apt-get install tmux screen byobu zile silverseacher-ag -y
+
+
 # install git
-sudo apt-get update
 if ! [ "$(which git)" ]; then
     sudo apt-get install git -y
 fi

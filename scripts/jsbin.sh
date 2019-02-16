@@ -17,8 +17,10 @@ MY_JSBIN_DB=${MY_JSBIN_DB:-jsbin}
 git clone https://github.com/creationix/nvm.git ~/.nvm
 sudo echo "source ~/.nvm/nvm.sh" >> ~/.bashrc && sudo echo "source ~/.nvm/nvm.sh" >> ~/.profile
 
+source ~/.bashrc
 # fingers crossed!
 nvm --version 2&> /dev/null  || echo "NVM installation unsuccessful, JSBIN WILL NOT RUN"
+
 nvm install lts/carbon
 nvm install lts/dubnium
 nvm alias default lts/carbon
@@ -28,23 +30,64 @@ npm -g install npm@latest --allow-root --unsafe-perm
 
 # grab mysql
 if ! [ "$(which mysql)" ]; then
-  (export DEBIAN_FRONTEND="noninteractive" ; sudo apt-get install -y mariadb-server mariadb-client )
+  # doesn't seem to be working with noninteractive.  change this for now
+  # (export DEBIAN_FRONTEND="noninteractive" ; sudo apt-get install -y mariadb-server mariadb-client )
+  #  will require manual intervention; will need to add the root pw, which is codeattheedge
+   sudo apt-get install -y mariadb-server mariadb-client
 fi
 
 
+# now configure -- drat!!
+# set root pw
+# add user jsuser
+# add db jsbin, grant all to jsuser w password
+# maybe we should add a SQL script here as well to make that easier?
+# preferable of course to configure these vars but no time right now I think.
+
+mkdir -p $DIR_JSBIN
+git clone $GIT_JSBIN $DIR_JSBIN
+cd $DIR_JSBIN
+git checkout $BRANCH_JSBIN
+
+## manage mysql stuff
 sudo systemctl stop mariadb.service
 sudo mysqld_safe --skip-grant-tables &
 
 # might as well do all of this before we need 
 cat >installjsbin.sql <<EOL
 use mysql;
+if 
 UPDATE user SET authentication_string = password("$MY_ROOT_PASS") where User='root';
-UPDATE user SET authentication_string = password("$MY_JSBIN_PASS") where User='$MY_JSBIN_USER';
+FLUSH PRIVILEGES;
+
+EOL
+
+cat > updateprivs.sql <<EOL
+CREATE USER jsbin;
 CREATE DATABASE $MY_JSBIN_DB;
+UPDATE user SET authentication_string = password("$MY_JSBIN_PASS") where User='$MY_JSBIN_USER';
 GRANT ALL PRIVILEGES ON $MY_JSBIN_DB.* TO '$MY_JSBIN_USER'@'localhost';
 FLUSH PRIVILEGES;
 
 EOL
+mysql -u root -p < installjsbin.sql
+
+# sudo 
+# sudo systemctl stop mariadb.service && echo 'stopped mb service for good measure'
+sudo mysqladmin shutdown && echo 'stoped safemode'
+mysqld_process_pid=$(echo "$(ps -C mysqld -o pid=)" | sed -e 's/^ *//g' -e 's/ *$//g')
+while [[ "$mysqld_process_pid" =~ ^[0-9]+$ ]]; do
+ mysqld_process_pid=$(echo "$(ps -C mysqld -o pid=)" | sed -e 's/^ *//g' -e 's/ *$//g')
+ sleep 1
+done
+sudo systemctl start mariadb.service && echo 'mb restarted'
+
+mysql -u root -p < updateprivs.sql
+
+figure out what to do about config.local.jsbin
+npm install
+npm run build
+
 
 while ! [[ "$mysqld_process_pid" =~ ^[0-9]+$ ]]; do
  mysqld_process_pid=$(echo "$(ps -C mysqld -o pid=)" | sed -e 's/^ *//g' -e 's/ *$//g')
@@ -57,28 +100,12 @@ mysql -u root < installjsbin.sql && echo "privs updated and db created"
 # place with proper dump shortly
 # mysql -u root jsbin < ./build/full-db-v3.mysql.sql
 # we've got the dump now!
-mysql -u root jsbin < ./utils/cote-mysql-dump.sql && echo "dump finished"
 mysqladmin shutdown && echo 'stoped safemode'
 
-# sudo systemctl stop mariadb.service && echo 'stopped mb service for good measure' 
-sudo systemctl start mariadb.service && echo 'mb restarted'
+sudo systemctl start mariadb.service
+mysql -u root jsbin -p < updateprivs.sql && echo "dump finished"
+mysql -u root jsbin < ./utils/cote-mysql-dump.sql && echo "dump finished"
 
-# now configure -- drat!!
-# set root pw
-# add user jsuser
-# add db jsbin, grant all to jsuser w password
-# maybe we should add a SQL script here as well to make that easier?
-# preferable of course to configure these vars but no time right now I think.
-
-mkdir -p $DIR_JSBIN
-git clone $GIT_JSBIN $DIR_JSBIN
-cd j$DIR_JSBIN
-git checkout $BRANCH_JSBIN
-
-
-# figure out what to do about config.local.jsbin
-npm install
-npm run build
 
 # chown -- shouldn't we? or are we already running as pi I guess? 
 chown -R pi:pi ./
@@ -89,12 +116,13 @@ mkdir -p /home/pi/.config/systemd/user/
 cp utils/jsbin.service /home/pi/.config/systemd/user/
 
 # add start script
-mkdir -p ~/bin
-cp utils/jsbin-start.sh
-chmod +x utils/jsbin-start.sh
+# obsolete I think!! yay.
+# mkdir -p ~/bin
+# cp utils/jsbin-start.sh
+# chmod +x utils/jsbin-start.sh
 
 # necessary?
-chown -R pi:pi /home/pi/.config/systemd/user/
+# chown -R pi:pi /home/pi/.config/systemd/user/
 
 # start  jsbin
 systemctl --user enable jsbin
