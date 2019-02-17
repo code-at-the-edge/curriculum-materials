@@ -12,7 +12,3 @@ update_config=1' >> /etc/wpa_supplicant/wpa_supplicant.conf
 
 # Download and Run RaspAP installer
 wget -q https://git.io/voEUQ -O /tmp/raspap && bash /tmp/raspap
-<<<<<<< HEAD
-=======
-
->>>>>>> 8566ca0bea8d6e5928982dfb7db047ad9f6e5367
