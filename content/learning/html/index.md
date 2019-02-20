@@ -5,20 +5,47 @@ weight: 2
 alwaysopen: true
 ---
 
+# Highlights!
+
+- [Make Your Code Playground Account Here](http://kgbv.local:3000/register)
+- [Write Your First Page Here](http://kgbv.local:3000/vav/edit?html,output)
+- [Later, add this List to your page](#activity-making-a-list-of-holiday-foods)
+
+## Webpages and Computer Languages
+
+When you go to Google's website, you see this:
+
+![Google India home page](./images/google.png)
+
+But what the computer sees is this:
+
+![Source code for Google India](./images/google-code.png)
+
+This language, called HTML or Hypertext Markup Language, is the language of web pages. Taken together with two other languages, CSS or Cascading Style Sheets, and JavaScript, it helps to power the Web.
+
+If we want to make our own web pages, we have write out our instructions about what we want using the language that the computer can understand--and that is what we will be learning about this week!
+
 # Building Blocks of HTML
 
 ## Activity: Creating your first Page 💻
 
 Sometimes it helps to just start building!
 
-1. On your computer, open the [**code playground**](http://). You can do this by clicking the link, or clicking the "Code Playground" link on the top right of the this web site
+1. On your computer, open the [**code playground**](http://kgbv.local:3000/register) and make an account: 
+- choose a simple name that no one else will use
+- write down your account and password in your notebook right away
+- after class, come write them down in our book so that we have them too. 
+You can do this by clicking the link, or clicking the "Code Playground" link on the top right of this web site
 
 <div class="alert alert-info">
   <strong>🔖 Terms and Tools: Code Playground</strong><br />
   A <strong>code playground</strong> is a live environment where you can type out your code and see the results in real time. The code playground always watches the changes you are making and then reloads just the section of the page that shows the "finished" result.
 </div>
 
-2. [Click on this link]($JSBIN_URL/pic/edit?html,output)In the HTML tab of your code playground, paste the following:
+1. It's time to make an account! 
+2. [Click on this link](http://kgbv.local:3000/vav/edit?html,output)
+
+In the HTML tab of your code playground, paste the following:
 
 ```html
 
@@ -49,19 +76,19 @@ Sometimes it helps to just start building!
 </html>
 ```
 
-3. In your code playground, try making changes to the HTML where you see "...". Pay attention to what happens to the resulting web page when you make certain changes to the code
+3. In your code playground, try making changes to the HTML where you see "...". Pay attention to what happens when you make changes to the code
 
 <div class="alert alert-success">
   <h4>🎉🎊🎉 Congratulations, you just made your first web page! 🎉🎊🎉</h4>
 </div>
 
-Now, to go back and talk through what made it possible to make that page.
+Now, why does this work?
 
 ## Tags
 
-The two core parts of HTML are **elements** which are created using **tags** in order to describe and structure content!
+HTML has **elements** which are made with **tags**!
 
-**Tags** specify where elements start and where they end. All tags start with a `<` left angle bracket and end with a `>` right angle bracket.
+**Tags** show where elements start and end. All tags start with a `<` left angle bracket and end with a `>` right angle bracket.
 
 For example in the HTML code above `<!DOCTYPE>`, `<html>`, and `</html>` are some of the tags we can see.
 
@@ -74,25 +101,19 @@ Now that we can identify tags, let's describe the code above to understand what 
 * The `<!DOCTYPE html>` declares that this document is a html document
 * `<html>` and `</html>` mark the beginning and the end of the **HTML element**. Everything else is nested underneath!
 
-## Elements
-
-A html document consists of **elements**. The body that goes between a start tag and an end tag is called an **element** in html. For example, the **HTML element** in the code above consists of everything from the start tag `<html>` to the end tag `</html>`
-
-### Activity: Locate the elements 💻
-
 1. Try to find the rest of the **elements** with your fellow students.
 
-You can review some of the most important html tags <a href="htmlcheatsheet.pdf">here </a>. The document is from the Stanford University.
+You can review some of the most important html tags <a href="htmlcheatsheet.pdf">here </a>.
 
-- **Start tag** `<head>` starts the *head element* and `</head>` ends it
+- `<head>` starts the *head element* and `</head>` ends it
 - The title of the web page between `<title>` and `</title>` tags
 - The main part of the page (the *body element*) goes between `<body>` and `</body>`
-- `<h1>` and `</h1>` indicate what goes between is a header
-- `<p>` and `</p>` mark the beginning and end of a paragraph element
+- `<h1>` and `</h1>` make a **header**
+- `<p>` and `</p>` make a **paragraph**
 
 ### Activity: Changing the look of text 💻
 
-If you have some special text you want to add emphasis to there are a few common ways you can!
+If you have some special text, here are someways to make it stand out:
 
 - `<strong></strong>` makes text **bold**
 - `<em></em>` makes text *italic*
@@ -145,7 +166,7 @@ Now we will add some more information to your site. If we want to list a lot of 
       - Tossed Salad
       - ...
 
-You just made an **list** that have a few lists **nested** inside it!
+You just made a **nested list** -- there are lists inside your list!
 
 There are different types of lists!
 
@@ -193,9 +214,6 @@ Think about is this way:
 Let's do an activity to practice using these tags!
 
 ### Activity: Classroom Tags 🏃🏾‍♀️
-
-**[TODO: write some aspect of this here]**
-
 
 <div class="alert alert-success">
   <h4>🎉🎊🎉 You finished the first class! 🎉🎊🎉</h4>
