@@ -1,4 +1,4 @@
-baseURL = "https://code-at-the-edge.github.io/"
+baseURL = "/"
 languageCode = "en-us"
 title = "KGBV Learns Code!"
 theme = "docdock"

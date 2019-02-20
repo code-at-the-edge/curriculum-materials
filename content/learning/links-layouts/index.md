@@ -31,10 +31,11 @@ First things, a link is defined using the `<a>`, or anchor, element. It often lo
 
 ```html
 <a href="https://mozillaindia.org/">Mozilla India</a>
-<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-
-Goechala.jpg/800px-Kangch-Goechala.jpg"><img src="https://upload.wikimedia.org/
-wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg"
-alt="Picture of Kangchenjunga taken from Goecha La pass, 4940m,Sikkim" /></a>
+
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg"
+         alt="Picture of Kangchenjunga taken from Goecha La pass, 4940m,Sikkim" />
+</a>
 ```
 
 <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-
