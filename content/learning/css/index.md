@@ -13,7 +13,8 @@ Today we will talk about how to add ✨ style ✨ to your web sites. By the end 
 - change the background colour
 - recognize the different sections of your web site
 
-Before that let's review what we did yesterday!
+
+Before that let's review what we did yesterday! Also, let's learn some new HTML that you didn't get to practice in your first class. Then we'll go on to CSS!
 
 ## Review: Parts of a web page and styling text
 
@@ -60,15 +61,45 @@ Before that let's review what we did yesterday!
     </html>
     ```
   **Your turn**:
+  
     - Can you <mark>highlight</mark> your **least** favourite dish on the list?
     - Can you make all the Holiday names *italic*?
 
-1. We also saw that web pages have different **sections** that create a broad outline, kind of like how you would a document on paper. These include `<article>`, `<aside>`, `<header>`, `<footer>`, `<nav>` and `<section>`, can you guess what they do?
 
-  ![](./images/semantics.jpg)
+## Extra HTML: Parts of a Web Page
+
+Like you, a web page has many parts: a `<head>` and a `<body>`, and all the pieces inside.  When we make a web page, we usually start by buiding a **skeleton**. We make the **shape** of the web page out of empty elements, and we fill in the **content** of the page afterwards. 
+
+We use special tags to build the skeleton. They tell the computer what part of the page is inside them. In these lessons, we will use these tags to help "structure" the web page:
+
+- `<h1>`, `<h2>`, and `<h3>` : these tags make "headings" -- `h1` is the biggest, and `h3` is smaller
+- `<header>`: We use this for content that goes at the top of the page, like the title, and sometimes also certain links. 
+- `<nav>`: the nav is usally inside or right after the `header` tag. It helps your users to "navigate" your page.
+- `<main>` : we put most of the content in our pages inside the `main` tag
+- `<article>`and `<section>`: we use these for parts of the main content
+- `<aside>`: we use `aside` when we havewritten something that is not part of the main story we aretelling, but is somehow related. We use asides the way we sometimes use smaller boxes in a poster. 
+- `<footer>`: this is for content that you want to put at the bottom of your web page. 
+
+This picture shows how you might make a web page out of these "structural" tags
+
+![web page structured by semantic tags](/images/semantics.jpg)
+
+<div class="alert alert-info">
+  <strong>🔖 Terms and Tools: "Semantic" Tags</strong><br />
+  We call these tags <strong>"semantic"</strong> because the name of the tag also defines the **function** of the content inside of the web page. "Semantic" is a compliated word, and you don't need to use it; but you might see other people use it when you are exploring the Internet.
+</div>
 
 
-1. Take a look at the code here, and add it to your `<article>` element
+Let's do an activity to practice using these tags!
+
+### Activity: Classroom Tags 🏃🏾‍♀️
+
+A web page has **structure**, just like a human body, or an automobile, or a house. It works best when the pieces of the structure are put together in the right order.  Your classroom has a "structure" too. Let's build a model of the classroom using tags! You can do ths however you want, but here are some ideas: 
+
+- The content of the walls of your class room (stuff like pictures, graphs, etc.) could be in the *element* of `<wall>`
+- What is on the ground of your classroom (stuff like your chairs, desks, etc.) could be in the *semantic element* of `<ground>`
+- What is on your desks (stuff like your monitor, mouse, keyboard, etc.) could be in the *semantic element* of <desk>`
+
 
 
 ### Activity 1 💻
