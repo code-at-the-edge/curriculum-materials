@@ -25,6 +25,8 @@ Before that let's review what we did yesterday! Also, let's learn some new HTML 
     <head>
       <meta charset="utf-8">
       <title>Favourite foods</title>
+      <link href="/offline/unpkg.com/chota.css" rel="stylesheet" type="text/css" />
+
     </head>
     <body>
 
@@ -186,7 +188,7 @@ h1 {
   color: white;
   font-size: 40px;
   font-family: Courier;
-  background-color: Green;
+  background-color: green;
   text-align: center;
 }
 ```
