@@ -85,6 +85,7 @@ The **Internet** is a network or networks that connects millions of computers, m
   According to Wikipedia, the largest open reference resource on the Internet, The <strong>World Wide Web (WWW)</strong>, also called the Web, is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and accessible via the Internet.
 </div>
 
+### Example: Talking to Your Friends on WhatsApp
 For example, when someone sends message to their friend on WhatsApp using their mobile phone (which is really just a small computer/electronic device) they are using the **Internet** and the following happens:
 
 1. Your phone connects to a computer *running* the "WhatsApp Server" that is connected to the Internet
