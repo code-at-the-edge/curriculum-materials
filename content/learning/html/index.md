@@ -10,16 +10,17 @@ alwaysopen: true
 - [Make Your Code Playground Account Here](http://kgbv.local:3000/register)
 - [Write Your First Page Here](http://kgbv.local:3000/vav/edit?html,output)
 - [Later, add this List to your page](#activity-making-a-list-of-holiday-foods)
+- [Use the Tag Cubes](activity-tag-cubes)
 
 ## Webpages and Computer Languages
 
 When you go to Google's website, you see this:
 
-![Google India home page](./images/google.png)
+![Google India home page](/images/google.png)
 
 But what the computer sees is this:
 
-![Source code for Google India](./images/google-code.png)
+![Source code for Google India](/images/google-code.png)
 
 This language, called HTML or Hypertext Markup Language, is the language of web pages. Taken together with two other languages, CSS or Cascading Style Sheets, and JavaScript, it helps to power the Web.
 
@@ -31,21 +32,21 @@ If we want to make our own web pages, we have write out our instructions about w
 
 Sometimes it helps to just start building!
 
-1. On your computer, open the [**code playground**](http://kgbv.local:3000/register) and make an account: 
+1. On your computer, open the <a  target="_blank" href="http://kgbv.local:3000/register">code playground</a> and make an account: 
 - choose a simple name that no one else will use
+- for "email", write your username + `@example.com`
 - write down your account and password in your notebook right away
 - after class, come write them down in our book so that we have them too. 
-You can do this by clicking the link, or clicking the "Code Playground" link on the top right of this web site
+
+**Tip:** You can always find the code playground by clicking the "<a href="http://kgbv.local:3000">Go Write Code</a>" link on the top right of this web site
 
 <div class="alert alert-info">
   <strong>🔖 Terms and Tools: Code Playground</strong><br />
   A <strong>code playground</strong> is a live environment where you can type out your code and see the results in real time. The code playground always watches the changes you are making and then reloads just the section of the page that shows the "finished" result.
 </div>
 
-1. It's time to make an account! 
-2. [Click on this link](http://kgbv.local:3000/vav/edit?html,output)
 
-In the HTML tab of your code playground, paste the following:
+1. [Click on this link]<a target="_blank" href="http://kgbv.local:3000/vav/edit?html,output">Click on this link</a>).  You will see the following code there:
 
 ```html
 
@@ -76,7 +77,7 @@ In the HTML tab of your code playground, paste the following:
 </html>
 ```
 
-3. In your code playground, try making changes to the HTML where you see "...". Pay attention to what happens when you make changes to the code
+3. In your code playground, please tell us what you like to eat by typing where you see the  "...". Pay attention to what happens when you make changes to the code
 
 <div class="alert alert-success">
   <h4>🎉🎊🎉 Congratulations, you just made your first web page! 🎉🎊🎉</h4>
@@ -84,7 +85,7 @@ In the HTML tab of your code playground, paste the following:
 
 Now, why does this work?
 
-## Tags
+## Tags and Elements
 
 HTML has **elements** which are made with **tags**!
 
@@ -98,18 +99,24 @@ Try to find more tags **tags** in the HMTL code above with your fellow students.
 
 Now that we can identify tags, let's describe the code above to understand what we did there:
 
-* The `<!DOCTYPE html>` declares that this document is a html document
-* `<html>` and `</html>` mark the beginning and the end of the **HTML element**. Everything else is nested underneath!
+* The `<!DOCTYPE html>` tells the computer  that this document is a html document
+* `<html>` and `</html>` mark the beginning and the end of the **HTML element**. Everything else is nested inside!
 
 1. Try to find the rest of the **elements** with your fellow students.
 
-You can review some of the most important html tags <a href="htmlcheatsheet.pdf">here </a>.
+You can review some of the most important html tags [here](htmlcheatsheet.pdf).
 
 - `<head>` starts the *head element* and `</head>` ends it
 - The title of the web page between `<title>` and `</title>` tags
 - The main part of the page (the *body element*) goes between `<body>` and `</body>`
 - `<h1>` and `</h1>` make a **header**
 - `<p>` and `</p>` make a **paragraph**
+
+### Activity: Tag Cubes
+Now we're going to take a break from the computer!
+
+- cut out the tag cubes
+- make a model of a web page using the tag cubes
 
 ### Activity: Changing the look of text 💻
 
@@ -186,34 +193,38 @@ For **unordered lists** we use the `<ul></ul>` tags and each list item starts wi
 
 ## Parts of a Web Page
 
-A web page often has many separate parts it can be logically seperated into. To help make web pages easier to build, people use elements to identify these seperate **sections** and create a broad outline, kind of like how you would a document on paper.
+Like you, a web page has many parts: a `<head>` and a `<body>`, and all the pieces inside.  When we make a web page, we usually start by buiding a **skeleton**. We make the **shape** of the web page out of empty elements, and we fill in the **content** of the page afterwards. 
 
-Some of the most frequently used sections, also in the image below, are:
+We use special tags to build the skeleton. They tell the computer what part of the page is inside them. In these lessons, we will use these tags to help "structure" the web page:
 
-`<article>`
-`<aside>`
-`<header>`
-`<footer>`
-`<h1>` through `<h6>`
-`<nav>`
-`<section>`
+- `<h1>`, `<h2>`, and `<h3>` : these tags make "headings" -- `h1` is the biggest, and `h3` is smaller
+- `<header>`: We use this for content that goes at the top of the page, like the title, and sometimes also certain links. 
+- `<nav>`: the nav is usally inside or right after the `header` tag. It helps your users to "navigate" your page.
+- `<main>` : we put most of the content in our pages inside the `main` tag
+- `<article>`and `<section>`: we use these for parts of the main content
+- `<aside>`: we use `aside` when we havewritten something that is not part of the main story we aretelling, but is somehow related. We use asides the way we sometimes use smaller boxes in a poster. 
+- `<footer>`: this is for content that you want to put at the bottom of your web page. 
 
-The image below identify some of the most important of these separate sections, can you guess what they do?
+This picture shows how you might make a web page out of these "structural" tags
 
-![](/images/semantics.jpg)
+![web page structured by semantic tags](/images/semantics.jpg)
 
-Each of these tags define an independent `element` in the HTML document.
-These elements are *semantic* because the tag also defines the function of their content in the document.
+<div class="alert alert-info">
+  <strong>🔖 Terms and Tools: "Semantic" Tags</strong><br />
+  We call these tags <strong>"semantic"</strong> because the name of the tag also defines the **function** of the content inside of the web page. "Semantic" is a compliated word, and you don't need to use it; but you might see other people use it when you are exploring the Internet.
+</div>
 
-Think about is this way:
-
-- The content of the walls of your class room (stuff like pictures, graphs, etc.) are in the *semantic element* of `<wall>`
-- What is on the ground of your classroom (stuff like your chairs, desks, etc.) are in the *semantic element* of `<ground>`
-- What is on your desks (stuff like your monitor, mouse, keyboard, etc.) are in the *semantic element* of <desk>`
 
 Let's do an activity to practice using these tags!
 
 ### Activity: Classroom Tags 🏃🏾‍♀️
+
+A web page has **structure**, just like a human body, or an automobile, or a house. It works best when the pieces of the structure are put together in the right order.  Your classroom has a "structure" too. Let's build a model of the classroom using tags! You can do ths however you want, but here are some ideas: 
+
+- The content of the walls of your class room (stuff like pictures, graphs, etc.) could be in the *element* of `<wall>`
+- What is on the ground of your classroom (stuff like your chairs, desks, etc.) could be in the *semantic element* of `<ground>`
+- What is on your desks (stuff like your monitor, mouse, keyboard, etc.) could be in the *semantic element* of <desk>`
+
 
 <div class="alert alert-success">
   <h4>🎉🎊🎉 You finished the first class! 🎉🎊🎉</h4>
