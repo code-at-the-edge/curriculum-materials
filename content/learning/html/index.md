@@ -5,12 +5,15 @@ weight: 2
 alwaysopen: true
 ---
 
-# Highlights!
-
-- [Make Your Code Playground Account Here](http://kgbv.local:3000/register)
-- [Write Your First Page Here](http://kgbv.local:3000/vav/edit?html,output)
-- [Later, add this List to your page](#activity-making-a-list-of-holiday-foods)
-- [Use the Tag Cubes](activity-tag-cubes)
+<div class="alert alert-success">
+  <h3>🔖 Using This Page</h3>
+  <ul>
+    <li><a href="http://kgbv.local:3000/register" target="_blank">Make your Code Playground account</a></li>
+    <li><a href="http://kgbv.local:3000/vav/edit?html,output">Click here to write your first web page</a></li>
+    <li>Later, <a href="#activity-making-a-list-of-holiday-foods">add this list to your web page</a></li>
+    <li>Then, <a href="#activity-tag-cubes">play with the tag cubes</a></li>
+  </ul>
+</div>
 
 ## Webpages and Computer Languages
 
@@ -32,11 +35,11 @@ If we want to make our own web pages, we have write out our instructions about w
 
 Sometimes it helps to just start building!
 
-1. On your computer, open the <a  target="_blank" href="http://kgbv.local:3000/register">code playground</a> and make an account: 
+1. On your computer, open the <a  target="_blank" href="http://kgbv.local:3000/register">code playground</a> and make an account:
 - choose a simple name that no one else will use
 - for "email", write your username + `@example.com`
 - write down your account and password in your notebook right away
-- after class, come write them down in our book so that we have them too. 
+- after class, come write them down in our book so that we have them too.
 
 **Tip:** You can always find the code playground by clicking the "<a href="http://kgbv.local:3000">Go Write Code</a>" link on the top right of this web site
 
@@ -46,7 +49,7 @@ Sometimes it helps to just start building!
 </div>
 
 
-1. [Click on this link]<a target="_blank" href="http://kgbv.local:3000/vav/edit?html,output">Click on this link</a>).  You will see the following code there:
+1. <a target="_blank" href="http://kgbv.local:3000/vav/edit?html,output">Click on this link</a>.  You will see the following code there:
 
 ```html
 
@@ -57,20 +60,20 @@ Sometimes it helps to just start building!
         <meta charset="utf-8">
         <title>Title</title>
     </head>
-  
+
     <body>
         <header class="site-header nav">
             <h1>My favourite foods</h1>
         </header>
-      
+
         <main>
-          
+
             <p>I like to eat...</p>
-            
+
         </main>
 
         <footer class="site-footer">
-          
+
         </footer>
 
     </body>
@@ -193,17 +196,17 @@ For **unordered lists** we use the `<ul></ul>` tags and each list item starts wi
 
 ## Parts of a Web Page
 
-Like you, a web page has many parts: a `<head>` and a `<body>`, and all the pieces inside.  When we make a web page, we usually start by buiding a **skeleton**. We make the **shape** of the web page out of empty elements, and we fill in the **content** of the page afterwards. 
+Like you, a web page has many parts: a `<head>` and a `<body>`, and all the pieces inside.  When we make a web page, we usually start by buiding a **skeleton**. We make the **shape** of the web page out of empty elements, and we fill in the **content** of the page afterwards.
 
 We use special tags to build the skeleton. They tell the computer what part of the page is inside them. In these lessons, we will use these tags to help "structure" the web page:
 
 - `<h1>`, `<h2>`, and `<h3>` : these tags make "headings" -- `h1` is the biggest, and `h3` is smaller
-- `<header>`: We use this for content that goes at the top of the page, like the title, and sometimes also certain links. 
+- `<header>`: We use this for content that goes at the top of the page, like the title, and sometimes also certain links.
 - `<nav>`: the nav is usally inside or right after the `header` tag. It helps your users to "navigate" your page.
 - `<main>` : we put most of the content in our pages inside the `main` tag
 - `<article>`and `<section>`: we use these for parts of the main content
-- `<aside>`: we use `aside` when we havewritten something that is not part of the main story we aretelling, but is somehow related. We use asides the way we sometimes use smaller boxes in a poster. 
-- `<footer>`: this is for content that you want to put at the bottom of your web page. 
+- `<aside>`: we use `aside` when we havewritten something that is not part of the main story we aretelling, but is somehow related. We use asides the way we sometimes use smaller boxes in a poster.
+- `<footer>`: this is for content that you want to put at the bottom of your web page.
 
 This picture shows how you might make a web page out of these "structural" tags
 
@@ -219,7 +222,7 @@ Let's do an activity to practice using these tags!
 
 ### Activity: Classroom Tags 🏃🏾‍♀️
 
-A web page has **structure**, just like a human body, or an automobile, or a house. It works best when the pieces of the structure are put together in the right order.  Your classroom has a "structure" too. Let's build a model of the classroom using tags! You can do ths however you want, but here are some ideas: 
+A web page has **structure**, just like a human body, or an automobile, or a house. It works best when the pieces of the structure are put together in the right order.  Your classroom has a "structure" too. Let's build a model of the classroom using tags! You can do ths however you want, but here are some ideas:
 
 - The content of the walls of your class room (stuff like pictures, graphs, etc.) could be in the *element* of `<wall>`
 - What is on the ground of your classroom (stuff like your chairs, desks, etc.) could be in the *semantic element* of `<ground>`

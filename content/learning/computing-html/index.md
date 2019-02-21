@@ -5,23 +5,27 @@ weight: 1
 alwaysopen: true
 ---
 
-# Using This Page
-- To see the slides [go here](/static/slides/01-computers.org)
-- To learn more about computers, keep reading!
+<div class="alert alert-success">
+  <h3>🔖 Using This Page</h3>
+  <ul>
+    <li><a href="/static/slides/01-computers.html" target="_blank">Click to see the presentation</a></li>
+    <li>Keep reading to learn more about computers!</li>
+  </ul>
+</div>
 
 # How Computers Work
 
 Computers machines that are **programmable**. This means:
 - We can give them **instructions**
-- They use those instructions to change **"inputs"** into **"outputs"** 
+- They use those instructions to change **"inputs"** into **"outputs"**
 
 ## Inputs and Outputs
 
 ![Logical representation of the parts of a computer](./images/computer.jpg)
 
 Inputs can be:
--  a mouse, 
--  a keyboard, 
+-  a mouse,
+-  a keyboard,
 -  a camera
 
 The computer cannot automatically act on those _inputs_ without help. You, the _human_ must give the computer specific instructions in order for it to know how to handle the information from those different sources in a way that produces results we can understand.
@@ -46,7 +50,7 @@ We use **programming languages** to define each and every step very carefully, c
 
 But we have to give them exactly the right instructions!
 
-Say I want a Cola. Can I just ask my computer to get one for me? 
+Say I want a Cola. Can I just ask my computer to get one for me?
 
 Imagine if you ask your friend to get a Cola for you. If your friend is nice enough to to it,, they will do many steps without yout explaining those steps to them. For example, they will do all this:
 
@@ -97,4 +101,3 @@ For example, when someone sends message to their friend on WhatsApp using their 
 ![WhatsApp logo](./images/whatsapp_logo.png)
 
 This is just a start of one interaction on the Internet, but we now know a little bit about the Internet. It is time to create our own web-pages now!
-
