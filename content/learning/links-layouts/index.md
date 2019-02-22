@@ -5,12 +5,20 @@ weight: 4
 alwaysopen: true
 ---
 
-Today we'll cover **two main concepts** through a mix of activities at the computer and moving around playing a game:
+Today we'll cover **two main concepts** through a mix of activities at the computer and playing a game:
 
 1. Creating connections, or links, to different parts of a web site or even between sites
 1. Controlling how a web site is structured and how elements are positioned
 
-We've been working in teams at our computers to work together on these activities, we'll start off doing that again today ⌨ 🖱.
+<div class="alert alert-success">
+  <h3>🔖 Using This Page</h3>
+  <ul>
+    <li><a href="http://kgbv.local:3000/" target="_blank">Open your web page in the Code Playground</a></li>
+    <li><a href="#extra-html-parts-of-a-web-page">Learn the extra parts of the web page</a></li>
+    <li><a href="#activity-classroom-tags">Make tags around the classroom</a></li>
+    <li><a href="#activity-adding-css">Add CSS to your web page</a></li>
+  </ul>
+</div>
 
 ## Creating connections, or linking web sites
 
@@ -38,12 +46,8 @@ First things, a link is defined using the `<a>`, or anchor, element. It often lo
 </a>
 ```
 
-<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-
-Goechala.jpg/800px-Kangch-Goechala.jpg"><img src="https://upload.wikimedia.org/
-wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg"
-alt="Picture of Kangchenjunga taken from Goecha La pass, 4940m,Sikkim" /></a>
-
-**[TODO cache the image locally!]**
+<a href="/images/800px-Kangch-Goechala.jpg"><img src="/images/800px-Kangch-Goechala.jpg"
+alt="Picture of Kangchenjunga taken from Goecha La pass, 4940m,Sikkim" width="50%" /></a>
 
 In the `<a>` element the `href` attribute specifies the _destination_, sometimes called an _address_. The element opening tag and closing tag go around the part of the web page that becomes the link: either text or an image!
 
@@ -79,8 +83,6 @@ Now it's **your turn**! Try to:
   <strong>🔎 Hint: Finding web addresses </strong><br />
   You can find the <em>address</em> of a web site by looking in the top centre of the browser bar
 </div>
-
-**[TODO: Screenshot from our RPi of browser bar]**
 
 ## Game: Connecting Online 🏃🏾‍♀️
 
