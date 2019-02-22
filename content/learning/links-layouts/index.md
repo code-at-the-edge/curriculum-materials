@@ -5,18 +5,22 @@ weight: 4
 alwaysopen: true
 ---
 
-Today we'll cover **two main concepts** through a mix of activities at the computer and playing a game:
+Today we'll learn how to create connections, or **links** 🔗🌐 and change elements shape on your web page. By the end of the class you will know how to:
 
-1. Creating connections, or links, to different parts of a web site or even between sites
-1. Controlling how a web site is structured and how elements are positioned
+- Add links to different parts of your web page or even between sites
+- Add images to your web page
+- Control the structure of HTML with CSS
+- Move where elements are positioned on the page
 
 <div class="alert alert-success">
   <h3>🔖 Using This Page</h3>
   <ul>
     <li><a href="http://kgbv.local:3000/" target="_blank">Open your web page in the Code Playground</a></li>
-    <li><a href="#extra-html-parts-of-a-web-page">Learn the extra parts of the web page</a></li>
-    <li><a href="#activity-classroom-tags">Make tags around the classroom</a></li>
-    <li><a href="#activity-adding-css">Add CSS to your web page</a></li>
+    <li><a href="#activity-linking-to-another-page">Add a link to your page</a></li>
+    <li><a href="#activity-connecting-online">Play a game to learn more about connecting online</a></li>
+    <li><a href="#activity-creating-borders">Learn how to make borders</a></li>
+    <li><a href="#activity-making-space">Create space around text and elements on your page</a></li>
+    <li><a href="#activity-putting-images-and-text-together">Put text and images together!</a></li>
   </ul>
 </div>
 
@@ -76,7 +80,7 @@ Then we use the `#` or hash symbol plus the `id` as the destination!
 Now it's **your turn**! Try to:
 
 - Add a link to another part of the same page
-- Add a link to another page
+- Add an image from the <a href="http://kgbv.local/pictures/" target="_blank">Picture Gallery</a>
 - If you have time, add a link to the course website!
 
 <div class="alert alert-warning">
@@ -84,7 +88,7 @@ Now it's **your turn**! Try to:
   You can find the <em>address</em> of a web site by looking in the top centre of the browser bar
 </div>
 
-## Game: Connecting Online 🏃🏾‍♀️
+## Activity: Connecting Online 🏃🏾‍♀️
 
 We've started to practice using links and see how they can create paths, or routes, between different parts of our own pages and sites as well as maybe even _different_ sites.
 

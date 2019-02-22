@@ -7,9 +7,9 @@ alwaysopen: true
 
 Today we will talk about how to add ✨ style ✨ to your web sites. By the end of the class you will know how to:
 
-- change the colour and font of text
-- change the background colour
-- recognize the different sections of your web site
+- Change the colour and font of text
+- Change the background colour
+- Recognize the different sections of your web site
 
 <div class="alert alert-success">
   <h3>🔖 Using This Page</h3>

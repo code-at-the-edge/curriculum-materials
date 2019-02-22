@@ -10,8 +10,8 @@ alwaysopen: true
   <ul>
     <li><a href="http://kgbv.local:3000/register" target="_blank">Make your Code Playground account</a></li>
     <li><a href="http://kgbv.local:3000/vav/edit?html,output">Click here to write your first web page</a></li>
-    <li>Later, <a href="#activity-making-a-list-of-holiday-foods">add this list to your web page</a></li>
-    <li>Then, <a href="#activity-tag-cubes">play with the tag cubes</a></li>
+    <li><a href="#activity-making-a-list-of-holiday-foods">Add this list to your web page</a></li>
+    <li><a href="#activity-tag-cubes">Play with the tag cubes</a></li>
   </ul>
 </div>
 
