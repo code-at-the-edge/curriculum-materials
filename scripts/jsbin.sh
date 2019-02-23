@@ -33,6 +33,11 @@ if ! [ "$(which mysql)" ]; then
   # doesn't seem to be working with noninteractive.  change this for now
   # (export DEBIAN_FRONTEND="noninteractive" ; sudo apt-get install -y mariadb-server mariadb-client )
   #  will require manual intervention; will need to add the root pw, which is codeattheedge
+
+  # update mariadb server version if necessary!
+  
+  debconf-set-selections <<< 'mariadb-server-10.1 mysql-server/root_password password $MY_ROOT_PASS'
+  debconf-set-selections <<< 'mariadb-server-10.1 mysql-server/root_password_again password $MY_ROOT_PASS'
    sudo apt-get install -y mariadb-server mariadb-client
 fi
 
@@ -53,24 +58,21 @@ git checkout $BRANCH_JSBIN
 sudo systemctl stop mariadb.service
 sudo mysqld_safe --skip-grant-tables &
 
-# might as well do all of this before we need 
+# Hopevully this now works as a single  sql script
+# pls move to temp dir!!!
 cat >installjsbin.sql <<EOL
 use mysql;
-if 
+
 UPDATE user SET authentication_string = password("$MY_ROOT_PASS") where User='root';
 FLUSH PRIVILEGES;
-
-EOL
-
-cat > updateprivs.sql <<EOL
-CREATE USER jsbin;
+CREATE USER '$MY_JSBIN_USER'@'localhost';
 CREATE DATABASE $MY_JSBIN_DB;
 UPDATE user SET authentication_string = password("$MY_JSBIN_PASS") where User='$MY_JSBIN_USER';
 GRANT ALL PRIVILEGES ON $MY_JSBIN_DB.* TO '$MY_JSBIN_USER'@'localhost';
 FLUSH PRIVILEGES;
 
 EOL
-mysql -u root -p < installjsbin.sql
+sudo mysql -u root < installjsbin.sql
 
 # sudo 
 # sudo systemctl stop mariadb.service && echo 'stopped mb service for good measure'
@@ -82,33 +84,32 @@ while [[ "$mysqld_process_pid" =~ ^[0-9]+$ ]]; do
 done
 sudo systemctl start mariadb.service && echo 'mb restarted'
 
-mysql -u root -p < updateprivs.sql
-
-figure out what to do about config.local.jsbin
+# figure out what to do about config.local.jsbin (!!)
 npm install
+cp config.default.jsbin config.local.jsbin
 npm run build
 
 
-while ! [[ "$mysqld_process_pid" =~ ^[0-9]+$ ]]; do
- mysqld_process_pid=$(echo "$(ps -C mysqld -o pid=)" | sed -e 's/^ *//g' -e 's/ *$//g')
- sleep 1
-done
-echo 'safe mode started'
-# sleep 20;
-mysql -u root < installjsbin.sql && echo "privs updated and db created"
-# load main jsbin tables
-# place with proper dump shortly
-# mysql -u root jsbin < ./build/full-db-v3.mysql.sql
-# we've got the dump now!
-mysqladmin shutdown && echo 'stoped safemode'
+# while ! [[ "$mysqld_process_pid" =~ ^[0-9]+$ ]]; do
+#  mysqld_process_pid=$(echo "$(ps -C mysqld -o pid=)" | sed -e 's/^ *//g' -e 's/ *$//g')
+#  sleep 1
+# done
+# echo 'safe mode started'
+# # sleep 20;
+# mysql -u root < installjsbin.sql && echo "privs updated and db created"
+# # load main jsbin tables
+# # place with proper dump shortly
+# # mysql -u root jsbin < ./build/full-db-v3.mysql.sql
+# # we've got the dump now!
+# mysqladmin shutdown && echo 'stoped safemode'
 
-sudo systemctl start mariadb.service
-mysql -u root jsbin -p < updateprivs.sql && echo "dump finished"
-mysql -u root jsbin < ./utils/cote-mysql-dump.sql && echo "dump finished"
+# sudo systemctl start mariadb.service
+# mysql -u root jsbin -p < updateprivs.sql && echo "dump finished"
+# mysql -u root jsbin < ./utils/cote-mysql-dump.sql && echo "dump finished"
 
 
 # chown -- shouldn't we? or are we already running as pi I guess? 
-chown -R pi:pi ./
+# chown -R pi:pi ./
 
 # add sytemctl user service
 # need to configure user spmewhere, for now it's pi, oh well

@@ -14,18 +14,54 @@ Today we'll learn how to change the layout and shape using HTML elements and CSS
 <div class="alert alert-success">
   <h3>🔖 Using This Page</h3>
   <ul>
-    <li><a href="http://kgbv.local:3000/" target="_blank">Open your web page in the Code Playground</a></li>
+    <li><a href="#web-page-parts">Learn about Web Page Parts</a></li>
+    <li><a href="#activity-working-with-structure">Activity: Working With Structure</a>.  Open the code for this activity <a href="http://kgbv.local:3000/vad/edit?html,css,output"> in the code playground</a>.</li>
     <li><a href="#activity-creating-borders">Learn how to make borders</a></li>
     <li><a href="#activity-making-space">Create space around text and elements on your page</a></li>
     <li><a href="#activity-putting-images-and-text-together">Put text and images together!</a></li>
   </ul>
 </div>
 
+
+## Web Page Parts
+
+Like you, a web page has many parts: a `<head>` and a `<body>`, and all the pieces inside.  When we make a web page, we usually start by buiding a **skeleton**. We make the **shape** of the web page out of empty elements, and we fill in the **content** of the page afterwards.
+
+We use special tags to build the skeleton. They tell the computer what part of the page is inside them. In these lessons, we will use these tags to help "structure" the web page:
+
+- `<h1>`, `<h2>`, and `<h3>` : these tags make "headings" -- `h1` is the biggest, and `h3` is smaller
+- `<header>`: We use this for content that goes at the top of the page, like the title, and sometimes also certain links.
+- `<nav>`: the nav is usally inside or right after the `header` tag. It helps your users to "navigate" your page.
+- `<main>` : we put most of the content in our pages inside the `main` tag
+- `<article>`and `<section>`: we use these for parts of the main content
+- `<aside>`: we use `aside` when we havewritten something that is not part of the main story we aretelling, but is somehow related. We use asides the way we sometimes use smaller boxes in a poster.
+- `<footer>`: this is for content that you want to put at the bottom of your web page.
+
+This picture shows how you might make a web page out of these "structural" tags
+
+![web page structured by semantic tags](/images/semantics.jpg)
+
+<div class="alert alert-info">
+  <strong>🔖 Terms and Tools: "Semantic" Tags</strong><br />
+  We call these tags <strong>"semantic"</strong> because the name of the tag also defines the **function** of the content inside of the web page. "Semantic" is a compliated word, and you don't need to use it; but you might see other people use it when you are exploring the Internet.
+</div>
+
+## Activity: Working With Structure
+
+[Open this page](http://kgbv.local:3000/vad/edit?html,css,output) in the Code Playground.  Let's see how structure works!
+
+
+
 ## Layouts for HTML
 
 Now that we have added links and thought about what it means to have connections between websites, we should look at _how to organize our own web pages_ so they are meaningful to us and are easier read for other people!
 
-With HTML and CSS organizing and structuring a page is called **layout** and we can think about HTML elements as a series of nested _boxes_, with the text and images we care about, or smallest box at the centre, often called _content_.
+<div class="alert alert-info">
+  <strong>🔖 Terms and Tools: Layout</strong><br />
+We say "layout" when we talk about <em>organizing</em> and <em>structuring</em>awb pages.
+</div>
+
+We can think about an HTML page as a series of _"nested boxes"_, with the text and images we care about, or smallest box at the centre, often called _content_.
 
 *Remember how we discussed CSS and changing the look of a website yesterday? The same rules of "inheritance" apply for how we lay out and control the size and spacing of elements*
 
@@ -78,7 +114,12 @@ Okay, let's start from our template, you can work from your existing page or fro
 </html>
 ```
 
-Now, how about we add a `border` to all the biggest headers, so `h1` elements! We can specify the thickness or width of the border, the style, and the color all at once:
+Now, let's add a `border` to all the biggest headers: the `h1` elements! The border has three parts: 
+- **thickness** in pixels:: `1px` or `2px` or `30px`
+- **style**: usually `solid`
+- **color**: this can be any color that CSS understands
+
+We usually write them all at once: 
 
 ```css
 h1 {
@@ -86,7 +127,7 @@ h1 {
 }
 ```
 
-This ability that `border` has is because it is a `shorthand` property, which is a fancy way of saying it is a fast way of setting many values.
+`border` is a `shorthand` property.  This is a fancy way of saying it is a fast way of setting many values.
 
 **Your turn**:
 
@@ -109,11 +150,11 @@ p {
 }
 ```
 
-We can change the width of an element using the `width` property, we can also use `height`, these are less useful for adjusting text specifically, but it can be important to set the size of the content we want to make space around.
+We can change the width of an element using the `width` property. We can also use `height`. These properties adjust the **space taken up by the box.** They don't change the **size of the text**. 
 
-Now, lets add some space for the content _inside_ borders, for that we use `padding`.
+Now, lets add some space for the content _inside_ borders. For that we use `padding`.
 
-Lets add some `padding` to our `p` element:
+Let's add some `padding` to our `p` element:
 
 ```css
 p {
@@ -122,7 +163,7 @@ p {
 }
 ```
 
-The property `padding` is also a quick way of setting padding around the whole area. It we want it to be the same we can use just one value, as we have done above, or we can set a value for each side separately:
+The property `padding` is also a quick way of setting padding on all 4 sides of the box. It we want it to be the same on all sides, we can use just one value, as we have done above, or we can set a value for each side separately:
 
 ```css
 padding: 20px 0 20px 0; /* This sets top and bottom padding at 20px and left and right at 0px */
@@ -135,7 +176,7 @@ Or, if we want to be really clear about what padding we are setting, we can defi
 - `padding-bottom`
 - `padding-left`
 
-We use the property `margin` in the same way, either in it's shorthand or individual form, lets add a `margin-bottom` to our header:
+We use the property `margin` in the same way, either in its shorthand or individual form. Let's add a `margin-bottom` to our header:
 
 ```css
 h1 {
