@@ -21,7 +21,7 @@ Computers machines that are **programmable**. This means:
 
 ## Inputs and Outputs
 
-![Logical representation of the parts of a computer](./images/computer.jpg)
+![Logical representation of the parts of a computer](/images/computer.jpg)
 
 Inputs can be:
 -  a mouse,
@@ -32,7 +32,7 @@ The computer cannot automatically act on those _inputs_ without help. You, the _
 
 ## Giving Instructions to Computers
 
-![Person and computer both thinking 'can't you do anything right?'](./images/interaction.gif)
+![Person and computer both thinking 'can't you do anything right?'](/images/interaction.gif)
 
 We communicate with computers the same way we communicate with other as people-- we use **languages**!! However, just like with spoken languages, there are many different ones for computers.
 
@@ -98,6 +98,6 @@ For example, when someone sends message to their friend on WhatsApp using their 
 1. If they can connect to your friend's phone, then the message is sent and removed from the WhatsApp computer
 1. The WhatsApp computer then tells your phone that the message was sent and received ✔️✔️
 
-![WhatsApp logo](./images/whatsapp_logo.png)
+![WhatsApp logo](/images/whatsapp_logo.png)
 
 This is just a start of one interaction on the Internet, but we now know a little bit about the Internet. It is time to create our own web-pages now!
