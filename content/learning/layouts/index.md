@@ -1,14 +1,13 @@
 ---
-title: Links and Layouts
+title: Layouts
 description: ""
-weight: 4
+weight: 5
 alwaysopen: true
 ---
 
-Today we'll learn how to create connections, or **links** 🔗🌐 and change elements shape on your web page. By the end of the class you will know how to:
+Today we'll learn how to change the layout and shape using HTML elements and CSS on your web page. By the end of the class you will know how to:
 
-- Add links to different parts of your web page or even between sites
-- Add images to your web page
+- Extra HTML structure on your web page
 - Control the structure of HTML with CSS
 - Move where elements are positioned on the page
 
@@ -16,96 +15,11 @@ Today we'll learn how to create connections, or **links** 🔗🌐 and change el
   <h3>🔖 Using This Page</h3>
   <ul>
     <li><a href="http://kgbv.local:3000/" target="_blank">Open your web page in the Code Playground</a></li>
-    <li><a href="#activity-linking-to-another-page">Add a link to your page</a></li>
-    <li><a href="#activity-connecting-online">Play a game to learn more about connecting online</a></li>
     <li><a href="#activity-creating-borders">Learn how to make borders</a></li>
     <li><a href="#activity-making-space">Create space around text and elements on your page</a></li>
     <li><a href="#activity-putting-images-and-text-together">Put text and images together!</a></li>
   </ul>
 </div>
-
-## Creating connections, or linking web sites
-
-Links are one of the most common features of web sites. In fact, they are what make web sites a "web". You can click on a link and "jump" or "follow" it to another page! The neat part about a link is that it doesn't have to be only text, it can be an image or other element.
-
-Links are often "local", that means they take you to another page on the same site, however they can also be "external" and take you to another site, or image, file, document, email, or phone number that you don't really have control over.
-
-<div class="alert alert-info">
-  <strong>🔖 Terms and Tools: A link by another name</strong><br />
-  Links used to be known as HTML links, hyperlinks (because the "H" stands for Hyper). When people are taking about <em>external</em> links they often just refer to a link based on the <em>type of destination</em> as a "URL" (Uniform Resource Locator) or "URI" (Uniform Resource Identifier), but those are actually the names of the thing being linked to, not the act of making a connection.
-</div>
-
-## Adding a Link
-
-Let's try adding a link now --
-
-First things, a link is defined using the `<a>`, or anchor, element. It often looks like:
-
-```html
-<a href="https://mozillaindia.org/">Mozilla India</a>
-
-<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg"
-         alt="Picture of Kangchenjunga taken from Goecha La pass, 4940m,Sikkim" />
-</a>
-```
-
-<a href="/images/800px-Kangch-Goechala.jpg"><img src="/images/800px-Kangch-Goechala.jpg"
-alt="Picture of Kangchenjunga taken from Goecha La pass, 4940m,Sikkim" width="50%" /></a>
-
-In the `<a>` element the `href` attribute specifies the _destination_, sometimes called an _address_. The element opening tag and closing tag go around the part of the web page that becomes the link: either text or an image!
-
-```html
-<a href="destination">link text or image</a>
-```
-
-The destination can be either _local_, or a part of our own web sites, or _external_, a part of someone else's web site or some other thing that is theirs.
-
-When we make local links we can point to a whole page, or just a part of a page we want to draw attention to. To mark a part of a page that we want to link directly we use the `id` or identifier attribute:
-
-```html
-<a id="bookmark"></a>
-<p id="introduction">This is the first paragraph of my page.
-Below, I have images of my favourite places</p>
-```
-
-Then we use the `#` or hash symbol plus the `id` as the destination!
-
-```html
-<a href="#introduction">Go to the introduction</a>
-```
-
-### Activity: Linking to another page 💻
-
-Now it's **your turn**! Try to:
-
-- Add a link to another part of the same page
-- Add an image from the <a href="http://kgbv.local/pictures/" target="_blank">Picture Gallery</a>
-- If you have time, add a link to the course website!
-
-<div class="alert alert-warning">
-  <strong>🔎 Hint: Finding web addresses </strong><br />
-  You can find the <em>address</em> of a web site by looking in the top centre of the browser bar
-</div>
-
-## Activity: Connecting Online 🏃🏾‍♀️
-
-We've started to practice using links and see how they can create paths, or routes, between different parts of our own pages and sites as well as maybe even _different_ sites.
-
-What does it mean for links on the Web to be visitable by everyone who comes to our web page. Let's try to understand by acting out sending messages to each other through the internet!
-
-Setup:
-
-1. Separate into groups of 3 to 5.
-1. Each group has an IP address, and each person in the group gets a position:
-  - The Message Writer
-  - The Internet
-  - The Server (carries the IP address)
-  - The Return Internet (optional)
-  - The Message Receiver (optional)
-1. The Internet must rip the message into exactly four packets.
-1. If the Internet drops a packet, they have to pick it up and go back to the start to deliver it again.
-1. The server has to wait for all of the message pieces to arrive before it can begin to send the message along.
 
 ## Layouts for HTML
 
@@ -122,7 +36,7 @@ When a page is laid out, each _element_ has a box put around it, and each box ha
 - Border
 - Margin
 
-![Image of HTML Box model with content, padding, border, margin elements, courtesy of w3schools](images/box-model.png)
+![Image of HTML Box model with content, padding, border, margin elements, courtesy of w3schools](/images/box-model.png)
 
 It is because of these parts we can add a border around elements and to control how much space is between elements. This helps text or images be easy to read, be emphasized if they are important, or just look exactly how you want it.
 
@@ -273,7 +187,7 @@ To start, let's make a class called "`ingredient`" with a header, image, and som
 <section id="ingredient-list">
   <div class="ingredient">
     <h3>Spice</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Spices_in_an_Indian_market.jpg/220px-Spices_in_an_Indian_market.jpg" />
+    <img src="http://kgbv.local/pictures/images/anise-aroma-art-277253.jpg" />
     <p>Spices are an ingredient in many foods</p>
   </div>
 </section>
@@ -291,8 +205,6 @@ To start, let's make a class called "`ingredient`" with a header, image, and som
   margin-bottom: 0.5rem;
 }
 ```
-
-**[TODO: Cache ingredient images locally!]**
 
 How about we have the image stay on the right side and the text on the left. We can use the CSS property `float` to do so! It has a few possible values:
 
