@@ -14,7 +14,7 @@ Today we'll learn how to change the layout and shape using HTML elements and CSS
 <div class="alert alert-success">
   <h3>🔖 Using This Page</h3>
   <ul>
-    <li><a href="#web-page-parts">Learn about Web Page Parts</a></li>
+    <li><a href="#web-page-parts">Learn about web page parts</a></li>
     <li><a href="#activity-working-with-structure">Activity: Working With Structure</a>.  Open the code for this activity <a href="http://kgbv.local:3000/vad/edit?html,css,output"> in the code playground</a>.</li>
     <li><a href="#activity-creating-borders">Learn how to make borders</a></li>
     <li><a href="#activity-making-space">Create space around text and elements on your page</a></li>
@@ -29,10 +29,10 @@ Like you, a web page has many parts: a `<head>` and a `<body>`, and all the piec
 
 We use special tags to build the skeleton. They tell the computer what part of the page is inside them. In these lessons, we will use these tags to help "structure" the web page:
 
-- `<h1>`, `<h2>`, and `<h3>` : these tags make "headings" -- `h1` is the biggest, and `h3` is smaller
+- `<h1>`, `<h2>`, and `<h3>`: these tags make "headings" -- `h1` is the biggest, and `h3` is smaller
 - `<header>`: We use this for content that goes at the top of the page, like the title, and sometimes also certain links.
 - `<nav>`: the nav is usally inside or right after the `header` tag. It helps your users to "navigate" your page.
-- `<main>` : we put most of the content in our pages inside the `main` tag
+- `<main>`: we put most of the content in our pages inside the `main` tag
 - `<article>`and `<section>`: we use these for parts of the main content
 - `<aside>`: we use `aside` when we havewritten something that is not part of the main story we aretelling, but is somehow related. We use asides the way we sometimes use smaller boxes in a poster.
 - `<footer>`: this is for content that you want to put at the bottom of your web page.
@@ -114,12 +114,12 @@ Okay, let's start from our template, you can work from your existing page or fro
 </html>
 ```
 
-Now, let's add a `border` to all the biggest headers: the `h1` elements! The border has three parts: 
+Now, let's add a `border` to all the biggest headers: the `h1` elements! The border has three parts:
 - **thickness** in pixels:: `1px` or `2px` or `30px`
 - **style**: usually `solid`
 - **color**: this can be any color that CSS understands
 
-We usually write them all at once: 
+We usually write them all at once:
 
 ```css
 h1 {
@@ -150,7 +150,7 @@ p {
 }
 ```
 
-We can change the width of an element using the `width` property. We can also use `height`. These properties adjust the **space taken up by the box.** They don't change the **size of the text**. 
+We can change the width of an element using the `width` property. We can also use `height`. These properties adjust the **space taken up by the box.** They don't change the **size of the text**.
 
 Now, lets add some space for the content _inside_ borders. For that we use `padding`.
 

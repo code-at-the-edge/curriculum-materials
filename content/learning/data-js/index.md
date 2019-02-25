@@ -1,18 +1,14 @@
----
+/*---
 title: "Data and Javascript"
 description: ""
-weight: 5
-alwaysopen: true
----
+weight: 0
+alwaysopen: false
+---*/
 
 Today we'll cover **two main concepts** through a mix of activities at the computer:
 
 1. Seeing data all around
 1. Making websites interactive using JavaScript
-
-Over the last three days we've talked about:
-
-[Summary of key concepts]
 
 ## Seeing data all around
 
