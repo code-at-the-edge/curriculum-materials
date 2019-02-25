@@ -163,3 +163,8 @@ div.alert-success > h4 {
   text-align: center;
   margin-bottom: 0;
 }
+
+/* img */
+img {
+  width: 50%;
+}
