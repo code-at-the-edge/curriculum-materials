@@ -1,4 +1,4 @@
-# Curriculum Materials for Code At the Edge
+# Code at the Edge Curriculum Materials
 
 
 [![Build Status](https://travis-ci.org/code-at-the-edge/curriculum-materials.svg?branch=master)](https://travis-ci.org/code-at-the-edge/curriculum-materials)
