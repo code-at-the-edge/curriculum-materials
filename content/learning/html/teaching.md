@@ -1,4 +1,4 @@
-# Lesson Plan for How Computers Work and Building Blocks of HTML
+# Lesson Plan for "HTML!"
 
 ## Audience
 
@@ -6,10 +6,11 @@
 
 ## Time
 
-2.0 hours
+1.5 hours
 
 ## Rationale and Learning Objectives
 
+Students experiment with basic HTML in the code playground environment, and are exposed to the concepts of **tags** and **elements**. They fill in text in `<p>` tags, and create lists with `<ul>` and `<li>`. Lter, they are exposed to `<main>`, `<header>`, `<footer>`, and `<nav>` tags as well.
 
 ## Preparation
 
@@ -34,6 +35,7 @@
 1. **Introduction** (10 minutes)
 1. **Let's learn about computers** (30 minutes)
   - Activity: Giving a Computer Instructions
+  
 1. **Introduction to HTML** (70 minutes)
   - Activity: Creating your first site
   - Activity: Locate the Tags
@@ -46,13 +48,6 @@
 ## Facilitation
 
 
-### Let's learn about computers
-
-Provides a short introduction to computational thinking, the World Wide Web and Internet and how we "talk" to Computers
-
-#### Activity: Giving a Computer Instructions
-
-As an instructor have students give you instructions to open the door to the room.
 
 ### Building Blocks of HTML
 
@@ -76,14 +71,15 @@ Designed to show the students the workings of an HTML page prior to introducing 
 
 #### Activity: Changing the look of text
 
-Brief intro to changing the appearance of text using **strong** and _emphasis_. These tags are in an activity at the beginning of the second session.
-
-#### Activity: Changing the look of text
+Brief intro to changing the appearance of text using **<strong>**, _<em>_ and <mark><mark></mark>. These tags are in an activity at the beginning of the second session.
 
 #### Activity: Making a list of holiday foods
 
+This short activity introduces the `<ul>` and `<li>` tags, and asks the students to add a list of favourite foods to their short web pag page. 
+
 #### Activity: Classroom Tags
 
+Offline activity: tag "elements" in the classroom using sticky notes. This offline activity, modelled on Mozilla's "HTML Thimble Tag" (see below), is intended to reinforce the tag/element concepts and to help students think about a web page as an object that they "build" from component elements.
 
 ## Resources
 

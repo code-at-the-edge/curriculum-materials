@@ -3,17 +3,47 @@
     {{ partial "header.html" . }}
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-  {{- with .CurrentSection }}
-    <nav class="shortcuts">
-      {{- range sort .Pages "Weight" }}
-        <li class="" role="">
-          <a href="{{.URL}}" {{if eq $.Site.Params.menushortcutsnewtab true }}target="_blank"{{ end }} rel="noopener">
-            {{ safeHTML .Name }}
+  <nav class ="shortcuts">
+      <li class="" role="">
+          <a href="http://kgbv.local:3000" target="_blank" rel="noopener">
+              Write Code!
           </a>
-        </li>
-      {{- end }}
-    </nav>
-  {{- end }}
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local/pictures/" target="_blank" rel="noopener">
+              Pictures
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local/reference/" target="_blank" rel="noopener">
+              HTML Reference
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local/emoji/" target="_blank" rel="noopener">
+              Emoji
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local:3000/wez" target="_blank" rel="noopener">
+              <mark>&nbsp;Your Web Pages&nbsp;</mark>
+          </a>
+      </li>
+
+  </nav>
+
+  {{/*- with .CurrentSection */}}
+  <!-- <nav class="shortcuts"> -->
+
+      <!-- {{- range sort .Pages "Weight" }}
+           <li class="" role="">
+           <a href="{{.URL}}" {{if eq $.Site.Params.menushortcutsnewtab true }}target="_blank"{{ end }} rel="noopener">
+           {{ safeHTML .Name }}
+           </a>
+           </li>
+           {{- end }} -->
+  <!-- </nav> -->
+  {{/*- end */}}
 </header>
 <article>
   <aside>

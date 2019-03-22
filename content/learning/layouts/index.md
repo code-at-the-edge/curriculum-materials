@@ -1,112 +1,67 @@
 ---
-title: Links and Layouts
+title: Layouts
 description: ""
-weight: 4
+weight: 5
 alwaysopen: true
 ---
 
-# Links and Layouts
+Today we'll learn how to change the layout and shape using HTML elements and CSS on your web page. By the end of the class you will know how to:
 
-Today we'll cover **two main concepts** through a mix of activities at the computer and moving around playing a game:
+- Extra HTML structure on your web page
+- Control the structure of HTML with CSS
+- Move where elements are positioned on the page
 
-1. Creating connections, or links, to different parts of a web site or even between sites
-1. Controlling how a web site is structured and how elements are positioned
+<div class="alert alert-success">
+  <h3>🔖 Using This Page</h3>
+  <ul>
+    <li><a href="#web-page-parts">Learn about web page parts</a></li>
+    <li><a href="#activity-working-with-structure">Activity: Working With Structure</a>.  Open the code for this activity <a href="http://kgbv.local:3000/vad/edit?html,css,output"> in the code playground</a>.</li>
+    <li><a href="#activity-creating-borders">Learn how to make borders</a></li>
+    <li><a href="#activity-making-space">Create space around text and elements on your page</a></li>
+    <li><a href="#activity-putting-images-and-text-together">Put text and images together!</a></li>
+  </ul>
+</div>
 
-We've been working in teams at our computers to work together on these activities, we'll start off doing that again today ⌨ 🖱.
 
-## Creating connections, or linking web sites
+## Web Page Parts
 
-Links are one of the most common features of web sites. In fact, they are what make web sites a "web". You can click on a link and "jump" or "follow" it to another page! The neat part about a link is that it doesn't have to be only text, it can be an image or other element.
+Like you, a web page has many parts: a `<head>` and a `<body>`, and all the pieces inside.  When we make a web page, we usually start by buiding a **skeleton**. We make the **shape** of the web page out of empty elements, and we fill in the **content** of the page afterwards.
 
-Links are often "local", that means they take you to another page on the same site, however they can also be "external" and take you to another site, or image, file, document, email, or phone number that you don't really have control over.
+We use special tags to build the skeleton. They tell the computer what part of the page is inside them. In these lessons, we will use these tags to help "structure" the web page:
+
+- `<h1>`, `<h2>`, and `<h3>`: these tags make "headings" -- `h1` is the biggest, and `h3` is smaller
+- `<header>`: We use this for content that goes at the top of the page, like the title, and sometimes also certain links.
+- `<nav>`: the nav is usally inside or right after the `header` tag. It helps your users to "navigate" your page.
+- `<main>`: we put most of the content in our pages inside the `main` tag
+- `<article>`and `<section>`: we use these for parts of the main content
+- `<aside>`: we use `aside` when we havewritten something that is not part of the main story we aretelling, but is somehow related. We use asides the way we sometimes use smaller boxes in a poster.
+- `<footer>`: this is for content that you want to put at the bottom of your web page.
+
+This picture shows how you might make a web page out of these "structural" tags
+
+![web page structured by semantic tags](/images/semantics.jpg)
 
 <div class="alert alert-info">
-  <strong>🔖 Terms and Tools: A link by another name</strong><br />
-  Links used to be known as HTML links, hyperlinks (because the "H" stands for Hyper). When people are taking about <em>external</em> links they often just refer to a link based on the <em>type of destination</em> as a "URL" (Uniform Resource Locator) or "URI" (Uniform Resource Identifier), but those are actually the names of the thing being linked to, not the act of making a connection.
+  <strong>🔖 Terms and Tools: "Semantic" Tags</strong><br />
+  We call these tags <strong>"semantic"</strong> because the name of the tag also defines the **function** of the content inside of the web page. "Semantic" is a compliated word, and you don't need to use it; but you might see other people use it when you are exploring the Internet.
 </div>
 
-## Adding a Link
+## Activity: Working With Structure
 
-Let's try adding a link now --
+[Open this page](http://kgbv.local:3000/vad/edit?html,css,output) in the Code Playground.  Let's see how structure works!
 
-First things, a link is defined using the `<a>`, or anchor, element. It often looks like:
 
-```html
-<a href="https://mozillaindia.org/">Mozilla India</a>
-<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-
-Goechala.jpg/800px-Kangch-Goechala.jpg"><img src="https://upload.wikimedia.org/
-wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg"
-alt="Picture of Kangchenjunga taken from Goecha La pass, 4940m,Sikkim" /></a>
-```
-
-<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-
-Goechala.jpg/800px-Kangch-Goechala.jpg"><img src="https://upload.wikimedia.org/
-wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/800px-Kangch-Goechala.jpg"
-alt="Picture of Kangchenjunga taken from Goecha La pass, 4940m,Sikkim" /></a>
-
-**[TODO cache the image locally!]**
-
-In the `<a>` element the `href` attribute specifies the _destination_, sometimes called an _address_. The element opening tag and closing tag go around the part of the web page that becomes the link: either text or an image!
-
-```html
-<a href="destination">link text or image</a>
-```
-
-The destination can be either _local_, or a part of our own web sites, or _external_, a part of someone else's web site or some other thing that is theirs.
-
-When we make local links we can point to a whole page, or just a part of a page we want to draw attention to. To mark a part of a page that we want to link directly we use the `id` or identifier attribute:
-
-```html
-<a id="bookmark"></a>
-<p id="introduction">This is the first paragraph of my page.
-Below, I have images of my favourite places</p>
-```
-
-Then we use the `#` or hash symbol plus the `id` as the destination!
-
-```html
-<a href="#introduction">Go to the introduction</a>
-```
-
-### Activity: Linking to another page 💻
-
-Now it's **your turn**! Try to:
-
-- Add a link to another part of the same page
-- Add a link to another page
-- If you have time, add a link to the course website!
-
-<div class="alert alert-warning">
-  <strong>🔎 Hint: Finding web addresses </strong><br />
-  You can find the <em>address</em> of a web site by looking in the top centre of the browser bar
-</div>
-
-**[TODO: Screenshot from our RPi of browser bar]**
-
-## Game: Connecting Online 🏃🏾‍♀️
-
-We've started to practice using links and see how they can create paths, or routes, between different parts of our own pages and sites as well as maybe even _different_ sites.
-
-What does it mean for links on the Web to be visitable by everyone who comes to our web page. Let's try to understand by acting out sending messages to each other through the internet!
-
-Setup:
-
-1. Separate into groups of 3 to 5.
-1. Each group has an IP address, and each person in the group gets a position:
-  - The Message Writer
-  - The Internet
-  - The Server (carries the IP address)
-  - The Return Internet (optional)
-  - The Message Receiver (optional)
-1. The Internet must rip the message into exactly four packets.
-1. If the Internet drops a packet, they have to pick it up and go back to the start to deliver it again.
-1. The server has to wait for all of the message pieces to arrive before it can begin to send the message along.
 
 ## Layouts for HTML
 
 Now that we have added links and thought about what it means to have connections between websites, we should look at _how to organize our own web pages_ so they are meaningful to us and are easier read for other people!
 
-With HTML and CSS organizing and structuring a page is called **layout** and we can think about HTML elements as a series of nested _boxes_, with the text and images we care about, or smallest box at the centre, often called _content_.
+<div class="alert alert-info">
+  <strong>🔖 Terms and Tools: Layout</strong><br />
+We say "layout" when we talk about <em>organizing</em> and <em>structuring</em>awb pages.
+</div>
+
+We can think about an HTML page as a series of _"nested boxes"_, with the text and images we care about, or smallest box at the centre, often called _content_.
 
 *Remember how we discussed CSS and changing the look of a website yesterday? The same rules of "inheritance" apply for how we lay out and control the size and spacing of elements*
 
@@ -117,7 +72,7 @@ When a page is laid out, each _element_ has a box put around it, and each box ha
 - Border
 - Margin
 
-![Image of HTML Box model with content, padding, border, margin elements, courtesy of w3schools](images/box-model.png)
+![Image of HTML Box model with content, padding, border, margin elements, courtesy of w3schools](/images/box-model.png)
 
 It is because of these parts we can add a border around elements and to control how much space is between elements. This helps text or images be easy to read, be emphasized if they are important, or just look exactly how you want it.
 
@@ -159,7 +114,12 @@ Okay, let's start from our template, you can work from your existing page or fro
 </html>
 ```
 
-Now, how about we add a `border` to all the biggest headers, so `h1` elements! We can specify the thickness or width of the border, the style, and the color all at once:
+Now, let's add a `border` to all the biggest headers: the `h1` elements! The border has three parts:
+- **thickness** in pixels:: `1px` or `2px` or `30px`
+- **style**: usually `solid`
+- **color**: this can be any color that CSS understands
+
+We usually write them all at once:
 
 ```css
 h1 {
@@ -167,7 +127,7 @@ h1 {
 }
 ```
 
-This ability that `border` has is because it is a `shorthand` property, which is a fancy way of saying it is a fast way of setting many values.
+`border` is a `shorthand` property.  This is a fancy way of saying it is a fast way of setting many values.
 
 **Your turn**:
 
@@ -190,11 +150,11 @@ p {
 }
 ```
 
-We can change the width of an element using the `width` property, we can also use `height`, these are less useful for adjusting text specifically, but it can be important to set the size of the content we want to make space around.
+We can change the width of an element using the `width` property. We can also use `height`. These properties adjust the **space taken up by the box.** They don't change the **size of the text**.
 
-Now, lets add some space for the content _inside_ borders, for that we use `padding`.
+Now, lets add some space for the content _inside_ borders. For that we use `padding`.
 
-Lets add some `padding` to our `p` element:
+Let's add some `padding` to our `p` element:
 
 ```css
 p {
@@ -203,7 +163,7 @@ p {
 }
 ```
 
-The property `padding` is also a quick way of setting padding around the whole area. It we want it to be the same we can use just one value, as we have done above, or we can set a value for each side separately:
+The property `padding` is also a quick way of setting padding on all 4 sides of the box. It we want it to be the same on all sides, we can use just one value, as we have done above, or we can set a value for each side separately:
 
 ```css
 padding: 20px 0 20px 0; /* This sets top and bottom padding at 20px and left and right at 0px */
@@ -216,7 +176,7 @@ Or, if we want to be really clear about what padding we are setting, we can defi
 - `padding-bottom`
 - `padding-left`
 
-We use the property `margin` in the same way, either in it's shorthand or individual form, lets add a `margin-bottom` to our header:
+We use the property `margin` in the same way, either in its shorthand or individual form. Let's add a `margin-bottom` to our header:
 
 ```css
 h1 {
@@ -268,7 +228,7 @@ To start, let's make a class called "`ingredient`" with a header, image, and som
 <section id="ingredient-list">
   <div class="ingredient">
     <h3>Spice</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Spices_in_an_Indian_market.jpg/220px-Spices_in_an_Indian_market.jpg" />
+    <img src="http://kgbv.local/pictures/images/anise-aroma-art-277253.jpg" />
     <p>Spices are an ingredient in many foods</p>
   </div>
 </section>
@@ -286,8 +246,6 @@ To start, let's make a class called "`ingredient`" with a header, image, and som
   margin-bottom: 0.5rem;
 }
 ```
-
-**[TODO: Cache ingredient images locally!]**
 
 How about we have the image stay on the right side and the text on the left. We can use the CSS property `float` to do so! It has a few possible values:
 

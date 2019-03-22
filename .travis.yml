@@ -1,7 +1,7 @@
 language: go
 
 go:
-  - 1.11
+  - 1.12
 
 sudo: false
 
@@ -27,7 +27,7 @@ install:
 script:
   - go mod download
   - mage -v hugo
-  - ./hugo -s ${TRAVIS_HOME}/gopath/src/github.com/code-at-the-edge/curriculum-materials
+  - ./hugo -b https://code-at-the-edge.github.io/curriculum-materials -s ${TRAVIS_HOME}/gopath/src/github.com/code-at-the-edge/curriculum-materials
 
 deploy:
   provider: pages

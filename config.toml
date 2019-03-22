@@ -1,6 +1,6 @@
-baseURL = "https://code-at-the-edge.github.io/curriculum-materials/"
+baseURL = "/"
 languageCode = "en-us"
-title = "Code At the Edge Curriculum"
+title = "KGBV Learns Code!"
 theme = "docdock"
 
 # ignoreFiles = [ "\\.css$", "\\.boo$" ]

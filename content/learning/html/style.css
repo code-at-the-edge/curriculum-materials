@@ -1,0 +1,35 @@
+body {
+    display:flex;
+    flex-direction: column;
+    min-height: 85vh;
+    border: 1px grey solid;
+    border-radius: 10px;  
+    margin: 10px;
+}
+
+header, footer {
+    background-color: var(--color-lightGrey);
+    min-height: 8rem;
+    width:100%
+}
+
+main {
+    padding: 2rem;  
+    flex-grow:1
+}
+
+
+
+main p::after {
+    content: "👈 write here!";
+    color: red;
+    background-color: rgba(00, 00, 88, 0.4);
+    font-size: 1.4rem;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+main p::after {
+    transform: skew(180deg);
+}
