@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://code-at-the-edge.github.io/curriculum-materials/learning/computing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://code-at-the-edge.github.io/curriculum-materials/learning/html/</loc>
+  </url>
+  
+  <url>
+    <loc>https://code-at-the-edge.github.io/curriculum-materials/learning/css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://code-at-the-edge.github.io/curriculum-materials/learning/links/</loc>
+  </url>
+  
+  <url>
+    <loc>https://code-at-the-edge.github.io/curriculum-materials/learning/layouts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://code-at-the-edge.github.io/curriculum-materials/learning/data-js/</loc>
+  </url>
+  
+  <url>
+    <loc>https://code-at-the-edge.github.io/curriculum-materials/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-at-the-edge.github.io/curriculum-materials/</loc>
+  </url>
+  
+  <url>
+    <loc>https://code-at-the-edge.github.io/curriculum-materials/learning/</loc>
+  </url>
+  
+  <url>
+    <loc>https://code-at-the-edge.github.io/curriculum-materials/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

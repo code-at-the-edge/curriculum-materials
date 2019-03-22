@@ -1,0 +1,170 @@
+body {
+  font-size: 1.2rem;
+}
+
+/* Rendering lessons and instructions side-by-side*/
+div.lesson-container {
+  display: flex;
+}
+
+div.lesson-container div.md, div.lesson-container div.render {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+div.render > iframe {
+  width: 100%;
+  height: 100%
+}
+
+
+/* Android 2.3 :checked fix */
+@-webkit-keyframes fake {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fake {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 1;
+  }
+}
+body {
+  -webkit-animation: fake 1s infinite;
+          animation: fake 1s infinite;
+}
+
+.worko-tabs {
+  /* margin: 20px; */
+  /* width: 80%; */
+}
+.worko-tabs .state {
+  position: absolute;
+  left: -10000px;
+}
+.worko-tabs .flex-tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.worko-tabs .flex-tabs .tab {
+  flex-grow: 1;
+  max-height: 40px;
+}
+.worko-tabs .flex-tabs .panel {
+  background-color: #fff;
+  padding: 20px;
+  min-height: 300px;
+  display: none;
+  width: 100%;
+  flex-basis: auto;
+  border-bottom: none;
+  border-bottom-color: none;
+}
+.worko-tabs .tab {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  background-color: #eee;
+  cursor: hand;
+  cursor: pointer;
+  border-left: 10px solid #ccc;
+}
+.worko-tabs .tab:hover {
+  background-color: #fff;
+}
+
+#tab-one:checked ~ .tabs #tab-one-label, #tab-two:checked ~ .tabs #tab-two-label {
+  background-color: #fff;
+  cursor: default;
+  border-left-color: #69be28;
+}
+
+#tab-one:checked ~ .tabs #tab-one-panel, #tab-two:checked ~ .tabs #tab-two-panel {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .flex-tabs {
+    flex-direction: column;
+  }
+  .flex-tabs .tab {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  .flex-tabs .tab:last-of-type {
+    border-bottom: none;
+  }
+  .flex-tabs #tab-one-label {
+    order: 1;
+  }
+  .flex-tabs #tab-two-label {
+    order: 3;
+  }
+  .flex-tabs #tab-one-panel {
+    order: 2;
+  }
+  .flex-tabs #tab-two-panel {
+    order: 4;
+  }
+  #tab-one:checked ~ .tabs #tab-one-label, #tab-two:checked ~ .tabs #tab-two-label {
+    border-bottom: none;
+  }
+  #tab-one:checked ~ .tabs #tab-one-panel, #tab-two:checked ~ .tabs #tab-two-panel {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+
+/* Fixing huge font sizes in child frame  */
+div.md h1:first-of-type {
+  font-size: 2.5rem !important;
+}
+div.md h2 {
+  font-size: 2.0rem;
+}
+
+/* Remove annoying borders */
+iframe {
+  border: none;
+}
+div.lesson-container > div {
+  border: 1px gray solid;
+}
+#project-caption {
+    background-color: #eee;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Fix that ribbon */
+  header:after {
+    /* background: url(ribbon.png) 0 0/100% no-repeat; */
+    background: none;
+    content: '';
+    height: .35rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+
+/* Alert success */
+div.alert-success > h4 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* img */
+img {
+  width: 50%;
+}

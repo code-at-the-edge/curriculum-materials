@@ -1,0 +1,60 @@
+#+TITLE: How Computers work
+#+REVEAL_SINGLE_FILE: t
+#+OPTIONS: reveal_single_file:t
+
+* What is a computer?
+- A Machine you can **Program**
+- You give the computer **Inputs**
+- The computer **does work** on the inputs
+- the computer gives you back **outputs**.
+
+* How do We Talk to Computers? 
+- Computers use languages too! 
+
+#+ATTR_REVEAL: :frag appear
+#+begin_quote 
+Hello, Sisters.
+#+end_quote
+
+#+ATTR_REVEAL: :frag appear
+#+begin_quote 
+नमस्कार, बहिनीहरू
+#+end_quote
+
+#+ATTR_REVEAL: :frag appear
+#+begin_quote 
+你好，兄弟姐妹
+#+end_quote
+
+* Making Mistakes
+#+ATTR_REWVEAL: :frag appear
+- I make many mistakes when I talk to you
+- But still you mostly understand
+- If you make mistakes with computers, they just stop working!
+
+* Dawn the Computer
+Let's Give Dawn some instructions!
+ 
+* Languages
+
+* The Internet
+** All the Computers in the Room
+[[./images/home-network.png]]
+- the computers in the room talk to each other by cable and WiFi
+** All the Computers in India
+[[./images/NKNIndia.png]]
+- the computers in India talk to each other by FibreOptic Cable
+** All the Computers in The World
+[[file:images/internet-backbone.png]]
+- all around the world, big and small computers talk to each other, all in computer languages where mistakes are not allowed. 
+
+* Example: WhatsApp
+
+* 
+
+* COMMENT How it looks to you
+[[./images/google.png]]
+
+* COMMENT How it looks to the computer
+[[./images/google-code.png]]
+

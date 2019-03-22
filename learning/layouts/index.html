@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KGBV Learns Code!</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-03-22T20:08:22 UTC">
+<title>Layouts :: KGBV Learns Code!</title>
+<link rel="shortcut icon" href="/curriculum-materials/images/favicon.png" type="image/x-icon" />
+<link href="/curriculum-materials/css/font-awesome.min.css" rel="stylesheet">
+<link href="/curriculum-materials/css/nucleus.css" rel="stylesheet">
+<link href="/curriculum-materials/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/curriculum-materials/css/bootstrap.min.css">
+<script src="/curriculum-materials/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/code-at-the-edge.github.io\/curriculum-materials";
+</script>
+<link href="/curriculum-materials/css/edge.css" rel="stylesheet">
+<link href="/curriculum-materials/css/syntax.css" rel="stylesheet">
+
+
+    
+  </head>
+  <body data-url="/curriculum-materials/learning/layouts/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://code-at-the-edge.github.io/curriculum-materials">KGBV Learns Code!</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+  <nav class ="shortcuts">
+      <li class="" role="">
+          <a href="http://kgbv.local:3000" target="_blank" rel="noopener">
+              Write Code!
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local/pictures/" target="_blank" rel="noopener">
+              Pictures
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local/reference/" target="_blank" rel="noopener">
+              HTML Reference
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local/emoji/" target="_blank" rel="noopener">
+              Emoji
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local:3000/wez" target="_blank" rel="noopener">
+              <mark>&nbsp;Your Web Pages&nbsp;</mark>
+          </a>
+      </li>
+
+  </nav>
+
+  
+  
+
+      
+  
+  
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+        <li data-nav-id="/curriculum-materials/" class="dd-item">
+        <a href="/curriculum-materials/">
+          <i class="fa fa-fw fa-home"></i>
+        </a>
+        </li>
+    <li data-nav-id="/curriculum-materials/learning/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/curriculum-materials/learning/">Learning</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/curriculum-materials/learning/computing/" class="dd-item">
+        <div>
+          <a href="/curriculum-materials/learning/computing/">
+            What is a Computer?
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/curriculum-materials/learning/html/" class="dd-item">
+        <div>
+          <a href="/curriculum-materials/learning/html/">
+            HTML!
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/curriculum-materials/learning/css/" class="dd-item">
+        <div>
+          <a href="/curriculum-materials/learning/css/">
+            Adding Style with CSS
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/curriculum-materials/learning/links/" class="dd-item">
+        <div>
+          <a href="/curriculum-materials/learning/links/">
+            Links
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/curriculum-materials/learning/layouts/" class="dd-item active">
+        <div>
+          <a href="/curriculum-materials/learning/layouts/">
+            Layouts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/curriculum-materials/learning/data-js/" class="dd-item">
+        <div>
+          <a href="/curriculum-materials/learning/data-js/">
+            
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+
+  <section class="page">
+    <div class="nav-select">
+      <center>Navigation :
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/curriculum-materials/learning/" >
+   Learning</option> 
+      <option value="/curriculum-materials/learning/computing/" >- What is a Computer?</option>
+      <option value="/curriculum-materials/learning/html/" >- HTML!</option>
+      <option value="/curriculum-materials/learning/css/" >- Adding Style with CSS</option>
+      <option value="/curriculum-materials/learning/links/" >- Links</option>
+      <option value="/curriculum-materials/learning/layouts/"  selected>- Layouts</option>
+      <option value="/curriculum-materials/learning/data-js/" >- </option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/curriculum-materials/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/curriculum-materials/js/auto-complete.js"></script>
+        <link href="/curriculum-materials/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+            var baseurl = "https:\/\/code-at-the-edge.github.io\/curriculum-materials";
+          
+        </script>
+        <script type="text/javascript" src="/curriculum-materials/js/search.js"></script>
+      </div>
+
+    <h1>Layouts</h1>
+
+    
+    
+    
+    
+
+<p>Today we&rsquo;ll learn how to change the layout and shape using HTML elements and CSS on your web page. By the end of the class you will know how to:</p>
+
+<ul>
+<li>Extra HTML structure on your web page<br /></li>
+<li>Control the structure of HTML with CSS<br /></li>
+<li>Move where elements are positioned on the page<br />
+<br /></li>
+</ul>
+
+<div class="alert alert-success">
+  <h3>🔖 Using This Page</h3>
+  <ul>
+    <li><a href="#web-page-parts">Learn about web page parts</a></li>
+    <li><a href="#activity-working-with-structure">Activity: Working With Structure</a>.  Open the code for this activity <a href="http://kgbv.local:3000/vad/edit?html,css,output"> in the code playground</a>.</li>
+    <li><a href="#activity-creating-borders">Learn how to make borders</a></li>
+    <li><a href="#activity-making-space">Create space around text and elements on your page</a></li>
+    <li><a href="#activity-putting-images-and-text-together">Put text and images together!</a></li>
+  </ul>
+</div>
+
+<h2 id="web-page-parts">Web Page Parts</h2>
+
+<p>Like you, a web page has many parts: a <code>&lt;head&gt;</code> and a <code>&lt;body&gt;</code>, and all the pieces inside.  When we make a web page, we usually start by buiding a <strong>skeleton</strong>. We make the <strong>shape</strong> of the web page out of empty elements, and we fill in the <strong>content</strong> of the page afterwards.</p>
+
+<p>We use special tags to build the skeleton. They tell the computer what part of the page is inside them. In these lessons, we will use these tags to help &laquo;structure&raquo; the web page:</p>
+
+<ul>
+<li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;h3&gt;</code>: these tags make &laquo;headings&raquo; &ndash; <code>h1</code> is the biggest, and <code>h3</code> is smaller<br /></li>
+<li><code>&lt;header&gt;</code>: We use this for content that goes at the top of the page, like the title, and sometimes also certain links.<br /></li>
+<li><code>&lt;nav&gt;</code>: the nav is usally inside or right after the <code>header</code> tag. It helps your users to &laquo;navigate&raquo; your page.<br /></li>
+<li><code>&lt;main&gt;</code>: we put most of the content in our pages inside the <code>main</code> tag<br /></li>
+<li><code>&lt;article&gt;</code>and <code>&lt;section&gt;</code>: we use these for parts of the main content<br /></li>
+<li><code>&lt;aside&gt;</code>: we use <code>aside</code> when we havewritten something that is not part of the main story we aretelling, but is somehow related. We use asides the way we sometimes use smaller boxes in a poster.<br /></li>
+<li><code>&lt;footer&gt;</code>: this is for content that you want to put at the bottom of your web page.<br />
+<br /></li>
+</ul>
+
+<p>This picture shows how you might make a web page out of these &laquo;structural&raquo; tags</p>
+
+<p><img src="/images/semantics.jpg" alt="web page structured by semantic tags" /></p>
+
+<div class="alert alert-info">
+  <strong>🔖 Terms and Tools: "Semantic" Tags</strong><br />
+  We call these tags <strong>"semantic"</strong> because the name of the tag also defines the **function** of the content inside of the web page. "Semantic" is a compliated word, and you don't need to use it; but you might see other people use it when you are exploring the Internet.
+</div>
+
+<h2 id="activity-working-with-structure">Activity: Working With Structure</h2>
+
+<p><a href="http://kgbv.local:3000/vad/edit?html,css,output">Open this page</a> in the Code Playground.  Let&rsquo;s see how structure works!</p>
+
+<h2 id="layouts-for-html">Layouts for HTML</h2>
+
+<p>Now that we have added links and thought about what it means to have connections between websites, we should look at <em>how to organize our own web pages</em> so they are meaningful to us and are easier read for other people!</p>
+
+<div class="alert alert-info">
+  <strong>🔖 Terms and Tools: Layout</strong><br />
+We say "layout" when we talk about <em>organizing</em> and <em>structuring</em>awb pages.
+</div>
+
+<p>We can think about an HTML page as a series of <em>&laquo;nested boxes&raquo;</em>, with the text and images we care about, or smallest box at the centre, often called <em>content</em>.</p>
+
+<p><em>Remember how we discussed CSS and changing the look of a website yesterday? The same rules of &laquo;inheritance&raquo; apply for how we lay out and control the size and spacing of elements</em></p>
+
+<p>When a page is laid out, each <em>element</em> has a box put around it, and each box has 4 parts, or areas:</p>
+
+<ul>
+<li>Content<br /></li>
+<li>Padding<br /></li>
+<li>Border<br /></li>
+<li>Margin<br />
+<br /></li>
+</ul>
+
+<p><img src="/images/box-model.png" alt="Image of HTML Box model with content, padding, border, margin elements, courtesy of w3schools" /></p>
+
+<p>It is because of these parts we can add a border around elements and to control how much space is between elements. This helps text or images be easy to read, be emphasized if they are important, or just look exactly how you want it.</p>
+
+<h2 id="activity-creating-borders">Activity: Creating Borders 💻</h2>
+
+<p>Okay, let&rsquo;s start from our template, you can work from your existing page or from scratch:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;style.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Site Title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Site Title<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+
+      <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+
+      <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+
+      <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>My favourite foods<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Some of my favourite foods are
+        <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+
+      <span class="p">&lt;</span><span class="nt">aside</span><span class="p">&gt;</span>
+
+      <span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
+<p>Now, let&rsquo;s add a <code>border</code> to all the biggest headers: the <code>h1</code> elements! The border has three parts:<br />
+- <strong>thickness</strong> in pixels:: <code>1px</code> or <code>2px</code> or <code>30px</code><br />
+- <strong>style</strong>: usually <code>solid</code><br />
+- <strong>color</strong>: this can be any color that CSS understands</p>
+
+<p>We usually write them all at once:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p><code>border</code> is a <code>shorthand</code> property.  This is a fancy way of saying it is a fast way of setting many values.</p>
+
+<p><strong>Your turn</strong>:</p>
+
+<ul>
+<li>Change the color of the border to blue<br /></li>
+<li>Make a thicker border<br /></li>
+<li>Add a border to something else on the page<br /></li>
+<li>Add a border to multiple things on the page at the same time<br />
+<br /></li>
+</ul>
+
+<h2 id="activity-making-space">Activity: Making Space 💻</h2>
+
+<p>Now that we have a nice border around our header, let&rsquo;s also add a border around our first paragraph so we can see a bit better how much space we have between them:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>We can change the width of an element using the <code>width</code> property. We can also use <code>height</code>. These properties adjust the <strong>space taken up by the box.</strong> They don&rsquo;t change the <strong>size of the text</strong>.</p>
+
+<p>Now, lets add some space for the content <em>inside</em> borders. For that we use <code>padding</code>.</p>
+
+<p>Let&rsquo;s add some <code>padding</code> to our <code>p</code> element:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>The property <code>padding</code> is also a quick way of setting padding on all 4 sides of the box. It we want it to be the same on all sides, we can use just one value, as we have done above, or we can set a value for each side separately:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">padding</span><span class="o">:</span> <span class="nt">20px</span> <span class="nt">0</span> <span class="nt">20px</span> <span class="nt">0</span><span class="o">;</span> <span class="c">/* This sets top and bottom padding at 20px and left and right at 0px */</span></code></pre></div>
+<p>Or, if we want to be really clear about what padding we are setting, we can define it for each side individually:</p>
+
+<ul>
+<li><code>padding-top</code><br /></li>
+<li><code>padding-right</code><br /></li>
+<li><code>padding-bottom</code><br /></li>
+<li><code>padding-left</code><br />
+<br /></li>
+</ul>
+
+<p>We use the property <code>margin</code> in the same way, either in its shorthand or individual form. Let&rsquo;s add a <code>margin-bottom</code> to our header:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">blue</span><span class="p">;</span>
+  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p><strong>Your turn:</strong></p>
+
+<ul>
+<li>Add space outside the border on the top side of the paragraph<br /></li>
+<li>Add a margin on the left and right of the header, using only one property <em>hint: you can use shorthand!</em><br /></li>
+<li>Add more space inside the border for the paragraph, however you want!<br />
+<br /></li>
+</ul>
+
+<h2 id="activity-making-websites-better-for-phones">Activity: Making websites better for phones 💻</h2>
+
+<p>In CSS there are lots of ways to tell the computer the length of something, so far we&rsquo;ve mostly used &laquo;px&raquo; or CSS pixels. These are <strong>absolute</strong> instructions, they identify a specific length and they do not always work on different types of devices.</p>
+
+<p>Now that many more people are using phones or small tablets to view web sites, people focus on using <strong>relative</strong> ways to specify size, this means they can grow&ndash;or shrink!!&ndash; with the size of the screen!</p>
+
+<p><strong>Your turn</strong>:</p>
+
+<ul>
+<li>Change your use of pixels for margin and padding above to one of the <em>relative units</em>: <code>rem</code>, <code>em</code>, or <code>%</code>, how does that make it different?<br />
+<br /></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Unit name</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Pixel</td>
+<td><code>px</code></td>
+<td>Absolute unit, relative to the screen</td>
+</tr>
+
+<tr>
+<td>Inch</td>
+<td><code>in</code></td>
+<td>Absolute unit 1<code>in</code> = 96px</td>
+</tr>
+
+<tr>
+<td>Percent</td>
+<td><code>%</code></td>
+<td>Relative unit based on a percentage of the parent element</td>
+</tr>
+
+<tr>
+<td>Em</td>
+<td><code>em</code></td>
+<td>Relative unit based on the <code>font-size</code> of the element, 1<code>em</code> = 1x the size of the font</td>
+</tr>
+
+<tr>
+<td>Root Em</td>
+<td><code>rem</code></td>
+<td>Relative unit based on the <code>font-size</code> of the &laquo;root&raquo; element on the page, this doesn&rsquo;t change depending on where it is in the page!</td>
+</tr>
+</tbody>
+</table>
+
+<div class="alert alert-info">
+  <strong>🔖 Terms and Tools: Absolute and Relative units</strong><br />
+  In CSS there are lots of ways to tell the computer the length of something, so far we've mostly used "px" or CSS pixels, which are <strong>absolute units</strong> that relates to the size of the screen you view a website on <em>and</em> the real world at the same time. Originally, 96 pixels was supposed to be 1-inch. There are so many different screens with different ways of displaying pixels and different resolutions that this was never true in practice. As a result, people focus on using <strong>relative units</strong> to specify sizes that are <em>flexible</em>, <em>adaptive</em> and are <em>scalable</em>.
+</div>
+
+<h2 id="positioning-elements">Positioning elements</h2>
+
+<p>Now that we know how to make space around elements, lets put that together with what we learned before about adding images, changing colours, and different sections of a web page!</p>
+
+<h3 id="activity-putting-images-and-text-together">Activity: Putting images and text together 💻</h3>
+
+<p>One our websites we have put in a lot of info about food but without images, lets put those together now by showing off the ingredients we might find in a recipe.</p>
+
+<p>To start, let&rsquo;s make a class called &laquo;<code>ingredient</code>&raquo; with a header, image, and some text:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">section</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;ingredient-list&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ingredient&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Spice<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;http://kgbv.local/pictures/images/anise-aroma-art-277253.jpg&#34;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Spices are an ingredient in many foods<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">ingredient</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mf">0.25</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">ingredient</span> <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>How about we have the image stay on the right side and the text on the left. We can use the CSS property <code>float</code> to do so! It has a few possible values:</p>
+
+<ul>
+<li><code>left</code><br /></li>
+<li><code>right</code><br /></li>
+<li><code>none</code> - Will be displayed where it occurs in the text. This is what  <strong>normally happens</strong>!<br /></li>
+<li><code>inherit</code> - The element inherits the float value of its parent<br />
+<br /></li>
+</ul>
+
+<p>Lets add a float to the image and see what it does! If we just want that to happen for ingredient images we need to specify that in the CSS:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">ingredient</span> <span class="o">&gt;</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="k">float</span><span class="p">:</span> <span class="kc">right</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>Looks pretty good, but what happens if we use the other float values <code>right</code>, <code>none</code>, and <code>inherit</code>?</p>
+
+<p>Also, the image seems like it overflows. In order to fix this we can use a &laquo;fix&raquo; or use another CSS property, <code>display</code> to help with this. <strong>Display</strong> is important, because it controls how and element is displayed, and can even hide it! It has a lot of values because it is used for all sorts of things! It can be used to set how things are displayed inside the element, outside the element, both together, or if it is a list!</p>
+
+<p>We want to set how both the inside and outside look, we can use the value <code>inline-flex</code> for this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">ingredient-list</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">inline</span><span class="o">-</span><span class="kc">flex</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>Now lets add more ingredients and see what we get!</p>
+
+
+    
+    
+          <div class="chevrons">
+      <div id="navigation">
+<a class="nav nav-prev" href="/curriculum-materials/learning/links/" title="Links"> <i class="fa fa-chevron-left"></i><label>Links</label></a>
+    <a class="nav nav-next" href="/curriculum-materials/learning/data-js/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
+    </div>
+  </section>
+</article>
+
+<footer>
+  <div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+	<div>
+  
+  
+    
+      Create a content/_footer.md file to customize the footer content
+    
+  
+	</div>
+</footer>
+
+<script src="/curriculum-materials/js/clipboard.min.js"></script>
+
+<link href="/curriculum-materials/css/featherlight.min.css" rel="stylesheet">
+<script src="/curriculum-materials/js/featherlight.min.js"></script>
+
+
+
+<script src="/curriculum-materials/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

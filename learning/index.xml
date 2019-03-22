@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning on KGBV Learns Code!</title>
+    <link>https://code-at-the-edge.github.io/curriculum-materials/learning/</link>
+    <description>Recent content in Learning on KGBV Learns Code!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://code-at-the-edge.github.io/curriculum-materials/learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is a Computer?</title>
+      <link>https://code-at-the-edge.github.io/curriculum-materials/learning/computing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://code-at-the-edge.github.io/curriculum-materials/learning/computing/</guid>
+      <description>🔖 Using This Page  Click to see the presentation Keep reading to learn more about computers!   How Computers Work Computers machines that are programmable. This means:
+- We can give them instructions
+- They use those instructions to change &amp;laquo;inputs&amp;raquo; into &amp;laquo;outputs&amp;raquo;
+Inputs and Outputs Inputs can be:
+- a mouse,
+- a keyboard,
+- a camera
+The computer cannot automatically act on those inputs without help.</description>
+    </item>
+    
+    <item>
+      <title>HTML!</title>
+      <link>https://code-at-the-edge.github.io/curriculum-materials/learning/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://code-at-the-edge.github.io/curriculum-materials/learning/html/</guid>
+      <description>🔖 Using This Page  Make your Code Playground account Click here to write your first web page Add this list to your web page Play with the tag cubes   Webpages and Computer Languages When you go to Google&amp;rsquo;s website, you see this:
+But what the computer sees is this:
+This language, called HTML or Hypertext Markup Language, is the language of web pages. Taken together with two other languages, CSS or Cascading Style Sheets, and JavaScript, it helps to power the Web.</description>
+    </item>
+    
+    <item>
+      <title>Adding Style with CSS</title>
+      <link>https://code-at-the-edge.github.io/curriculum-materials/learning/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://code-at-the-edge.github.io/curriculum-materials/learning/css/</guid>
+      <description>Today we will talk about how to add ✨ style ✨ to your web sites. By the end of the class you will know how to:
+ Change the colour and font of text
+ Change the background colour
+ Recognize the different sections of your web site
+  🔖 Using This Page  Open your web page in the Code Playground Practice using HTML tags on your page Add CSS to your web page   Before that let&amp;rsquo;s review what we did yesterday!</description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://code-at-the-edge.github.io/curriculum-materials/learning/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://code-at-the-edge.github.io/curriculum-materials/learning/links/</guid>
+      <description>Today we&amp;rsquo;ll learn how to create connections, or links 🔗🌐. By the end of the class you will know how to:
+ Add links to different parts of your web page or even between sites
+ Add images to your web page
+  🔖 Using This Page  Open your web page in the Code Playground Add a link to your page Play a game to learn more about connecting online   Creating connections, or linking web sites Links are one of the most common features of web sites.</description>
+    </item>
+    
+    <item>
+      <title>Layouts</title>
+      <link>https://code-at-the-edge.github.io/curriculum-materials/learning/layouts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://code-at-the-edge.github.io/curriculum-materials/learning/layouts/</guid>
+      <description>Today we&amp;rsquo;ll learn how to change the layout and shape using HTML elements and CSS on your web page. By the end of the class you will know how to:
+ Extra HTML structure on your web page
+ Control the structure of HTML with CSS
+ Move where elements are positioned on the page
+  🔖 Using This Page  Learn about web page parts Activity: Working With Structure.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://code-at-the-edge.github.io/curriculum-materials/learning/data-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://code-at-the-edge.github.io/curriculum-materials/learning/data-js/</guid>
+      <description>/&amp;mdash;
+title: &amp;laquo;Data and Javascript&amp;raquo;
+description: &amp;laquo;&amp;raquo;
+weight: 0
+alwaysopen: false
+&amp;mdash;/
+Today we&amp;rsquo;ll cover two main concepts through a mix of activities at the computer:
+ Seeing data all around
+ Making websites interactive using JavaScript
+  Seeing data all around Most people end up working with &amp;laquo;data&amp;raquo; because they have stories to tell or problems to solve.
+Those stories or problems mostly start out as a question, for example &amp;laquo;How many of my friends like this type of food?</description>
+    </item>
+    
+  </channel>
+</rss>

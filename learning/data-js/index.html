@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KGBV Learns Code!</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-03-22T20:08:22 UTC">
+<title> :: KGBV Learns Code!</title>
+<link rel="shortcut icon" href="/curriculum-materials/images/favicon.png" type="image/x-icon" />
+<link href="/curriculum-materials/css/font-awesome.min.css" rel="stylesheet">
+<link href="/curriculum-materials/css/nucleus.css" rel="stylesheet">
+<link href="/curriculum-materials/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/curriculum-materials/css/bootstrap.min.css">
+<script src="/curriculum-materials/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/code-at-the-edge.github.io\/curriculum-materials";
+</script>
+<link href="/curriculum-materials/css/edge.css" rel="stylesheet">
+<link href="/curriculum-materials/css/syntax.css" rel="stylesheet">
+
+
+    
+  </head>
+  <body data-url="/curriculum-materials/learning/data-js/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://code-at-the-edge.github.io/curriculum-materials">KGBV Learns Code!</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+  <nav class ="shortcuts">
+      <li class="" role="">
+          <a href="http://kgbv.local:3000" target="_blank" rel="noopener">
+              Write Code!
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local/pictures/" target="_blank" rel="noopener">
+              Pictures
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local/reference/" target="_blank" rel="noopener">
+              HTML Reference
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local/emoji/" target="_blank" rel="noopener">
+              Emoji
+          </a>
+      </li>
+      <li class="" role="">
+          <a href="http://kgbv.local:3000/wez" target="_blank" rel="noopener">
+              <mark>&nbsp;Your Web Pages&nbsp;</mark>
+          </a>
+      </li>
+
+  </nav>
+
+  
+  
+
+      
+  
+  
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+        <li data-nav-id="/curriculum-materials/" class="dd-item">
+        <a href="/curriculum-materials/">
+          <i class="fa fa-fw fa-home"></i>
+        </a>
+        </li>
+    <li data-nav-id="/curriculum-materials/learning/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/curriculum-materials/learning/">Learning</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/curriculum-materials/learning/computing/" class="dd-item">
+        <div>
+          <a href="/curriculum-materials/learning/computing/">
+            What is a Computer?
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/curriculum-materials/learning/html/" class="dd-item">
+        <div>
+          <a href="/curriculum-materials/learning/html/">
+            HTML!
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/curriculum-materials/learning/css/" class="dd-item">
+        <div>
+          <a href="/curriculum-materials/learning/css/">
+            Adding Style with CSS
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/curriculum-materials/learning/links/" class="dd-item">
+        <div>
+          <a href="/curriculum-materials/learning/links/">
+            Links
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/curriculum-materials/learning/layouts/" class="dd-item">
+        <div>
+          <a href="/curriculum-materials/learning/layouts/">
+            Layouts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/curriculum-materials/learning/data-js/" class="dd-item active">
+        <div>
+          <a href="/curriculum-materials/learning/data-js/">
+            
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+
+  <section class="page">
+    <div class="nav-select">
+      <center>Navigation :
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/curriculum-materials/learning/" >
+   Learning</option> 
+      <option value="/curriculum-materials/learning/computing/" >- What is a Computer?</option>
+      <option value="/curriculum-materials/learning/html/" >- HTML!</option>
+      <option value="/curriculum-materials/learning/css/" >- Adding Style with CSS</option>
+      <option value="/curriculum-materials/learning/links/" >- Links</option>
+      <option value="/curriculum-materials/learning/layouts/" >- Layouts</option>
+      <option value="/curriculum-materials/learning/data-js/"  selected>- </option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/curriculum-materials/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/curriculum-materials/js/auto-complete.js"></script>
+        <link href="/curriculum-materials/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+            var baseurl = "https:\/\/code-at-the-edge.github.io\/curriculum-materials";
+          
+        </script>
+        <script type="text/javascript" src="/curriculum-materials/js/search.js"></script>
+      </div>
+
+    <h1></h1>
+
+    
+    
+    
+    
+
+<p>/<em>&mdash;<br />
+title: &laquo;Data and Javascript&raquo;<br />
+description: &laquo;&raquo;<br />
+weight: 0<br />
+alwaysopen: false<br />
+&mdash;</em>/</p>
+
+<p>Today we&rsquo;ll cover <strong>two main concepts</strong> through a mix of activities at the computer:</p>
+
+<ol>
+<li>Seeing data all around<br /></li>
+<li>Making websites interactive using JavaScript<br />
+<br /></li>
+</ol>
+
+<h2 id="seeing-data-all-around">Seeing data all around</h2>
+
+<p>Most people end up working with &laquo;<strong>data</strong>&raquo; because they have <em>stories to tell</em> or <em>problems to solve</em>.</p>
+
+<p>Those stories or problems mostly <strong>start out as a question</strong>, for example &laquo;How many of my friends like this type of food?&raquo; or &laquo;How do people in my community access the internet?&raquo;</p>
+
+<p>In order to answer these types of questions, lists of text, numbers, and images could come in helpful: you could take photos of all the different ways people access a web site for example, or ask all your friends what they like to eat and record what everyone says.</p>
+
+<p>Based on the Food Servies (?) game, a question could be:<br />
+  - How many people perferred foraged foods?<br />
+  - How healthy was everyone in a particular round?<br />
+  - How many total purchases did shoppers make?<br />
+  - &hellip; what are some other questions about the game that you all had??</p>
+
+<p>So, to help answer these questions we need to work with <strong>data</strong>, but what is it exactly?<br />
+Let&rsquo;s take an example of a recipe, what kinds of things can we say about a recipe?<br />
+  - It is used by people to prepare food<br />
+  - A recipe has a name<br />
+  - It might be made mostly on certain holidays<br />
+  - It has a set of ingredients<br />
+  - It has instructions for ways to prepare food: chopping, cutting, stirring<br />
+  - It might be the favourite of some peoples&rsquo; but not others</p>
+
+<p>Just like a recipe, we also have data that people could attach to us:<br />
+  - a names<br />
+  - when were born<br />
+  - how old we are<br />
+  - hair colour<br />
+  - how many siblings we have<br />
+  - a favourite foods!</p>
+
+<p>From the above we see two major <em>types</em> of data: Qualitative and Quantitative</p>
+
+<p><strong>Qualitative data</strong> (often text and images) is &laquo;everything that refers to the quality of something: A description of colours, texture, and feel of an object, a description of experiences, and interviews are all qualitative data&raquo;</p>
+
+<p><strong>Quantitative data</strong> (often numbers) is data that refers to a number, e.g., the number of ingredients, the price, a score, the size</p>
+
+<h2 id="activity-seeing-data-as-categories">Activity: Seeing data as categories 🏃🏾‍♀️</h2>
+
+<p>[Introduce data set from game, ask people to identify &laquo;categories&raquo; for the data from above]</p>
+
+<table>
+<thead>
+<tr>
+<th>[Category]</th>
+<th>[Descriptor]</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Player</td>
+<td>Number of players</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="activity-data-for-humans-versus-data-for-computers">Activity: Data for humans versus Data for computers 💻</h2>
+
+<p>We have been mostly talking about data that is easy for humans to understand, rather than data that is easy for computers to understand.</p>
+
+<p>Computers like &laquo;<strong>structured</strong>&raquo; data that is <strong>machine-readable</strong> as opposed to humans, who also can use &laquo;<strong>unstructured</strong>&raquo; data like above. What is the difference?</p>
+
+<p>A sentence with all the data embedded in it:</p>
+
+<p>[TODO: Change this!]</p>
+
+<blockquote>
+<p>One of my favourite recipes is Pumpkin Pie, it is usually made in Canada using the fall, traditionally during the harvest season, and sometimes at special holidays including Canadian Thanksgiving and Christmas. To make pumpkin pie the main ingredients are a pumpkin that is roasted, pureed and strained, milk, many spices including cinnamon and nutmeg, a pie crust made with flour, shortening or butter, salt, and water. The crust has to be made first, rolled out and placed in a pie plate, with the pumpkin filling all mixed together until smooth and poured overtop. Then it is put in the oven for a long time to cook.</p>
+</blockquote>
+
+<p>This sentence has all of the details about recipes we talked about above, but not in any particular order, and all of the details are mixed together. We are able to read it and pick out the details that are similar, but for a computer it would be more difficult! Other things that are difficult for computers to &laquo;read&raquo; or interpret the details in are images.</p>
+
+<p>So if we want to share the data in a way that computers can understand it, we have to translate those details into formats thats are easy for computers to interpret:<br />
+- <strong>A SPREADSHEET OR TABLE</strong>, usually with the file format of a <code>.csv</code> &laquo;comma-seperated values&raquo; (CSV) or <code>.xls</code> Microsoft Excel Spreadsheet.<br />
+- <strong>A LIST OF KEYS AND VALUES</strong>, can have many formats, but a popular one is <code>.json</code> or &laquo;JavaScript Object Notation&raquo; (JSON)</p>
+
+<p>How about we <em>translate</em> the data from the game using the categories we have above, into a form that will be easier for computers to interpret?</p>
+
+<ul>
+<li>Build a CSV<br /></li>
+<li>Identify categories<br /></li>
+<li>Have shared filling out?<br />
+<br />
+<br /></li>
+</ul>
+
+<h2 id="making-websites-interact-with-data-using-javascript">Making websites interact with data using JavaScript</h2>
+
+<p>Now that we have data for computers, let&rsquo;s use it with our web page!</p>
+
+<h2 id="activity-add-json-data-to-a-web-page">Activity: Add JSON data to a web page  💻</h2>
+
+<h2 id="activity-checking-our-work-in-the-browser">Activity: Checking our work in the browser  💻</h2>
+
+<ul>
+<li>Understand difference between HTML, CSS, and JavaScript (JS) and how they fit together<br /></li>
+
+<li><p>Analyze whether a web page is using JavaScript using Browser Developer Tools and Inspector</p></li>
+
+<li><p>Remember the difference between JavaScript (JS) and HTML and CSS</p></li>
+
+<li><p>Recognize whether a web page is using JavaScript using Browser Developer Tools and Inspector</p></li>
+
+<li><p>Analyze how data relates to the content on a web page</p></li>
+</ul>
+
+<p>.</p>
+
+
+    
+    
+          <div class="chevrons">
+      <div id="navigation">
+<a class="nav nav-prev" href="/curriculum-materials/learning/layouts/" title="Layouts"> <i class="fa fa-chevron-left"></i><label>Layouts</label></a>
+    <a class="nav nav-next" href="/curriculum-materials/learning/computing/" title="What is a Computer?" style="margin-right: 0px;"><label>What is a Computer?</label><i class="fa fa-chevron-right"></i></a></div>
+    </div>
+  </section>
+</article>
+
+<footer>
+  <div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+	<div>
+  
+  
+    
+      Create a content/_footer.md file to customize the footer content
+    
+  
+	</div>
+</footer>
+
+<script src="/curriculum-materials/js/clipboard.min.js"></script>
+
+<link href="/curriculum-materials/css/featherlight.min.css" rel="stylesheet">
+<script src="/curriculum-materials/js/featherlight.min.js"></script>
+
+
+
+<script src="/curriculum-materials/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>
