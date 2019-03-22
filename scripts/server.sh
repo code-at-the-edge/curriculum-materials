@@ -44,7 +44,3 @@ sudo rm /etc/nginx/sites-enabled/default
 sudo chown -R www-data:www-data /var/www/code.$HOSTNAME/html
 sudo chmod -R 0755 /var/www/$HOSTNAME.local/html/*
 sudo systemctl restart nginx
-<<<<<<< HEAD
-=======
-
->>>>>>> 8566ca0bea8d6e5928982dfb7db047ad9f6e5367
