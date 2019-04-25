@@ -1,0 +1,34 @@
+title: "KGBV Learns Code!"
+subtitle:
+description: > # this means to ignore newlines until "baseurl:"
+  Learning materials and deployment setup for the Code at the Edge project
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://code-at-the-edge.github.io/curriculum-materials/" # the base hostname & protocol for your site
+github:
+  repo: "code-at-the-edge/curriculum-materials"
+  branch: "gh-pages"
+
+
+collections:
+  articles:
+    output: true
+permalink: /:path/
+
+# Build settings
+markdown: kramdown
+
+redcarpet:
+    extensions: [
+        'no_intra_emphasis',
+        'fenced_code_blocks',
+        'autolink',
+        'strikethrough',
+        'superscript',
+        'with_toc_data',
+        'tables',
+        'hardwrap'
+    ]
+
+# variables
+video: "<span class=\"video-player\"></span>"
+assignment: "<span class=\"assignment\">Assignment: </span>"
