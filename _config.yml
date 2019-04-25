@@ -10,7 +10,7 @@ github:
 
 
 collections:
-  articles:
+  lessons:
     output: true
 permalink: /:path/
 

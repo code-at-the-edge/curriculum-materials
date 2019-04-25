@@ -9,7 +9,7 @@
   {% assign item = site.pages | where: "path", "contents.html" | first %}
 
 {% for path in item.contents %}
-  {% assign subpage = site.articles | where: "path", path | first %}
+  {% assign subpage = site.lessons | where: "path", path | first %}
   <li{% if page.url contains subpage.url %} class="selected"{% endif %}>
     <a href="{{ subpage.url | prepend: site.baseurl }}">{% if subpage.module %}{{ subpage.module }}.{% endif %} {{ subpage.title }}</a>
       {% if page.url contains subpage.url %}
