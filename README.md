@@ -1,5 +1,8 @@
 # Code at the Edge Curriculum Materials
 
+## Work in Progress
+
+We're in the process of switching from Hugo to Jekyll. This branch is our current attempt to do so. 
 
 [![Build Status](https://travis-ci.org/code-at-the-edge/curriculum-materials.svg?branch=master)](https://travis-ci.org/code-at-the-edge/curriculum-materials)
 
